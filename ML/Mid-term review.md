@@ -10,7 +10,7 @@
 - []()
 
 
-<h1 id="1">ML is the ROX</h1>
+<h1 id="1">Module: ML is the ROX</h1>
 
 ## 1. Supervised Learning VS Unsupervised learning VS Reinforcement Learning
 Supervised Learning = Approximation. Inductive bias.<br />
@@ -35,7 +35,7 @@ Data, Learning and Modeling<br />
 https://machinelearningmastery.com/data-learning-and-modeling/#:~:text=Instance%3A%20A%20single%20row%20of,attribute%20of%20a%20data%20instance.
 
 
-<h1 id="2">SL1 Decision Tree</h1>
+<h1 id="2">Module: SL1 Decision Tree</h1>
 
 ## 1. Terms definition
 Instances: inputs, a row of data, an observation from domain <br />
