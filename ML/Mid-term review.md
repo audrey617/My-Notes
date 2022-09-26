@@ -12,6 +12,7 @@
 
 
 <h1 id="1">ML is the ROX</h3>
+
 ### 1. Supervised Learning VS Unsupervised learning VS Reinforcement Learning
 Supervised Learning = Approximation. Inductive bias.<br />
 Unsupervised learning = Description<br />
