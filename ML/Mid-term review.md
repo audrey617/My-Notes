@@ -24,7 +24,7 @@ unsupervised learning - make up some criterion and then find a way to cluster da
 
 reinforcement learning - try to find behavior that scores well
 
-2. Induction and Deduction
+### 2. Induction and Deduction
 Induction: being from examples to a more general rule.
 Deduction: from a general rule to specific examples, like reasoning.
 inductive bias: 
