@@ -1,5 +1,5 @@
 # Lesson outline
-- [Module: ML is the ROX]()
+- [Module: ML is the ROX](#1)
 - [Module: SL1 Decision Tree]()
 - []()
 - []()
@@ -11,8 +11,8 @@
 - []()
 
 
-# Module: ML is the ROX
-###1. Supervised Learning VS Unsupervised learning VS Reinforcement Learning
+<h1 id="1">ML is the ROX</h3>
+### 1. Supervised Learning VS Unsupervised learning VS Reinforcement Learning
 Supervised Learning = Approximation. Inductive bias.<br />
 Unsupervised learning = Description<br />
 Reinforcement Learning (Wiki): How intelligent agents ought to take actions in an environment in order to maximize the notion of cumulative reward<br />
