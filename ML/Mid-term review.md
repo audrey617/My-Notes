@@ -47,7 +47,9 @@ Candidate: A concept that you think might be the target concept<br />
 Testing set: A set of instances with correct labels that was not visible to the learning algorithm<br />
 
 ## 2. Representation VS Algorithm
+DT Representation: Represent data. Decision tree is a strcuture of nodes(condition/feature), edges(feature value, eg T/F) and leaves (output label).<br />
+DT Algorithm: Sequence of steps to get output 1) Pick best attribute 2) Ask question 3) Follow answer path 4) repeat 1-3 until find answer<br />
 
-
+## 2. Decision Trees Expressiveness
 
 
