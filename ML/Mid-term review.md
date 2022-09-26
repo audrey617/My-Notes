@@ -11,7 +11,7 @@
 - []()
 
 
-<h1 id="1">ML is the ROX</h3>
+<h1 id="1">ML is the ROX</h1>
 
 ### 1. Supervised Learning VS Unsupervised learning VS Reinforcement Learning
 Supervised Learning = Approximation. Inductive bias.<br />
@@ -33,4 +33,5 @@ preference and restriction biases for supervised learning algorithms:<br />
 https://downey.io/notes/omscs/cs7641/restriction-and-preference-bias-supervised-learning/<br />
 
 
-<h1 id="2">SL1 Decision Tree</h3>
+
+<h1 id="2">SL1 Decision Tree</h1>
