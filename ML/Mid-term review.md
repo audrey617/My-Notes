@@ -1,6 +1,6 @@
 # Lesson outline
 - [Module: ML is the ROX](#1)
-- [Module: SL1 Decision Tree]()
+- [Module: SL1 Decision Tree](#2)
 - []()
 - []()
 - []()
@@ -32,5 +32,5 @@ https://www.baeldung.com/cs/ml-inductive-bias
 preference and restriction biases for supervised learning algorithms:
 https://downey.io/notes/omscs/cs7641/restriction-and-preference-bias-supervised-learning/
 
-# Module: SL1 Decision Tree
 
+<h1 id="2">SL1 Decision Tree</h3>
