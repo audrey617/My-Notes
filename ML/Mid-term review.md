@@ -12,7 +12,7 @@
 
 
 # Module: ML is the ROX
-1. Supervised Learning VS Unsupervised learning VS Reinforcement Learning
+###1. Supervised Learning VS Unsupervised learning VS Reinforcement Learning
 Supervised Learning = Approximation. Inductive bias.<br />
 Unsupervised learning = Description<br />
 Reinforcement Learning (Wiki): How intelligent agents ought to take actions in an environment in order to maximize the notion of cumulative reward<br />
