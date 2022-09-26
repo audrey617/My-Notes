@@ -8,7 +8,6 @@
 - []()
 - []()
 - []()
-- [General Reference](#referencegeneral)
 
 
 <h1 id="1">ML is the ROX</h1>
@@ -52,6 +51,3 @@ Testing set: A set of instances with correct labels that was not visible to the 
 
 
 
-<h1 id="referencegeneral">General reference</h1>
-CS7641 course content<br />
-Student notes: https://github.com/mohamedameen93/CS-7641-Machine-Learning-Notes<br />
