@@ -1,7 +1,7 @@
 # Lesson outline
 - [Module: ML is the ROX](#1)
 - [Module: SL1 Decision Tree](#2)
-- []()
+- [Module: SL2 Regression & Classification](#3)
 - []()
 - []()
 - []()
@@ -75,7 +75,7 @@ So the space of decision tree is large. The hypothesis space of all decision tre
     <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/1.JPG?raw=true">
 </p>
 
-### 4. ID3
+### 4. ID3 (Top down, greedy appraoch, returns optimal decision tree)
 Best selection is based on **largest Information gain or smallest entropy**<br />
 IG = H(S) - H(S|A). H(S|A) is uncertainty(entropy) after splitting set S  on attribute A.<br />
 https://en.wikipedia.org/wiki/ID3_algorithm  
@@ -98,3 +98,7 @@ ID3 (Examples, Target_Attribute, Attributes)
     End
     Return Root
 ```
+
+### 5. ID3 Bias
+
+<h1 id="3">Module: SL2 Regression & Classification</h1>
