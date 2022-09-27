@@ -72,7 +72,7 @@ This is double exponential. 2^(2^n) is not 4^n. This is a lot. When N is 6, the 
 So the space of decision tree, the hypothesis space of all decision tree is very expressive and expensive if we don't make smart decision.
 
 <p align="center" width="100%">
-    <img width="33%" src="https://github.com/audrey617/Notes/blob/main/ML/images/1.JPG?raw=true">
+    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/1.JPG?raw=true">
 </p>
 
 
