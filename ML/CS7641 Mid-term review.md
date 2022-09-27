@@ -70,5 +70,6 @@ How many decision tree (functions) will we have? or In terms of n, how many diff
 Explain from professor: Well if you understand how we got 2^n from the possible patterns of n attributes, then going to to the next step is exactly the same reasoning. With n attributes there are 2^n possible patterns. Let's write that k patterns so I can stop using carets all the time. So there are k possible patterns. I want to know how many binary functions there are over k patterns.  How do we figure that out? Well each pattern can be mapped to true or false. So that means each pattern can be labeled one of two ways. Therefore there 2^k ways to map those patterns (dammit, the caret is back). What's k? Oh, 2^n. So there are 2^(2^n) boolean functions from n boolean attributes.<br />
 This is double exponential. 2^(2^n) is not 4^n. This is a lot. When N is 6, the number is already very big.
 So the space of decision tree, the hypothesis space of all decision tree is very expressive and expensive if we don't make smart decision.
-![below]([http://url/to/img.png](https://github.com/audrey617/Notes/blob/main/ML/images/1.JPG?raw=true))
+
+![http://url/to/img.png](https://github.com/audrey617/Notes/blob/main/ML/images/1.JPG?raw=true)
 
