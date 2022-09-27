@@ -76,7 +76,7 @@ So the space of decision tree is large. The hypothesis space of all decision tre
 </p>
 
 ### 4. ID3
-https://en.wikipedia.org/wiki/ID3_algorithm
+https://en.wikipedia.org/wiki/ID3_algorithm  Best selection is based on IG/entropy
 ```
 ID3 (Examples, Target_Attribute, Attributes)
     Create a root node for the tree
