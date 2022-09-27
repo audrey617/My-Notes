@@ -76,6 +76,7 @@ So the space of decision tree is large. The hypothesis space of all decision tre
 </p>
 
 ### 4. ID3
-<p align="center" width="100%">
+[<p align="center" width="100%">
     <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/2.JPG?raw=true">
 </p>
+](https://en.wikipedia.org/wiki/ID3_algorithm)
