@@ -77,7 +77,7 @@ So the space of decision tree is large. The hypothesis space of all decision tre
 
 ### 4. ID3
 Best selection is based on **largest Information gain or smallest entropy**<br />
-IG = H(S) - H(S|A). H(S|A) is uncertainty after splitting set S  on attribute A.<br />
+IG = H(S) - H(S|A). H(S|A) is uncertainty(entropy) after splitting set S  on attribute A.<br />
 https://en.wikipedia.org/wiki/ID3_algorithm  
 ```
 ID3 (Examples, Target_Attribute, Attributes)
