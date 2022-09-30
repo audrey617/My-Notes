@@ -122,3 +122,11 @@ What to do for leaves:  Average, local linear fit.<br/>
 
 
 <h1 id="3">Module: SL2 Regression & Classification</h1>
+Regression: falling back to mean<br/> 
+https://en.wikipedia.org/wiki/Regression_analysis
+
+### 1. Errors
+Our goal is to find the values of θ that minimize the above sum of squared errors. One of the common approach is to use calculus. This is where the gradient descent algorithm comes in handy. Also notice, how easy it is to take a derivative of this error function. So take a good look at the gradient descent algorithm document and come back here to find the linear equation that fits our data.<br/>
+
+### 2. Polynomial Regression
+$$ w = (X^tX)^-1X^tY) $$
