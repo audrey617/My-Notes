@@ -79,10 +79,13 @@ When we have N boolean attributes (will need n! nodes), output is boolean. <br /
 ### 4. ID3 (Top down, greedy appraoch, returns optimal decision tree)
 Best selection is based on **largest Information gain or smallest entropy**<br />
 IG = H(S) - H(S|A). H(S|A) is uncertainty(entropy) after splitting set S  on attribute A.<br />
-https://en.wikipedia.org/wiki/ID3_algorithm  
+https://en.wikipedia.org/wiki/ID3_algorithm  & StatQuest 
 
 <p align="center" width="100%">
     <img width="30%" src="https://github.com/audrey617/Notes/blob/main/ML/images/3.JPG?raw=true">
+</p>
+<p align="center" width="100%">
+    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/4.JPG?raw=true">
 </p>
 
 ```
