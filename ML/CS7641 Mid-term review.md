@@ -2,6 +2,8 @@
 - [Module: ML is the ROX](#1)
 - [Module: SL1 Decision Tree](#2)
 - [Module: SL2 Regression & Classification](#3)
+- [Module: SL3 Neural Networks](#4)
+- [Module: SL4 Instance Based Learning](#5)
 - []()
 - []()
 - []()
@@ -126,10 +128,27 @@ Regression: falling back to mean<br/>
 https://en.wikipedia.org/wiki/Regression_analysis
 
 ### 1. Errors
-Our goal is to find the values of θ that minimize the above sum of squared errors. One of the common approach is to use calculus. This is where the gradient descent algorithm comes in handy. Also notice, how easy it is to take a derivative of this error function. So take a good look at the gradient descent algorithm document and come back here to find the linear equation that fits our data.<br/>
+Our goal is to find the values of θ(coefficient) that minimize the above sum of squared errors (Mean Sqaure error. MSE). One of the common approach is to use calculus. This is where the gradient descent algorithm comes in handy. Also notice, how easy it is to take a derivative of this error function. So take a good look at the gradient descent algorithm document and come back here to find the linear equation that fits our data.<br/>
 
 ### 2. Polynomial Regression
-General linear model. Detail see wiki link. Get weight or beta hat <br/> 
+General linear model. Detail see wiki link. Get weight/coefficient <br/> 
 
 $$ W = (X^TX)^{-1}X^TY $$  
 
+### 3. Model Selection & overfitting/underfitting Cross Validation
+The goal of Machine Learning is "Generalization". One meaning of "fold": "consisting of so many parts or facets." So, n-fold cross validation means the data is in n parts. - Michael Littman <br/>
+Overfitting, underfitting - learning curve & validation curve
+https://scikit-learn.org/stable/modules/cross_validation.html <br/> 
+https://en.wikipedia.org/wiki/Cross-validation_(statistics) <br/> 
+
+### 4. Input Spaces
+Scalar continuous input  <br/> 
+vector continuous input  <br/> 
+discrete input, Scalar or vector<br/> 
+
+<h1 id="4">Module: SL3 Neural Networks</h1>
+
+
+
+
+<h1 id="5">Module: SL4 Instance Based Learning</h1>
