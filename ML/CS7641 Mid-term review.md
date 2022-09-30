@@ -137,7 +137,7 @@ $$ W = (X^TX)^{-1}X^TY $$
 
 ### 3. Model Selection & overfitting/underfitting Cross Validation
 The goal of Machine Learning is "Generalization". One meaning of "fold": "consisting of so many parts or facets." So, n-fold cross validation means the data is in n parts. - Michael Littman <br/>
-Overfitting, underfitting - learning curve & validation curve
+Overfitting, underfitting - learning curve & validation curve <br/> 
 https://scikit-learn.org/stable/modules/cross_validation.html <br/> 
 https://en.wikipedia.org/wiki/Cross-validation_(statistics) <br/> 
 
