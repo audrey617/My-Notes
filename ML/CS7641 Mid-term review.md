@@ -80,6 +80,11 @@ When we have N boolean attributes (will need n! nodes), output is boolean. <br /
 Best selection is based on **largest Information gain or smallest entropy**<br />
 IG = H(S) - H(S|A). H(S|A) is uncertainty(entropy) after splitting set S  on attribute A.<br />
 https://en.wikipedia.org/wiki/ID3_algorithm  
+
+<p align="center" width="100%">
+    <img width="30%" src="https://github.com/audrey617/Notes/blob/main/ML/images/3.JPG?raw=true">
+</p>
+
 ```
 ID3 (Examples, Target_Attribute, Attributes)
     Create a root node for the tree
