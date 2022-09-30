@@ -76,7 +76,7 @@ When we have N boolean attributes (will need n! nodes), output is boolean. <br /
     <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/1.JPG?raw=true">
 </p>
 
-### 4. ID3 (Top down, greedy appraoch, returns optimal decision tree)
+### 4. ID3 (Top down, greedy appraoch, returns optimal decision tree, prefer shorter tree than long tree)
 Best selection is based on **largest Information gain or smallest entropy**<br />
 IG = H(S) - H(S|A). H(S|A) is uncertainty(entropy) after splitting set S  on attribute A.<br />
 https://en.wikipedia.org/wiki/ID3_algorithm  & StatQuest 
@@ -108,6 +108,17 @@ ID3 (Examples, Target_Attribute, Attributes)
     Return Root
 ```
 
-### 5. ID3 Bias
+### 5. ID3 Bias (Inductive Bias)
+Restriction Bias: hypothesis set space H. <br/>
+Reference Bias: subset of hypothesis (n belongs to H). Short or long, how to split(gini or entropy), which tree to prefer (accuracy? precision?)<br/>
+
+### 5. Other considerations(Continuous Attributes, Repeat attribute, When to stop, regression tree)
+Continuous Attributes: split attribute range into equal intervals<br/>
+Repeat attribute along a path in a tree: NO for discrete attributes But YES for continuous attributes since we can ask different question on the same attribute. eg, ask age attribute "is it above 30", then ask "is it above 15" makes sense.<br/> 
+When to stop: 1) Everything is cliassified correctly 2) No more attributes 3) overfitting-> cross-validation, validation curve& learning curve, pre-pruning or post-pruning  (Don't violate Occam's razor: entities should not be multiplied beyond necessity)<br/> 
+Regression Tree: https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeRegressor.html<br/> 
+What to do for splitting: Need continuous outputs. Information gain is not available since it is unable to measure information on continuous values well and won't generalize well. Measure errors/mixedup things can use variance. Gain ratio is also one option <br/> 
+What to do for leaves:  Average, local linear fit.<br/> 
+
 
 <h1 id="3">Module: SL2 Regression & Classification</h1>
