@@ -165,16 +165,15 @@ XOR: requires 2 perceptrons<br/>
 **Perceptron Training** <br/> 
 Given examples, find weights that map inputs to outputs. Two different rules are developed. One is Perceptron rule (use threshold output) and the other is gradient descent/delta rule (use unthreshold values)<br/> 
 
-**Perceptron Training: Perceptron rule. Δw_i = α * (y - ŷ)*x_i. Finite convergency for linear separability** <br/> 
+**Perceptron Training: Perceptron rule. Δw_i = α * (y - ŷ)*x_i. Finite convergency for linear separability**
 https://en.wikipedia.org/wiki/Perceptron See learning algorithm part for details.<br/> 
 The idea is to update weights by rewarding correct (increase weight) and punishing wrong (reduce weight). Learning rate is used to control the weight change speed so as to avoid overshooting. If the data is linearly separable, the perceptron will find the seperate line in finite iterations. However, whether a data is linearly separable is usualy unknown. So we use threshold to stop loop: repeated until the iteration error is less than a user-specified error threshold. (If it is known this dataset is linear seperatable, we could set the error to 0. But maybe not ideal to do so), or a predetermined number of iterations have been completed then stop.
 <br/> 
 <p align="center" width="100%">
     <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/6.JPG?raw=true">
 </p>
-<br/> 
 
-**Perceptron Training: Gradient descent. Δw_i = α * (y - a)*x_i. More robust for non-linear. Local optimum if not convex** <br/> 
+**Perceptron Training: Gradient descent. Δw_i = α * (y - a)*x_i. More robust for non-linear. Local optimum if not convex**
 <p align="center" width="100%">
     <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/7.JPG?raw=true">
 </p>
