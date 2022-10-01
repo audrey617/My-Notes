@@ -188,6 +188,12 @@ From George Kudrayvtsev student note<br/>
 </p>
 
 
+Regarding activation functions in NN <br/>
+https://towardsdatascience.com/activation-functions-neural-networks-1cbd9f8d91d6 <br/>
+<p align="center" width="100%">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/activation_function_cheatsheet.png?raw=true">
+</p>
+
 ### 3. Neural Network
 **Sketch** <br/> 
 
