@@ -175,7 +175,6 @@ The idea is to update weights by rewarding correct (increase weight) and punishi
 <br/> 
 
 **Perceptron Training: Gradient descent. More robust for non-linear separability** <br/> 
-To minimize error E(W) <br/> 
 <p align="center" width="100%">
     <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/7.JPG?raw=true">
 </p>
@@ -183,7 +182,7 @@ To minimize error E(W) <br/>
 
 **Perceptron Training: Compare** <br/> 
 <p align="center" width="100%">
-    <img width="40%" src="https://github.com/audrey617/Notes/blob/main/ML/images/8.JPG?raw=true">
+    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/8.JPG?raw=true">
 </p>
 
 
