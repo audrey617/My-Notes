@@ -183,12 +183,8 @@ To minimize error E(W) <br/>
 
 **Perceptron Training: Compare** <br/> 
 <p align="center" width="100%">
-    <img width="30%" src="https://github.com/audrey617/Notes/blob/main/ML/images/8.JPG?raw=true">
+    <img width="40%" src="https://github.com/audrey617/Notes/blob/main/ML/images/8.JPG?raw=true">
 </p>
-
-
-
-**gradient descent** <br/> 
 
 
 
