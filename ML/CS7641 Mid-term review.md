@@ -170,20 +170,20 @@ https://en.wikipedia.org/wiki/Perceptron See learning algorithm part for details
 The idea is to update weights by rewarding correct (increase weight) and punishing wrong (reduce weight). Learning rate is used to control the weight change speed so as to avoid overshooting. If the data is linearly separable, the perceptron will find the seperate line in finite iterations. However, whether a data is linearly separable is usualy unknown. So we use threshold to stop loop: repeated until the iteration error is less than a user-specified error threshold. (If it is known this dataset is linear seperatable, we could set the error to 0. But maybe not ideal to do so), or a predetermined number of iterations have been completed then stop.
 <br/> 
 <p align="center" width="100%">
-    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/6.JPG?raw=true">
+    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/6.JPG?raw=true">
 </p>
 <br/> 
 
 **Perceptron Training: Gradient descent. More robust for non-linear separability** <br/> 
 To minimize error E(W) <br/> 
 <p align="center" width="100%">
-    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/7.JPG?raw=true">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/7.JPG?raw=true">
 </p>
 <br/> 
 
-**Perceptron Training: Compare ** <br/> 
+**Perceptron Training: Compare** <br/> 
 <p align="center" width="100%">
-    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/8.JPG?raw=true">
+    <img width="30%" src="https://github.com/audrey617/Notes/blob/main/ML/images/8.JPG?raw=true">
 </p>
 
 
