@@ -147,6 +147,7 @@ vector continuous input  <br/>
 discrete input, Scalar or vector<br/> 
 
 <h1 id="4">Module: SL3 Neural Networks</h1>
+
 ### 1. Perceptron
 
 A perceptron is a linear function, and it computes hyperplanes. Care about what is activation function? what is firing threshold? Above or equal to threshold -> 1; else 0 <br/> 
