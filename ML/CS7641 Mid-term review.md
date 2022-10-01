@@ -148,16 +148,17 @@ discrete input, Scalar or vector<br/>
 
 <h1 id="4">Module: SL3 Neural Networks</h1>
 ### 1. Perceptron
+
 A perceptron is a linear function, and it computes hyperplanes. Care about what is activation function? what is firing threshold? Above or equal to threshold -> 1; else 0 <br/> 
 
-Perceptron units expressions of boolean <br/> 
+**Perceptron units expressions of boolean** <br/> 
 If we focus on X1 ∈ {0,1} and X2 ∈ {0,1}. What W1,W2 and θ can be?<br/> 
 AND: 1/2, 1/2, 3/4<br/> 
 OR: 1/2, 1/2, 1/4<br/> 
 NOT FOR X1: W1 = -1, θ = 0<br/> 
 XOR: requires 2 perceptrons<br/> 
 <p align="center" width="100%">
-    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/5.JPG?raw=true">
+    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/5.JPG?raw=true">
 </p>
 
 <h1 id="5">Module: SL4 Instance Based Learning</h1>
