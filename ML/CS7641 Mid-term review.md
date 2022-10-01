@@ -179,4 +179,13 @@ The idea is to update weights by rewarding correct (increase weight) and punishi
 </p>
 <br/> 
 
+### 2. Sigmoid (S-like, Differentiable threshold)
+https://mathworld.wolfram.com/SigmoidFunction.html <br/>
+Similarity between the above two functions begs the question, why didn’t we just use calculus on the thresholded y? The simple answer is that the function is not differentiable (https://en.wikipedia.org/wiki/Differentiable_function) <br/> 
+How differentiable? sigmoid is one option. Perceptron is a "hard" version of sigmoid function. When a-> -inf, sigmoid(a)->0, when a->+inf, sigmoid(a)->1 <br/>
+From George Kudrayvtsev note<br/>
+<p align="center" width="100%">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/8.JPG?raw=true">
+</p>
+
 <h1 id="5">Module: SL4 Instance Based Learning</h1>
