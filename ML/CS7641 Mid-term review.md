@@ -187,7 +187,7 @@ Given examples, find weights that map inputs to outputs. Two different rules are
 
 <strong>Perceptron Training: Perceptron rule. Δw_i = α * (y - ŷ)*x_i. Finite convergency for linear separability</strong><br/> 
 https://en.wikipedia.org/wiki/Perceptron See learning algorithm part for details.<br/> 
-The idea is to update weights by rewarding correct (increase weight) and punishing wrong (reduce weight). Learning rate is used to control the weight change speed so as to avoid overshooting. If the data is linearly separable, the perceptron will find the seperate line in finite iterations. However, whether a data is linearly separable is usualy unknown. So we use threshold to stop loop: repeated until the iteration error is less than a user-specified error threshold. (If it is known this dataset is linear seperatable, we could set the error to 0. But maybe not ideal to do so), or a predetermined number of iterations have been completed then stop.
+The idea is to add weights when y=1 and ŷ = 0 and to reduce weights when y=0 and ŷ = 1. Learning rate is used to control the weight change speed so as to avoid overshooting. If the data is linearly separable, the perceptron will find the seperate line in finite iterations. However, whether a data is linearly separable is usualy unknown. So we use threshold to stop loop: repeated until the iteration error is less than a user-specified error threshold. (If it is known this dataset is linear seperatable, we could set the error to 0. But maybe not ideal to do so), or a predetermined number of iterations have been completed then stop.
 <br/> 
 <p align="center" width="100%">
     <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/6.JPG?raw=true">
