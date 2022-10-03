@@ -200,7 +200,7 @@ The idea is to add weights when y=1 and ŷ = 0 and to reduce weights when y=0 an
 <br/> 
 
 ### 2. Sigmoid (S-like, Differentiable threshold)
-Similarity between the above two functions begs the question, why didn’t we just use calculus on the thresholded y? The simple answer is that the function is not differentiable (https://en.wikipedia.org/wiki/Differentiable_function) <br/> 
+Similarity between the above two functions begs the question, why didn’t we just use calculus on the thresholded ŷ? The simple answer is that the function ŷ is not differentiable (https://en.wikipedia.org/wiki/Differentiable_function) <br/> 
 How differentiable? sigmoid is one option. Perceptron is a "hard" version of sigmoid function. When a-> -inf, sigmoid(a)->0, when a->+inf, sigmoid(a)->1 <br/>
 From George Kudrayvtsev student note<br/>
 <p align="center" width="100%">
