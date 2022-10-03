@@ -79,6 +79,7 @@ When we have N boolean attributes (will need n! nodes), output is boolean. <br /
 </p>
 
 ### 4. ID3 (Top down, greedy appraoch, returns optimal decision tree, prefer shorter tree than long tree)
+The leaves contrains a mixture of T and F are impure. The leaves only contain T or F are pure. To select node, compare options, we prefer the option provides more pure leaves. To quantify the impurity of leaves, we use Gini impurity (G= ∑ p(i)∗(1−p(i))), entropy or Information gain <br/> 
 Best selection is based on **largest Information gain or smallest entropy**<br />
 IG = H(S) - H(S|A). H(S|A) is uncertainty(entropy) after splitting set S  on attribute A.<br />
 https://en.wikipedia.org/wiki/ID3_algorithm  & StatQuest 
@@ -121,6 +122,7 @@ When to stop: 1) Everything is cliassified correctly 2) No more attributes 3) ov
 Regression Tree: https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeRegressor.html<br/> 
 What to do for splitting: Need continuous outputs. Information gain is not available since it is unable to measure information on continuous values well and won't generalize well. Measure errors/mixedup things can use variance. Gain ratio is also one option <br/> 
 What to do for leaves:  Average, local linear fit.<br/> 
+
 
 
 <h1 id="3">Module: SL2 Regression & Classification</h1>
