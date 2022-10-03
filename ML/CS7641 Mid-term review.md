@@ -79,8 +79,9 @@ When we have N boolean attributes (will need n! nodes), output is boolean. <br /
 </p>
 
 ### 4. ID3 (Top down, greedy appraoch, returns optimal decision tree, prefer shorter tree than long tree)
-The leaves contrains a mixture of T and F are impure. The leaves only contain T or F are pure. To select node, compare options, we prefer the option provides more pure leaves. To quantify the impurity of leaves, we use Gini impurity (G= ∑ p(i)∗(1−p(i)). A Gini Impurity of 0 is the lowest and best possible impurity), entropy or Information gain <br/> 
-Best selection is based on **largest Information gain or smallest entropy**<br />
+The leaves contrains a mixture of T and F are impure. The leaves only contain T or F are pure. To select node, compare options, we prefer the option provides more pure leaves. To quantify the impurity of leaves, we use Gini impurity (G= ∑ p(i)∗(1−p(i)). A Gini Impurity of 0 is the lowest and best possible impurity), entropy or Information gain. <br/> 
+<br/> 
+Best selection of ID3 is based on **largest Information gain or smallest entropy**<br />
 IG = H(S) - H(S|A). H(S|A) is uncertainty(entropy) after splitting set S  on attribute A.<br />
 https://en.wikipedia.org/wiki/ID3_algorithm  & StatQuest 
 
