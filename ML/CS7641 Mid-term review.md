@@ -141,7 +141,8 @@ What to do for leaves:  Average, local linear fit.<br/>
 
 <h1 id="3">Module: SL2 Regression & Classification</h1>
 Regression: falling back to mean<br/> 
-https://en.wikipedia.org/wiki/Regression_analysis
+Linear Regression (Traditional Statistic): 1) Use least-sqaures to fit a line to data 2) Calculate R^2(coefficient of determination, (SS(mean)-SS(fit))/SS(mean)) which describes how well the regression predictions approximate the real data points  3) Calculate a p-value for R^2. Imagine the data only has two observations, R^2 will be 100% as long as you draw a striaight line. We need more information to determine if the R^2 is statistically significant or reliable. This is p-value. The p-value for R^2 comes from F=((SS(mean)-SS(fit))/degree of freedom pfit-pmean)/(SS(fit)/degree of freedom n-pfit). The p-value is number of extreme values divided by all values<br/>
+https://en.wikipedia.org/wiki/Regression_analysis <br/>
 
 ### 1. Errors
 Our goal is to find the values of θ(coefficient) that minimize the above sum of squared errors (Mean Sqaure error. MSE). One of the common approach is to use calculus. This is where the gradient descent algorithm comes in handy. Also notice, how easy it is to take a derivative of this error function. So take a good look at the gradient descent algorithm document and come back here to find the linear equation that fits our data.<br/>
