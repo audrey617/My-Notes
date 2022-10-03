@@ -117,11 +117,15 @@ Restriction Bias: hypothesis set space H. <br/>
 Reference Bias: subset of hypothesis (n belongs to H). Short or long, how to split(gini or entropy), which tree to prefer (accuracy? precision?)<br/>
 
 ### 5. Other considerations(Continuous Attributes, Repeat attribute, When to stop, regression tree)
-Continuous Attributes: split attribute range into equal intervals<br/>
-Repeat attribute along a path in a tree: NO for discrete attributes But YES for continuous attributes since we can ask different question on the same attribute. eg, ask age attribute "is it above 30", then ask "is it above 15" makes sense.<br/> 
-When to stop: 1) Everything is cliassified correctly 2) No more attributes 3) overfitting-> cross-validation, validation curve& learning curve, pre-pruning or post-pruning(Cost complexity pruning)  (Don't violate Occam's razor: entities should not be multiplied beyond necessity)<br/> 
+**Continuous Attributes**: split attribute range into equal intervals<br/>
+**Repeat attribute along a path in a tree**: NO for discrete attributes But YES for continuous attributes since we can ask different question on the same attribute. eg, ask age attribute "is it above 30", then ask "is it above 15" makes sense.<br/> 
+**When to stop**: <br/> 
+1) Everything is cliassified correctly <br/> 
+2) No more attributes <br/> 
+3) overfitting-> cross-validation, validation curve& learning curve, pre-pruning or post-pruning(post-pruning: Cost complexity pruning, essentially, pruning recursively finds the node with the “weakest link.” The weakest link is characterized by an effective alpha, where the nodes with the smallest effective alpha are pruned first. cost complexity measure/tree score = Training error + a * T (number of leaf nodes).  The a * T is the tree complexity penalty. a is the tuning value. We picked the sub tree with lowest tree score)  <br/> 
+4) (Don't violate Occam's razor: entities should not be multiplied beyond necessity)<br/> 
 <br/> 
-Regression Tree is a type of decision tree: https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeRegressor.html<br/> 
+**Regression Tree**: a type of decision tree:<br/> 
 In a regression tree, each leaf represents a numeric value. In contrast, classification tree has either true or false in leaves or the leaves are discrete categories. To pick one feature's best threshold to split data into two groups, we try to find the threshold with the smallest sum of squared residuals. To build a tree, From root, we have each feature pick its best threshold, which becomes a candidate for the node. We compare each candidate's SSRs, and then pick the candidate with the lowest value for root. We grow the tree in this way<br/> 
 What to do for splitting: Need continuous outputs. Information gain is not available since it cannot measure information on continuous values well and won't generalize well. But we can visualize how bad a prediction is by looking at the distance between the observation and predicted values. This distance is residual. And we can use the residuals to quantify the quality of these predictions. To evaluate the prediction of the threshold selection, we add the squared residuals of each sample as the sum of squared residuals. Measure errors/mixedup things can also use variance. Gain ratio is also one option. <br/> 
 What to do for leaves:  Average, local linear fit.<br/> 
