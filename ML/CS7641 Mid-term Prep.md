@@ -236,14 +236,17 @@ Gradient descent can get stuck in local optima and not necessarily result in the
 1) Momentum: allows gradient descent to “gain speed” if it’s descending down steep areas in the function <br/>
 2) Higher order derivatives: look at combinations of weight changes to try to grasp the bigger picture of how the function is changing <br/>
 3) Randomized optimization<br/>
-4) Penalizing complexity: the idea of penalizing “complexity” so that the network avoids overfitting with too many nodes or too many layer or too large number of weights <br/>
+4) Penalizing complexity: the idea of penalizing “complexity” so that the network avoids overfitting with too many nodes or too many layer or too large magnitude of weights <br/>
 
 
 **Restriction Bias** <br/>
-Restriction Bias tells you something about the <u>representational power</u> of whatever data structure you use. In this case, the network of neurons. And it tells you the set of hypotheses that you are willing to consider.
-
+Restriction bias tells you something about the representational power of whatever data structure you use, in this case, the network of neurons. And it tells you the set of hypotheses that you are willing to consider. It is the representation's ability to consider hypotheses <br/>
 <br/>
-<br/>
+What restriction we are putting? Perception can only work with linear data or half spaces, but NN restriction bias is not much restricted if using sigmoids. NN can model many types of functions: <br/>
+1) Boolean: Network of threshold-like unit
+2) Continuous Functions (a function with no jump or discontinuities): represented with a single hidden layer with enough hidden units. Each hidden unit can worry about one little patch of the function that it needs to model. The patch got set in the hidden layer and in the output layer they get stitched together.
+3) Arbitrary: Anything, even continuous has discontinuities. The solution is to add hidden layers. With multiple hidden layers, it works<br/>
+NN has low restriction bias but high probability of overfitting due to model complexity and excessive trainig. To avoid that, we restrict to a bounded number of hidden layers with bounded number of units and stop training when weights are too large . The number can be decided using cross validation. Error on the training set drops as we increase iteration but will cause overfit in the end <br/>
 
 
 **Preference Bias** <br/>
