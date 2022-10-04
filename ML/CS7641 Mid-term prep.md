@@ -246,19 +246,19 @@ Main ideas of backpropagation:<br/>
 2) plug the derivates into Gradient Descent to optimize parameters <br/> 
 
 <p align="center" width="100%">
-    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition2_0.JPG?raw=true">
+    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition2_0.JPG?raw=true">
 </p>
 <p align="center" width="100%">
-    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition2_1.JPG?raw=true">
+    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition2_1.JPG?raw=true">
 </p>
 <p align="center" width="100%">
-    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition2_2.JPG?raw=true">
+    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition2_2.JPG?raw=true">
 </p>
 <p align="center" width="100%">
-    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition2_3.JPG?raw=true">
+    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition2_3.JPG?raw=true">
 </p>
 <p align="center" width="100%">
-    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition2_4.JPG?raw=true">
+    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition2_4.JPG?raw=true">
 </p>
 
 https://towardsdatascience.com/understanding-backpropagation-algorithm-7bb3aa2f95fd
