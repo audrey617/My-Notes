@@ -1,15 +1,15 @@
 # Lesson outline
 - [Module: ML is the ROX](#1)
-- [Module: SL1 Decision Tree](#2)
-- [Module: SL2 Regression & Classification](#3)
-- [Module: SL3 Neural Networks](#4)
-- [Module: SL4 Instance Based Learning](#5)
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+- [Module: SL1  Decision Tree](#2)
+- [Module: SL2  Regression & Classification](#3)
+- [Module: SL3  Neural Networks](#4)
+- [Module: SL4  Instance Based Learning](#5)
+- [Module: SL5  Ensemble B&B]()
+- [Module: SL6  Kernel Methods & SVMs]()
+- [Module: SL7  Comp Learning Theory]()
+- [Module: SL8  VC Dimensions]()
+- [Module: SL9  Bayesian Learning]()
+- [Module: SL10 Bayesian Inference]()
 
 
 <h1 id="1">Module: ML is the ROX</h1>
@@ -232,8 +232,23 @@ We don't have guarantee of convergency in finite time. No hard thresholding<br/>
 It could be stuck in local optimal<br/>
 
 **Optimizing Weights** <br/> 
+Gradient descent can get stuck in local optima and not necessarily result in the best global approximation of the function in question. Besides gradient descent, other methods to train NN <br/>
+1) Momentum: allows gradient descent to “gain speed” if it’s descending down steep areas in the function <br/>
+2) Higher order derivatives: look at combinations of weight changes to try to grasp the bigger picture of how the function is changing <br/>
+3) Randomized optimization<br/>
+4) Penalizing complexity: the idea of penalizing “complexity” so that the network avoids overfitting with too many nodes or too many layer or too large number of weights <br/>
 
-**Bias** <br/> 
+
+**Restriction Bias** <br/>
+Restriction Bias tells you something about the <u>representational power</u> of whatever data structure you use. In this case, the network of neurons. And it tells you the set of hypotheses that you are willing to consider.
+
+<br/>
+<br/>
+
+
+**Preference Bias** <br/>
+
+
 
 
 ### 4.Neural Network From StatQuest
