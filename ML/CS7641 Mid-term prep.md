@@ -242,13 +242,28 @@ A neural network consists of Nodes and connection between the nodes. The numbers
 
 **Part2: Backpropagation Main Ideas** <br/>
 Main ideas of backpropagation:<br/>
-1) using chain rule to calculate derivatives d_SSR/d_bias = d_SSR/d_predicted * d_predicted/d_bias <br/> 
+1) using chain rule to calculate derivatives  <br/> 
 2) plug the derivates into Gradient Descent to optimize parameters <br/> 
-<br/>
-Predicted_i = green squiggle = blue + orange + b3<br/>
-SSR = ∑(Observated_i - predicted_i)^2<br/>
 
-**Part2: Backpropagation Detail** <br/>
+<p align="center" width="100%">
+    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition2_0.JPG?raw=true">
+</p>
+<p align="center" width="100%">
+    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition2_1.JPG?raw=true">
+</p>
+<p align="center" width="100%">
+    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition2_2.JPG?raw=true">
+</p>
+<p align="center" width="100%">
+    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition2_3.JPG?raw=true">
+</p>
+<p align="center" width="100%">
+    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition2_4.JPG?raw=true">
+</p>
+
+https://towardsdatascience.com/understanding-backpropagation-algorithm-7bb3aa2f95fd
+
+
 
 
 <h1 id="5">Module: SL4 Instance Based Learning</h1>
