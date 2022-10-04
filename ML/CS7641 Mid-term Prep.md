@@ -4,12 +4,12 @@
 - [Module: SL2  Regression & Classification](#3)
 - [Module: SL3  Neural Networks](#4)
 - [Module: SL4  Instance Based Learning](#5)
-- [Module: SL5  Ensemble B&B]()
-- [Module: SL6  Kernel Methods & SVMs]()
-- [Module: SL7  Comp Learning Theory]()
-- [Module: SL8  VC Dimensions]()
-- [Module: SL9  Bayesian Learning]()
-- [Module: SL10 Bayesian Inference]()
+- [Module: SL5  Ensemble B&B](#6)
+- [Module: SL6  Kernel Methods & SVMs](#7)
+- [Module: SL7  Comp Learning Theory](#8)
+- [Module: SL8  VC Dimensions](#9)
+- [Module: SL9  Bayesian Learning](#10)
+- [Module: SL10 Bayesian Inference](#11)
 
 
 <h1 id="1">Module: ML is the ROX</h1>
@@ -285,7 +285,24 @@ Step2: plug the derivates into Gradient Descent to optimize parameters <br/>
 
 
 
-
 <h1 id="5">Module: SL4 Instance Based Learning</h1>
+### 1.Instance Based Learning
+Normal ML algorithms uses input data (𝑥, 𝑦) and searches the hypotheses space for the best generalized function 𝑓(𝑥) to predict new values. In Instance Based Learning, we create a database of all 𝑥/𝑦 relationships, and once we receive a new value 𝑥 we lookup this database to find corresponding 𝑦.<br/>
+Advantages: 1) The model perfectly remembers the training data rather than an abstract generalizing 2) Fast. No need for learning 3)simple <br/>
+Disadvantages: 1) Massive storage to query 2) No generalization and overfitting: sensitive to noise 3) Can return multiple values for the same input <br/>
+
+### 2.KNN(K-Nearest Neighbors)
 
 
+
+
+<h1 id="6">Module: SL5  Ensemble B&B</h1>
+
+
+
+
+<h1 id="7">Module: SL6  Kernel Methods & SVMs</h1>
+<h1 id="8">Module: SL7  Comp Learning Theory</h1>
+<h1 id="9">Module: SL8  VC Dimensions</h1>
+<h1 id="10">Module: SL9  Bayesian Learning</h1>
+<h1 id="11">Module: SL10 Bayesian Inference</h1>
