@@ -286,6 +286,7 @@ Step2: plug the derivates into Gradient Descent to optimize parameters <br/>
 
 
 <h1 id="5">Module: SL4 Instance Based Learning</h1>
+
 ### 1.Instance Based Learning
 Normal ML algorithms uses input data (𝑥, 𝑦) and searches the hypotheses space for the best generalized function 𝑓(𝑥) to predict new values. In Instance Based Learning, we create a database of all 𝑥/𝑦 relationships, and once we receive a new value 𝑥 we lookup this database to find corresponding 𝑦.<br/>
 Advantages: 1) The model perfectly remembers the training data rather than an abstract generalizing 2) Fast. No need for learning 3)simple <br/>
