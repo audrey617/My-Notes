@@ -241,9 +241,8 @@ A neural network consists of Nodes and connection between the nodes. The numbers
 </p>
 
 **Part2: Backpropagation Main Ideas** <br/>
-Main ideas of backpropagation:<br/>
-1) using chain rule to calculate derivatives  <br/> 
-2) plug the derivates into Gradient Descent to optimize parameters <br/> 
+Step1: using chain rule to calculate derivatives  <br/> 
+Step2: plug the derivates into Gradient Descent to optimize parameters <br/> 
 
 <p align="center" width="100%">
     <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition2_0.JPG?raw=true">
