@@ -246,12 +246,13 @@ What restriction we are putting? Perception can only work with linear data or ha
 1) Boolean: Network of threshold-like unit
 2) Continuous Functions (a function with no jump or discontinuities): represented with a single hidden layer with enough hidden units. Each hidden unit can worry about one little patch of the function that it needs to model. The patch got set in the hidden layer and in the output layer they get stitched together.
 3) Arbitrary: Anything, even continuous has discontinuities. The solution is to add hidden layers. With multiple hidden layers, it works<br/>
+
 NN has low restriction bias but high probability of overfitting due to model complexity and excessive trainig. To avoid that, we restrict to a bounded number of hidden layers with bounded number of units and stop training when weights are too large . The number can be decided using cross validation. Error on the training set drops as we increase iteration but will cause overfit in the end <br/>
 
 
 **Preference Bias** <br/>
-
-
+Preference bias describe which hypotheses from the restricted space are preferred. Give two representation, Why would you prefer one over the other. <br/>
+How do initial the weights: small random values. random help avoid local minima; small help avoid overfitting (too large magnitude of weights->overfitting); small and random has low complexity -> Meet Occam's razor (Don't make something more complex unless you are getting better error; if two things have similar error, pick simpler one for generalization)<br/>
 
 
 ### 4.Neural Network From StatQuest
