@@ -227,7 +227,7 @@ https://towardsdatascience.com/activation-functions-neural-networks-1cbd9f8d91d6
 A neural network consists of Nodes and connection between the nodes. The numbers along each connection represent parameter values that were estimated when this NN was fit to the data. It starts out with unknown values that are estimated when we fit NN to a datase using Backpropagation. Usually a neural network has more than one input/output node and different layers of nodes between input and output nodes. The layers of nodes between the input and output nodes are called hidden layers. When you build a neural network, one of the first thing you do is decide how many hidden layers you want, and how many nodes go into each hidden layer. The hidden layer nodes contains activation functions/curved bent lines. The previous layer node output with the parameter adjustment becomes the input in the new layer node activation function. <br/>
 
 <p align="center" width="100%">
-    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition1.png?raw=true">
+    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition1.JPG?raw=true">
 </p>
 
 
