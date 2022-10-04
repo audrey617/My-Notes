@@ -261,8 +261,6 @@ Main ideas of backpropagation:<br/>
     <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition2_4.JPG?raw=true">
 </p>
 
-https://towardsdatascience.com/understanding-backpropagation-algorithm-7bb3aa2f95fd
-
 
 
 
