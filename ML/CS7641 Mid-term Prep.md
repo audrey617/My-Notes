@@ -226,6 +226,9 @@ https://towardsdatascience.com/activation-functions-neural-networks-1cbd9f8d91d6
 
 ### 3. Neural Network
 **Sketch** <br/> 
+When activation function is differentiable like sigmoid, then mapping from input to output will be differentiable
+back-propagation: the error of the network propogates to adjust each unit’s weight individually.<br/> 
+
 
 **Optimizing Weights** <br/> 
 
