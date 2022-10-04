@@ -289,12 +289,16 @@ Step2: plug the derivates into Gradient Descent to optimize parameters <br/>
 
 ### 1.Instance Based Learning
 Normal ML algorithms uses input data (𝑥, 𝑦) and searches the hypotheses space for the best generalized function 𝑓(𝑥) to predict new values. In Instance Based Learning, we create a database of all 𝑥/𝑦 relationships, and once we receive a new value 𝑥 we lookup this database to find corresponding 𝑦.<br/>
+<br/>
 Advantages: 1) The model perfectly remembers the training data rather than an abstract generalizing 2) Fast. No need for learning 3)simple <br/>
 Disadvantages: 1) Massive storage to query 2) No generalization and overfitting: sensitive to noise 3) Can return multiple values for the same input <br/>
 
 ### 2.KNN(K-Nearest Neighbors)
 
-
+**Comparison** <br/>
+<p align="center" width="100%">
+    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/9.JPG?raw=true">
+</p>
 
 
 <h1 id="6">Module: SL5  Ensemble B&B</h1>
@@ -302,8 +306,8 @@ Disadvantages: 1) Massive storage to query 2) No generalization and overfitting:
 
 
 
-<h1 id="7">Module: SL6  Kernel Methods & SVMs</h1>
-<h1 id="8">Module: SL7  Comp Learning Theory</h1>
-<h1 id="9">Module: SL8  VC Dimensions</h1>
-<h1 id="10">Module: SL9  Bayesian Learning</h1>
-<h1 id="11">Module: SL10 Bayesian Inference</h1>
+<h1 id="7">Module: SL6  Kernel Methods & SVMs</h1> W
+<h1 id="8">Module: SL7  Comp Learning Theory</h1> T
+<h1 id="9">Module: SL8  VC Dimensions</h1> F
+<h1 id="10">Module: SL9  Bayesian Learning</h1> S
+<h1 id="11">Module: SL10 Bayesian Inference</h1> S
