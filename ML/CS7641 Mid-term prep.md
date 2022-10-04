@@ -197,6 +197,7 @@ The idea is to add weights when y=1 and ŷ = 0 and to reduce weights when y=0 an
 <p align="center" width="100%">
     <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/7.JPG?raw=true">
 </p>
+
 ```
 Take the derivative of the Loss function for each parameter in it
 Pick random values for parameters
