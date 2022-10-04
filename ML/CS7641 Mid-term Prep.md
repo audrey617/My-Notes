@@ -226,9 +226,10 @@ https://towardsdatascience.com/activation-functions-neural-networks-1cbd9f8d91d6
 
 ### 3. Neural Network
 **Sketch** <br/> 
-When activation function is differentiable like sigmoid, then mapping from input to output will be differentiable
-back-propagation: the error of the network propogates to adjust each unit’s weight individually.<br/> 
-
+When activation function is differentiable like sigmoid, then mapping from input to output will be differentiable in terms of weights, which means we can figure out how any given weight change in the network changes the mapping from inputs to outputs. This leads to backpropagation (information flows from input to output and error flows backward from output to input. This tells you how to compute derivatives)<br/> 
+Backpropagation: the error of the network propogates to adjust each unit’s weight individually.<br/> 
+We don't have guarantee of convergency in finite time. No hard thresholding<br/>
+It could be stuck in local optimal<br/>
 
 **Optimizing Weights** <br/> 
 
