@@ -373,7 +373,7 @@ How to pick d()? d(x,q) = euclidean/manhattan/weighted. Your choice of distance 
 
 How to pick k? When k is small, models have high variance, fitting on a strongly local level. Larger k creates models with lower variance but higher bias, smoothing out the influence of individual data points on output decisions. If k=n we will end up with a constant average function (under non-weighted average case). If we used weighted average, the points closer to the query point will have greater influence. We can also use other methods instead of weighted-average. We can use "local" linear regression on the nearest k points, this is known as "Locally Weighted Regression". We can even use Decision Trees, Neural Networks, etc. to get more complicated hypothese spaces (From line to curves for example). This though might cause overfitting<br/>
 
-**No free lunch theorem**<br/>
+### 3.No free lunch theorem
 Any learning algorithm that you create is going to have the property that if you average over all possible instance, it is not doing any different than random. If I don't know the data I am going to learn over, then it really doesn't matter what I do because there are all possible kind of dataset. However, If I have the domain knowledge, I can use it to choose the best learning algorithm for the problems that I am going to encounter <br/>
 <br/>
 From https://machinelearningmastery.com/no-free-lunch-theorem-for-machine-learning/ <br/>
