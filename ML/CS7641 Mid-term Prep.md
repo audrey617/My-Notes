@@ -294,11 +294,49 @@ Advantages: 1) The model perfectly remembers the training data rather than an ab
 Disadvantages: 1) Massive storage to query 2) No generalization and overfitting: sensitive to noise 3) Can return multiple values for the same input <br/>
 
 ### 2.KNN(K-Nearest Neighbors)
+**algorithm** <br/>
+While k is the number to consider, we also need “distance” to determine how close or similar an xi ∈ X is for a new input x. The distance is our expression of domain knowledge about the space
+<br/>
+```
+Given:
+    1. Training data D = {X,Y}
+    2. Distance metric 𝑑(𝑞, 𝑥) → similarity function, domain knowledge
+    3. Number of neighbors (𝑘) → domain knowledge
+    4. Query point (𝑞)
+    
+Find:
+    A set of nearest neighbors such that 𝑑(𝑞, 𝑥) is smallest
 
-**Comparison** <br/>
+Return:
+     1. Classification: vote, take the mode or plurality. 
+     2. Regression: mean
+     3. Tie needs tiebreak (random pick, closest distance). Can also use a weighted vote of weighted average, which means that the closer the point is to the query point, the more influence it has on the vote/mean
+```
+
+<p align="center" width="100%">
+    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/10.JPG?raw=true">
+</p>
+
+
+**Running Time and Space Comparison Given n sorted data points** <br/>
 <p align="center" width="100%">
     <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/9.JPG?raw=true">
 </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <h1 id="6">Module: SL5  Ensemble B&B</h1>
