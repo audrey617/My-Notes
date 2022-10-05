@@ -342,11 +342,18 @@ Advantages: Incremental (online) learning, Suitability for complex and incomplet
 Disadvantages: Handling very large problem domains, Handling highly dynamic problem domains, Handling overly noisy data, Achieving fully automatic operation (Only for complete problem domains a fully automatic operation of a lazy learner can be expected. Otherwise, user feedback is needed for situations for which the learner has no solution) <br/>
  
 
-**Eager vs Lazy Learners** <br/>
+**KNN BIAS** <br/>
+Preference Bias: <br/>
+1. locality(Near points are similar) -> d() distance function (euclidean, mahanttan,...)<br/>
+2. Smoothness ->k and avg. averaging neighbors makes sense and feature behavior smoothly transitions between values<br/>
+3. Treating the features of training sample vector equally -> But is this really true? You may care more about x1 and x2 is less crucial. <br/>
 
+**Curse of Dimensionality**<br/>
+As the number of features or dimensions grows, the amount of data that we need to generalize accurately grows exponentially.<br/>
+**TODO**
 
-
-
+**About d() and k**<br/>
+**TODO**
 
 
 <h1 id="6">Module: SL5  Ensemble B&B</h1>
