@@ -325,16 +325,17 @@ Return:
 </p>
 
 
-**About Lazy Learners** <br/>
+**About Lazy Learners/Instance Based Learning** <br/>
 https://ibug.doc.ic.ac.uk/media/uploads/documents/courses/ml-lecture4.pdf<br/>
 https://jmvidal.cse.sc.edu/talks/instancelearning/lazyandeagerlearning.html<br/>
 <br/>
 Lazy Learners includes KNN, Locally weighted regression, Case-based reasoning <br/>
+<br/>
 Advantages: Incremental (online) learning, Suitability for complex and incomplete problem domains, Suitability for simultaneous application to multiple problems, Ease of maintenance <br/>
+<br/>
 Disadvantages: Handling very large problem domains, Handling highly dynamic problem domains, Handling overly noisy data, Achieving fully automatic operation (Only for complete problem domains a fully automatic operation of a lazy learner can be expected. Otherwise, user feedback is needed for situations for which the learner has no solution) <br/>
  
 **Eager vs Lazy Learners Comparison** <br/>
-
 1. Generalize at When: Instance-based methods are also known as lazy learning because they do not generalize until needed. All the other learning methods we have seen (and even radial basis function networks) are eager learning methods because they generalize (one-fits-all) before seeing the query. <br/>
 2. Approximation: The eager learner must create a global approximation. The lazy learner can create many local approximations. <br/>
 3. Performance: Lazy learning is very suitable for complex and incomplete problem domains, where a complex target function can be represented by a collection of less complex local approximations.If eager and lazy learners both use the same Hypothesis then, in effect, the lazy can represent more complex function. For example, if Hypothesis consists of linear function then a lazy learner can construct what amounts to a non-linear global function.<br/>
