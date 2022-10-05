@@ -310,7 +310,8 @@ Find:
 Return:
      1. Classification: vote, take the mode or plurality. 
      2. Regression: mean
-     3. Tie needs tiebreak (random pick, closest distance). Can also use a weighted vote of weighted average, which means that the closer the point is to the query point, the more influence it has on the vote/mean
+     Tie needs tiebreak (random pick, closest distance). 
+     Can also use a weighted vote of weighted avg=> the closer the point is, the more influence it has on the vote/mean
 ```
 
 <p align="center" width="100%">
