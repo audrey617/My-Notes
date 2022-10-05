@@ -148,7 +148,7 @@ Linear Regression (Traditional Statistic):  <br/>
 4) https://en.wikipedia.org/wiki/Regression_analysis <br/>
 
 ### 1. Errors
-Our goal is to find the values of θ(coefficient) that minimize the above sum of squared errors (Mean Sqaure error. MSE). One of the common approach is to use calculus. This is where the gradient descent algorithm comes in handy. Also notice, how easy it is to take a derivative of this error function. So take a good look at the gradient descent algorithm document and come back here to find the linear equation that fits our data.<br/>
+Our goal is to find the values of θ(coefficient) that minimize the above sum of squared errors (Mean Sqaure error. MSE). One of the common approach is to use calculus. Another approach is where the gradient descent algorithm comes in handy. Also notice, how easy it is to take a derivative of this error function. So take a good look at the gradient descent algorithm document and come back here to find the linear equation that fits our data.<br/>
 
 ### 2. Polynomial Regression
 General linear model. Detail see wiki link. Get weight/coefficient <br/> 
