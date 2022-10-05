@@ -354,17 +354,14 @@ Preference Bias (Bias in Assumption. Our belief about what makes a good hypothes
 
 
 **Curse of Dimensionality**<br/>
-As the number of features or dimensions grows, the amount of data that we need to generalize accurately grows exponentially.<br/>
-This is not only for knn but general<br/>
+As the number of features or dimensions grows, the amount of data that we need to generalize accurately grows exponentially.
+This is not only for knn but general ML<br/>
 <br/>
-
-<br/>https://en.wikipedia.org/wiki/Curse_of_dimensionality<br/>
-The curse of dimensionality refers to various phenomena that arise when analyzing and organizing data in high-dimensional spaces that do not occur in low-dimensional settings such as the three-dimensional physical space of everyday experience. The expression was coined by Richard E. Bellman when considering problems in dynamic programming.<br/>
-<br/>
+From wiki: https://en.wikipedia.org/wiki/Curse_of_dimensionality<br/>
+The curse of dimensionality refers to various phenomena that arise when analyzing and organizing data in high-dimensional spaces that do not occur in low-dimensional settings such as the three-dimensional physical space of everyday experience. The expression was coined by Richard E. Bellman when considering problems in dynamic programming.<br/><br/>
 Dimensionally cursed phenomena occur in domains such as numerical analysis, sampling, combinatorics, machine learning, data mining and databases. The common theme of these problems is that when the dimensionality increases, the volume of the space increases so fast that the available data become sparse. In order to obtain a reliable result, the amount of data needed often grows exponentially with the dimensionality. Also, organizing and searching data often relies on detecting areas where objects form groups with similar properties; in high dimensional data, however, all objects appear to be sparse and dissimilar in many ways, which prevents common data organization strategies from being efficient.<br/>
 <br/>
-<br/>
-As dimensions increase, What will happen. From JPL speech:<br/>
+As dimensions increase, What will happen? From JPL speech:<br/>
 1) Euclidean distances become less meaningful<br/>
 2) Uniform distributions become exponentially hard to sample<br/>
 3) Many parameters become polynomially hard to estimate (eg, covariance)<br/>
