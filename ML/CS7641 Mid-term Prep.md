@@ -380,6 +380,7 @@ From https://machinelearningmastery.com/no-free-lunch-theorem-for-machine-learni
 The NFL stated that within certain constraints, over the space of all possible problems, every optimization technique will perform as well as every other one on average (including Random Search). If one algorithm performs better than another algorithm on one class of problems, then it will perform worse on another class of problems <br/>
 
 <h1 id="6">Module: SL5  Ensemble B&B</h1>
+
 ### 1. Ensemble learning
 The general approach to ensemble learning algorithms is to learn rules over smaller subsets of the training data, then combine all of the rules into a collective, smarter decision-maker. A particular rule might apply well to a subset, but might not be as prevalent in the whole; hence, each weak learner picks up simple rules that, when combined with the other learners, can make more-complex inferences about the overall dataset. We need to determine how to pick subsets (eg, Uniformly Randomly) and how to combine learners (eg, equally believe each one and take average).<br/>
 
