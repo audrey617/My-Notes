@@ -423,11 +423,11 @@ Output H_final
 
 **3.6 AdaBoost**: 
 <p align="center" width="100%">
-    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/Add1.JPG?raw=true">
+    <img width="100%" src="https://github.com/audrey617/Notes/blob/main/ML/images/Add1.JPG?raw=true">
 </p>
 
 <p align="center" width="100%">
-    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/Add2.JPG?raw=true">
+    <img width="100%" src="https://github.com/audrey617/Notes/blob/main/ML/images/Add2.JPG?raw=true">
 </p>
 
 
