@@ -384,8 +384,6 @@ The NFL stated that within certain constraints, over the space of all possible p
 ### 1. Ensemble learning
 The general approach to ensemble learning algorithms is to learn rules over smaller subsets of the training data, then combine all of the rules into a collective, smarter decision-maker. A particular rule might apply well to a subset, but might not be as prevalent in the whole; hence, each weak learner picks up simple rules that, when combined with the other learners, can make more-complex inferences about the overall dataset. We need to determine how to pick subsets (eg, Uniformly Randomly) and how to combine learners (eg, equally believe each one and take average).<br/>
 
-From https://machinelearningmastery.com/tour-of-ensemble-learning-algorithms/<br/>
-Ensemble learning refers to algorithms that combine the predictions from two or more models<br/>
 
 ### 2. Bagging/Bootstrap Aggregating (Bagged Decision Trees (canonical bagging), Random Forest, Extra Trees)
 Each subsets are like boots and the averaging is like the strap. <br/>
@@ -393,8 +391,9 @@ Each subsets are like boots and the averaging is like the strap. <br/>
 **How to combine learners**: combining the results with mean <br/>
 Generalization: Taking the average of a set of weak learners trained on subsets of the data can outperform a single learner trained on the entire dataset because of overfitting. Overfitting a subset will not overfit the overall dataset, and the average will “smooth out” the specifics of each individual learner.<br/>
 
+
 ### 3. Boosting (AdaBoost (canonical boosting), Gradient Boosting Machines, Stochastic Gradient Boosting (XGBoost and similar))
-The term boosting refers to a family of algorithms that are able to convert weak learners to strong learners. Boosting is an ensemble method that seeks to change the training data to focus attention on examples that previous fit models on the training dataset have gotten wrong. The key property of boosting ensembles is the idea of correcting prediction errors. The models are fit and added to the ensemble sequentially such that the second model attempts to correct the predictions of the first model, the third corrects the second model, and so on.<br/>
+The term boosting refers to a family of algorithms that are able to convert weak learners to strong learners. Boosting is an ensemble method that seeks to change the training data to focus attention on examples that previous fit models on the training dataset have gotten wrong. The key property of boosting ensembles is the idea of correcting prediction errors. The models are fit and added to the ensemble sequentially such that the second model attempts to correct the predictions of the first model, the third corrects the second model, and so on. From https://machinelearningmastery.com/tour-of-ensemble-learning-algorithms/<br/>
 
 **3.1 How to pick subsets**: focus on subsets with "hardest" examples (Not good at analyzing)
 
