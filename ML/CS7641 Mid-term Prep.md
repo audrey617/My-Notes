@@ -410,8 +410,16 @@ Strong Learners vs. Weak Learners (The Strength of Weak Learnability, 1990):<br/
 A weak learner produces a classifier which is only slightly more accurate than random classification.<br/>
 A class of concepts is learnable (or strongly learnable) if there exists a polynomial-time algorithm that achieves low error with high confidence for all concepts in the class.<br/> 
 
-**3.5 Code**: 
+**3.5 Boosting In Code**: 
+High level: Look at training data, construct distribution, find a weak classfier with low error. Keep doing that untile you have a bunch of them. And combine them somehow into some final hypothesis. But where to find the distribution and where do we get this final hypothesis><br/> 
 
+```
+Given training data {(x_i, y_i)}, y_i ∈ {−1, +1}
+For t (timestamp) = 1 to T:
+    1) Construct the distribution 𝔻_t
+    2) Find weak classifier H𝑡(𝑥) with small error ε = 𝑃𝑟_𝔻(h(𝑥) ≠ c(𝑥)) (ε could be as big as slightly less than a half)
+Output H_final
+```
 
 **3.6 AdaBoost**: 
 
