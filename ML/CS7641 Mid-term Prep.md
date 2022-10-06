@@ -49,17 +49,17 @@ https://machinelearningmastery.com/data-learning-and-modeling/#:~:text=Instance%
  * Testing set: A set of instances with correct labels that was not visible to the learning algorithm<br />
 
 ## 2. Representation VS Algorithm
- * DT Representation: Represent data. Decision tree is a strcuture of nodes(condition/feature), edges(feature value, eg T/F) and leaves (output label).<br />
- * DT Algorithm: Sequence of steps to get output 1) Pick best attribute 2) Ask question 3) Follow answer path 4) repeat 1-3 until find answer<br />
+ * DT Representation: Represent data. Decision tree is a strcuture of nodes(condition/feature), edges(feature value, eg T/F) and leaves (output label)<br/>
+ * DT Algorithm: Sequence of steps to get output 1) Pick best attribute 2) Ask question 3) Follow answer path 4) repeat 1-3 until find answer<br/>
 
 ## 3. Decision Trees Expressiveness
-For Boolean function (AND & OR), the truth table is a path to a leaf.<br />
-A AND B: A->T->B->T-> True leaf, otherwise False leaf<br />
-A OR B : A->F->B->F-> FALSE leaf, otherwise True leaf<br />
+For Boolean function (AND & OR), the truth table is a path to a leaf.<br/>
+A AND B: A->T->B->T-> True leaf, otherwise False leaf<br/>
+A OR B : A->F->B->F-> FALSE leaf, otherwise True leaf<br/>
 <br />
-For Boolean function (XOR)<br />
-The tree is just another representation of the full truth table. <br />
-<br />
+For Boolean function (XOR)<br/>
+The tree is just another representation of the full truth table. <br/>
+<br/>
 A generalized situation<br />
 N-OR (A1 OR A2 OR A3 OR A4..., probelm like any): We need N nodes to represent tree. The decision tree is in fact linear.<br />
 N-XOR  (A1 XOR A2 XOR A3 XOR A4...problem like parity (odd parity)): We need 2^N - 1 or O(2^N) nodes to represent tree. The decision tree is exponential number of nodes. N-XOR is exponential and hard.<br />
