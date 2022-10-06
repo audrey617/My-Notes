@@ -443,42 +443,45 @@ In summary, AdaBoost 1) combines a lot of weak learner to make classficiations. 
 
 <br/> <br/> <br/> <br/>
 
-<h1 id="7">Module: SL6  Kernel Methods & SVMs</h1> W
-**Support Vector Machines (SVMs) from StatQuest**<br/>
-bias: the inability for a machine learning method to capture the true relationship is called bias.
-variance in ml: the difference in fits between data set is called variance. producing consistent predictions across different datasets means the model has low variance. 
-For a overfitted model, it has low bias as it fits training set well but high variability because it results in vastly different sums of squares for different datasets.
-Three commonly used methods for finding a good point between simple and complicated models are regularization, boosting and bagging.
-
-Part 1:
-The shortest distance between the observations and the threshold is called the margin. When the threshold is halfway between the two observations, the margin is as large as it can be. Moving either direction will reduce the margin. When we use the threshold that gives us the largest margin to make classification, we are using the Maximal Margin Classifier. However, the maximal margin classifiers are super sensentive to outliers in the training data and makes it bad.
-
-Can we do better?
-Yes, to make a threshold that is not so sensitive to outliers we must allow misclassification. Choosing a threshold that allows misclassifications is an example of the Bias/Variance Tradeoff that plagues all of machine learning. in other words, before we allowed misclassifications, we picked a threshold that was very sensitive to the training data(low bias) and it performed poorly when we got new data (high variance). In contrast, when we picked a threshold that was less sensitive to the training data and allowed misclassification(high bias),it performs better when with new data (low variance). When we allow misclassifications, the distance between the observations and the threshold is called a Soft Margin. To pick up the soft margin, we use cross validation to determine how many misclassifications and observations to allow inside of the Soft Margin to get the best classification. When we uses a Soft Margin to determine the location of a threshold, then we are using Soft Margin Classifier aka a Support Vector Classifier to classify observations. The name Support Vector Classifier (SVC) comes from the fact that the observations on the edge and within the Soft Margin are called Support Vectors. When the data is 2-dimensional, a Support Vector Classifier is a line. When the data is 3-dimensional, the SVC forms a plane. When the data are in 4+ dimensions, the SVC is a hyperplane (flat affine subspace. All flat affine subspaces are called hyperplanes. so point/line/plane are all flat affine hyperplanes technically, but usually used above 4D).
-
-SVC can handle outliers, and because they allow miscliassifications, they can handle overlapping classifications. However, it won't perform well when one type are in sides while another type is in the middle. Because this training dataset had so much overlap, we were unable to find a satisfying SVC to separate them. Since Maximal Margin Classifiers and Support Vector Classifiers cannot handle this type of data, we need Support Vector Machines.
+<h1 id="7">Module: SL6  Kernel Methods & SVMs</h1>
+### 1. Support Vector Machines (SVMs)
+The objective of the support vector machine algorithm is to find a hyperplane in an N-dimensional space(N — the number of features) that distinctly classifies the data points. <br/>
 
 
+### Addition. Support Vector Machines (SVMs) from StatQuest<br/>
+bias: the inability for a machine learning method to capture the true relationship is called bias. <br/>
+variance in ml: the difference in fits between data set is called variance. producing consistent predictions across different datasets means the model has low variance.  <br/>
+For a overfitted model, it has low bias as it fits training set well but high variability because it results in vastly different sums of squares for different datasets. <br/>
+Three commonly used methods for finding a good point between simple and complicated models are regularization, boosting and bagging. <br/>
 
-The main ideas of SVM are:
-1) Start with data in a relatively low dimension
-2) Move the data into a higher dimension
-3) Find Support Vector Classifier that separates the higher dimensional data into two groups
+**Part 1:** <br/>
+The shortest distance between the observations and the threshold is called the margin. When the threshold is halfway between the two observations, the margin is as large as it can be. Moving either direction will reduce the margin. When we use the threshold that gives us the largest margin to make classification, we are using the Maximal Margin Classifier. However, the maximal margin classifiers are super sensentive to outliers in the training data and makes it bad. <br/> <br/>
 
-How do we decide how to transform data?
-In order to make the mathematics possible, SVM use Kernel Functions to systematically find SVC in higher dimensions.
+Can we do better? <br/>
+Yes, to make a threshold that is not so sensitive to outliers we must allow misclassification. Choosing a threshold that allows misclassifications is an example of the Bias/Variance Tradeoff that plagues all of machine learning. in other words, before we allowed misclassifications, we picked a threshold that was very sensitive to the training data(low bias) and it performed poorly when we got new data (high variance). In contrast, when we picked a threshold that was less sensitive to the training data and allowed misclassification(high bias),it performs better when with new data (low variance). When we allow misclassifications, the distance between the observations and the threshold is called a Soft Margin. To pick up the soft margin, we use cross validation to determine how many misclassifications and observations to allow inside of the Soft Margin to get the best classification. When we uses a Soft Margin to determine the location of a threshold, then we are using Soft Margin Classifier aka a Support Vector Classifier to classify observations. The name Support Vector Classifier (SVC) comes from the fact that the observations on the edge and within the Soft Margin are called Support Vectors. When the data is 2-dimensional, a Support Vector Classifier is a line. When the data is 3-dimensional, the SVC forms a plane. When the data are in 4+ dimensions, the SVC is a hyperplane (flat affine subspace. All flat affine subspaces are called hyperplanes. so point/line/plane are all flat affine hyperplanes technically, but usually used above 4D). <br/> <br/>
 
-In the dosage example, Polynomial Kernel is used, which has a parameter d standing for the degree of polynomial. When d=1, the Polynomial Kernel computes the relationships between each pair of observations in 1D, and these relationships are used to find SVC. When d = 2, Polynomial Kernel computes 2d relationships between each pair of observations and those relationships are used to find SVC. In summary, the Polynomial Kernel systematically increases dimensions by setting d, the degree of polynomial, and the relationships between each pair of observations are used to find SVC. The good value of d can be found with Cross Validation.
+SVC can handle outliers, and because they allow miscliassifications, they can handle overlapping classifications. However, it won't perform well when one type are in sides while another type is in the middle. Because this training dataset had so much overlap, we were unable to find a satisfying SVC to separate them. Since Maximal Margin Classifiers and Support Vector Classifiers cannot handle this type of data, we need Support Vector Machines. <br/> <br/>
 
 
-Another very commonly used Kernel is Radial Kernel, also known as Radial Basis Function (RBF) Kernel. This kernel finds SVC in infinite dimensions. It behaves like a weighted Nearest Neighbor model. The closest observations (nearest neighbor) have a lot of influence on how we classify the new observation.
+The main ideas of SVM are: <br/>
+1) Start with data in a relatively low dimension <br/>
+2) Move the data into a higher dimension <br/>
+3) Find Support Vector Classifier that separates the higher dimensional data into two groups <br/>
+
+How do we decide how to transform data? <br/>
+In order to make the mathematics possible, SVM use Kernel Functions to systematically find SVC in higher dimensions. <br/>
+
+In the dosage example, Polynomial Kernel is used, which has a parameter d standing for the degree of polynomial. When d=1, the Polynomial Kernel computes the relationships between each pair of observations in 1D, and these relationships are used to find SVC. When d = 2, Polynomial Kernel computes 2d relationships between each pair of observations and those relationships are used to find SVC. In summary, the Polynomial Kernel systematically increases dimensions by setting d, the degree of polynomial, and the relationships between each pair of observations are used to find SVC. The good value of d can be found with Cross Validation. <br/>
 
 
-Kernel functions only calculate the relationships between every pair of points as if they are in the higher dimensions; they don't actually do the transformation. This trick, calculating the high-dimensional relationships without actually transforming the data to the higher dimension, is called The Kernel Trick. The kernel trick reduces the amount of computation required for SVM by avoiding the math that transforms the data from low to high dimensions, and it makes calculating relationships in the infinite dimensions used by Radial Kernel possible
+Another very commonly used Kernel is Radial Kernel, also known as Radial Basis Function (RBF) Kernel. This kernel finds SVC in infinite dimensions. It behaves like a weighted Nearest Neighbor model. The closest observations (nearest neighbor) have a lot of influence on how we classify the new observation. <br/>
 
-In summary, when we have two categories, but no obvious linear classifier that separates them in a nice way, Support Vector mahines work by moving the data into a relatively high dimensional space and finding a relatively high dimensional Support Vector Classifier that can effectively classify the observations.
 
-PART 2: The Polynomial Kernel
+Kernel functions only calculate the relationships between every pair of points as if they are in the higher dimensions; they don't actually do the transformation. This trick, calculating the high-dimensional relationships without actually transforming the data to the higher dimension, is called The Kernel Trick. The kernel trick reduces the amount of computation required for SVM by avoiding the math that transforms the data from low to high dimensions, and it makes calculating relationships in the infinite dimensions used by Radial Kernel possible <br/>
+
+In summary, when we have two categories, but no obvious linear classifier that separates them in a nice way, Support Vector mahines work by moving the data into a relatively high dimensional space and finding a relatively high dimensional Support Vector Classifier that can effectively classify the observations. <br/> <br/>
+
+**PART 2: The Polynomial Kernel** <br/>
 
 
 
