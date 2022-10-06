@@ -380,8 +380,37 @@ From https://machinelearningmastery.com/no-free-lunch-theorem-for-machine-learni
 The NFL stated that within certain constraints, over the space of all possible problems, every optimization technique will perform as well as every other one on average (including Random Search). If one algorithm performs better than another algorithm on one class of problems, then it will perform worse on another class of problems <br/>
 
 <h1 id="6">Module: SL5  Ensemble B&B</h1>
+### 1. Ensemble learning
+The general approach to ensemble learning algorithms is to learn rules over smaller subsets of the training data, then combine all of the rules into a collective, smarter decision-maker. A particular rule might apply well to a subset, but might not be as prevalent in the whole; hence, each weak learner picks up simple rules that, when combined with the other learners, can make more-complex inferences about the overall dataset. We need to determine how to pick subsets (eg, Uniformly Randomly) and how to combine learners (eg, equally believe each one and take average).<br/>
+
+From https://machinelearningmastery.com/tour-of-ensemble-learning-algorithms/<br/>
+Ensemble learning refers to algorithms that combine the predictions from two or more models<br/>
+
+### 2. Bagging/Bootstrap Aggregating (Bagged Decision Trees (canonical bagging), Random Forest, Extra Trees)
+Each subsets are like boots and the averaging is like the strap. <br/>
+**How to pick subsets**:  choosing data uniformally randomly to form our subset. Note, we can randomly select the same value more than once. Randomly selecting data and allowing for duplicates is called **Sampling with Replacement** <br/>
+**How to combine learners**: combining the results with mean <br/>
+Generalization: Taking the average of a set of weak learners trained on subsets of the data can outperform a single learner trained on the entire dataset because of overfitting. Overfitting a subset will not overfit the overall dataset, and the average will “smooth out” the specifics of each individual learner.<br/>
+
+### 3. Boosting (AdaBoost (canonical boosting), Gradient Boosting Machines, Stochastic Gradient Boosting (XGBoost and similar))
+The term boosting refers to a family of algorithms that are able to convert weak learners to strong learners. Boosting is an ensemble method that seeks to change the training data to focus attention on examples that previous fit models on the training dataset have gotten wrong. The key property of boosting ensembles is the idea of correcting prediction errors. The models are fit and added to the ensemble sequentially such that the second model attempts to correct the predictions of the first model, the third corrects the second model, and so on.<br/>
+
+**3.1 How to pick subsets**: focus on subsets with "hardest" examples (Not good at analyzing)
+
+**3.2 How to combine learners**: Weighted mean
+
+**3.3 Error**: Learning only happens if your training set has the same distribution as the future testing set. If not, all bets are off. Here is another definition of error 𝑃𝑟_𝔻(h(𝑥) ≠ c(𝑥)). 𝔻 stands for distribution. h is the specific hypothesis that our learner think is the true concept. c is the underlying true concept. Now the error is the probability given the underlined distribution that I will disagree with the true concept on some particular instance X. <br/>
+
+Why we consider this way? Is it same as considering only the number of mismatches in classification case? <br/>
+No. Even you may get many examples wrong, in some sense, some examples are more important than others as some may be very rare.  It's not about the number of distinct mistakes you can make but rather the amount of time you will be wrong. This becomes important when you think about the underlying distribution of examples <br/>
+
+**Weak Learner**:No matter what the distribution is over data, a learner will do better than chance (better than chance: the error rate Pr_𝔻(.) is always less than a half). ∀𝔻 : Pr_𝔻(.) ≤ 1/2 − ε. Technically you are bounded away from one half. Another way to think about that is, you always get some information from learner. Ther learner is always able to learn something. Chance would be the case where your probability is 1/2 and you actually learn nothing at all.
 
 
+**Code**: 
+
+
+**AdaBoost**: 
 
 
 <h1 id="7">Module: SL6  Kernel Methods & SVMs</h1> W
