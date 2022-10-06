@@ -411,7 +411,7 @@ A weak learner produces a classifier which is only slightly more accurate than r
 A class of concepts is learnable (or strongly learnable) if there exists a polynomial-time algorithm that achieves low error with high confidence for all concepts in the class.<br/> 
 
 **3.5 Boosting In Code**: 
-High level: Look at training data, construct distribution, find a weak classfier with low error. Keep doing that untile you have a bunch of them. And combine them somehow into some final hypothesis. But where to find the distribution and where do we get this final hypothesis><br/> 
+High level: Look at training data, construct distribution, find a weak classfier with low error. Keep doing that untile you have a bunch of them. And combine them somehow into some final hypothesis. But where to find the distribution and where do we get this final hypothesis?<br/> 
 
 ```
 Given training data {(x_i, y_i)}, y_i ∈ {−1, +1}
@@ -422,6 +422,13 @@ Output H_final
 ```
 
 **3.6 AdaBoost**: 
+<p align="center" width="100%">
+    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/Add1.JPG?raw=true">
+</p>
+
+<p align="center" width="100%">
+    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/Add2.JPG?raw=true">
+</p>
 
 
 ### 4.  Adaboost from StatQuest
