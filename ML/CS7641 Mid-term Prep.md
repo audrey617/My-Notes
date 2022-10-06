@@ -422,6 +422,8 @@ Output H_final
 ```
 
 **3.6 AdaBoost**: 
+The better we’re doing overall, the more we should focus on individual mistakes. On each iteration, our probability distribution adjusts to make D favor incorrect answers so that our classifier H can learn them better on the next round; it weighs incorrect results more and more as the overall model performance increases. <br/> 
+
 <p align="center" width="100%">
     <img width="100%" src="https://github.com/audrey617/Notes/blob/main/ML/images/Add1.JPG?raw=true">
 </p>
