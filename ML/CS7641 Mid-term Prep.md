@@ -404,14 +404,27 @@ The term boosting refers to a family of algorithms that are able to convert weak
 Why we consider this way? Is it same as considering only the number of mismatches in classification case? <br/>
 No. Even you may get many examples wrong, in some sense, some examples are more important than others as some may be very rare.  It's not about the number of distinct mistakes you can make but rather the amount of time you will be wrong. This becomes important when you think about the underlying distribution of examples <br/>
 
-**Weak Learner**:No matter what the distribution is over data, a learner will do better than chance (better than chance: the error rate Pr_𝔻(.) is always less than a half). ∀𝔻 : Pr_𝔻(.) ≤ 1/2 − ε. Technically you are bounded away from one half. Another way to think about that is, you always get some information from learner. Ther learner is always able to learn something. Chance would be the case where your probability is 1/2 and you actually learn nothing at all.
+**3.4 Weak Learner**:No matter what the distribution is over data, a learner will do better than chance (better than chance: the error rate Pr_𝔻(.) is always less than a half). ∀𝔻 : Pr_𝔻(.) ≤ 1/2 − ε. Technically you are bounded away from one half. Another way to think about that is, you always get some information from learner. Ther learner is always able to learn something. Chance would be the case where your probability is 1/2 and you actually learn nothing at all.<br/>
+
+Strong Learners vs. Weak Learners (The Strength of Weak Learnability, 1990):<br/>
+A weak learner produces a classifier which is only slightly more accurate than random classification.<br/>
+A class of concepts is learnable (or strongly learnable) if there exists a polynomial-time algorithm that achieves low error with high confidence for all concepts in the class.<br/> 
+
+**3.5 Code**: 
 
 
-**Code**: 
+**3.6 AdaBoost**: 
 
 
-**AdaBoost**: 
+### 4.  Adaboost from StatQuest
+Using Decision Trees and Random Forests to explain the three main concepts behind AdaBoost.<br/> 
+Comparison 1: In a Random Forest, each time you make a tree, you make a full sized tree. Some trees might be bigger than others, but there is no predetermined maximum depth. In contrast, in a Forest of Trees(Stumps) with AdaBoost, the trees are usually just a node and two leaves. A tree with just one node and two leaves is called a stump. Stump can only use one variable to make a decision, thus, Stumps are technically "weak learners". However, that's the way AdaBoost likes it.<br/> 
+Comparison 2: In a Random Forest, each tree has an equal vote on the final classification. In contrast, in a Forest of Stumps made with AdaBoost, some stumps get more say in the final classification than others. Large stumps weight better than smaller stumps.<br/> 
+Comparison 3: In a Random Forest, each tree is made independently of the others. In other words, it doesn't matter if one tree is made first than other. In contrast, in a Forest of Stumps made with AdaBoost, order is important. The errosrs that the first stump makes influence how the second stump is made.  The second stump influece the third and so on. <br/> 
 
+In summary, AdaBoost 1) combines a lot of weak learner to make classficiations. The weak learner are almost always stumps. 2) Some stumps get more say in the classfication than others. 3) Each Stump is made by taking the previous stump's mistakes into account. <br/>
+
+<br/> <br/> <br/> <br/>
 
 <h1 id="7">Module: SL6  Kernel Methods & SVMs</h1> W
 **Support Vector Machines (SVMs) from StatQuest**<br/>
