@@ -465,6 +465,13 @@ About the margin <br/>
     <img width="100%" src="https://github.com/audrey617/Notes/blob/main/ML/images/SVM1.JPG?raw=true">
 </p>
 
+<br/>Max margin math equals to ... <br/>
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/audrey617/Notes/blob/main/ML/images/SVM2.JPG?raw=true">
+</p>
+
+Properties of this equaltion:<br/>
+
 
 ### Support Vector Machines (SVMs) from StatQuest<br/>
 **Bias**: the inability for a machine learning method to capture the true relationship is called bias. <br/>
