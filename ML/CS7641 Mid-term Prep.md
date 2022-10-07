@@ -433,6 +433,10 @@ The better we’re doing overall, the more we should focus on individual mistake
 </p>
 
 <p align="center" width="100%">
+    <img width="100%" src="https://github.com/audrey617/Notes/blob/main/ML/images/adaboost1.jfif?raw=true">
+</p>
+
+<p align="center" width="100%">
     <img width="100%" src="https://github.com/audrey617/Notes/blob/main/ML/images/Add2.JPG?raw=true">
 </p>
 
