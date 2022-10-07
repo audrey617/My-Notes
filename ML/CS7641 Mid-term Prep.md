@@ -500,12 +500,10 @@ It turns out that all we need to do to calculate the high-dimensional relationsh
 To review, the Polynomial Kernel  (a x b + r)^d computes relationships between pairs of observation.  and b refer to two different observation we want to calculate the high dimensional relationship for, r determines the coefficient of the polynomial, d sets the degree of the polynomial. Note, r and d are determined using Cross-Validation. Once r and d are decided, we can plug in the observations and do the math<br/>
 
 Note, in SVC Sklearn https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html <br/> 
-Kernel coefficient is gamma Parameter. here is r
-Degree Parameter(Degree of the polynomial kernel function) is degree.
+Kernel coefficient is gamma Parameter.Degree Parameter(Degree of the polynomial kernel function) is degree.
 
 
-<br/> 
-**PART 3: The Radial Kernel e^(** <br/>
+**PART 3: The Radial Kernel** <br/>
 
 
 
