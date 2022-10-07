@@ -447,7 +447,6 @@ Boosting basically says if I have some examples that I haven't been able to clas
 Boosting doesn't overfit <br/> 
 
 
-
 ### 4.  Adaboost from StatQuest
 Using Decision Trees and Random Forests to explain the three main concepts behind AdaBoost.<br/> 
 Comparison 1: In a Random Forest, each time you make a tree, you make a full sized tree. Some trees might be bigger than others, but there is no predetermined maximum depth. In contrast, in a Forest of Trees(Stumps) with AdaBoost, the trees are usually just a node and two leaves. A tree with just one node and two leaves is called a stump. Stump can only use one variable to make a decision, thus, Stumps are technically "weak learners". However, that's the way AdaBoost likes it.<br/> 
@@ -456,14 +455,18 @@ Comparison 3: In a Random Forest, each tree is made independently of the others.
 
 In summary, AdaBoost 1) combines a lot of weak learner to make classficiations. The weak learner are almost always stumps. 2) Some stumps get more say in the classfication than others. 3) Each Stump is made by taking the previous stump's mistakes into account. <br/>
 
-<br/> <br/> <br/> <br/>
+<br/>
 
 <h1 id="7">Module: SL6  Kernel Methods & SVMs</h1>
 
 ### 1. Support Vector Machines (SVMs)<br/>
+About the margin <br/>
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/audrey617/Notes/blob/main/ML/images/SVM1.JPG?raw=true">
+</p>
 
 
-### Addition. Support Vector Machines (SVMs) from StatQuest<br/>
+### Support Vector Machines (SVMs) from StatQuest<br/>
 **Bias**: the inability for a machine learning method to capture the true relationship is called bias. <br/>
 **Variance**: In ML, the difference in fits between data set is called variance. Producing consistent predictions across different datasets means the model has low variance.  <br/>
 For a overfitted model, it has low bias as it fits training set well but high variability because it results in vastly different sums of squares for different datasets. <br/>
