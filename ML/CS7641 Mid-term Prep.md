@@ -471,7 +471,8 @@ About the margin <br/>
 </p>
 
 Properties of this equaltion:<br/>
-
+Once you find alpha, you can recover W. W = ∑∝𝑖𝑦𝑖𝑥𝑖<br/>
+Once you recover W, you can have b<br/>
 
 ### Support Vector Machines (SVMs) from StatQuest<br/>
 **Bias**: the inability for a machine learning method to capture the true relationship is called bias. <br/>
