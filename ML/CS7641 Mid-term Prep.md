@@ -425,7 +425,7 @@ For t (timestamp) = 1 to T:
 Output H_final
 ```
 
-**3.6 AdaBoost**: 
+**3.6 AdaBoost Math**: <br/> 
 The better we’re doing overall, the more we should focus on individual mistakes. On each iteration, our probability distribution adjusts to make D favor incorrect answers so that our classifier H can learn them better on the next round; it weighs incorrect results more and more as the overall model performance increases. <br/> 
 
 <p align="center" width="100%">
@@ -439,6 +439,13 @@ The better we’re doing overall, the more we should focus on individual mistake
 <p align="center" width="100%">
     <img width="100%" src="https://github.com/audrey617/Notes/blob/main/ML/images/Add2.JPG?raw=true">
 </p>
+
+**3.6 AdaBoost Intuition**:  <br/> 
+Intuition: why does boosting do well?  <br/> 
+Boosting basically says if I have some examples that I haven't been able to classify well, I am going to rerate all my examples, so the one I'm not doing well become critical important. This is whole bit of 𝔻 all about. We know we have a notion of a weak leaner ht(x). No matter what happens, we will find some hypothesis that does well.  So in the end, to understand why the final hypothesis does well, we can ask under what circumstance it wouldn't do well. If it doesn't do well, there has to be a bunch of examples getting wrong. How many things could it not get right? That number has to be small. Let's imagine I had a number of examples wrong at a timestamp, since I have a distribution and I re-normalize, and then I get half right in the next round. It is forced to do well due to weak learner. This cause us to get fewer things wrong over time.  Can the right examples become wrong after re-distribution? (I am a bit confused on the proof.)  <br/> 
+
+Boosting doesn't overfit <br/> 
+
 
 
 ### 4.  Adaboost from StatQuest
