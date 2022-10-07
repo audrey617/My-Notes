@@ -444,49 +444,63 @@ In summary, AdaBoost 1) combines a lot of weak learner to make classficiations. 
 <br/> <br/> <br/> <br/>
 
 <h1 id="7">Module: SL6  Kernel Methods & SVMs</h1>
-### 1. Support Vector Machines (SVMs)
-The objective of the support vector machine algorithm is to find a hyperplane in an N-dimensional space(N — the number of features) that distinctly classifies the data points. <br/>
+
+### 1. Support Vector Machines (SVMs)<br/>
 
 
 ### Addition. Support Vector Machines (SVMs) from StatQuest<br/>
-bias: the inability for a machine learning method to capture the true relationship is called bias. <br/>
-variance in ml: the difference in fits between data set is called variance. producing consistent predictions across different datasets means the model has low variance.  <br/>
+**Bias**: the inability for a machine learning method to capture the true relationship is called bias. <br/>
+**Variance**: In ML, the difference in fits between data set is called variance. Producing consistent predictions across different datasets means the model has low variance.  <br/>
 For a overfitted model, it has low bias as it fits training set well but high variability because it results in vastly different sums of squares for different datasets. <br/>
 Three commonly used methods for finding a good point between simple and complicated models are regularization, boosting and bagging. <br/>
 
 **Part 1:** <br/>
-The shortest distance between the observations and the threshold is called the margin. When the threshold is halfway between the two observations, the margin is as large as it can be. Moving either direction will reduce the margin. When we use the threshold that gives us the largest margin to make classification, we are using the Maximal Margin Classifier. However, the maximal margin classifiers are super sensentive to outliers in the training data and makes it bad. <br/> <br/>
+The shortest distance between the observations and the threshold is called the **margin**. When the threshold is halfway between the two observations, the margin is as large as it can be. Moving either direction will reduce the margin. When we use the threshold that gives us the largest margin to make classification, we are using the **Maximal Margin Classifier**. However, the maximal margin classifiers are super sensentive to outliers in the training data and makes it bad. <br/> <br/>
 
 Can we do better? <br/>
-Yes, to make a threshold that is not so sensitive to outliers we must allow misclassification. Choosing a threshold that allows misclassifications is an example of the Bias/Variance Tradeoff that plagues all of machine learning. in other words, before we allowed misclassifications, we picked a threshold that was very sensitive to the training data(low bias) and it performed poorly when we got new data (high variance). In contrast, when we picked a threshold that was less sensitive to the training data and allowed misclassification(high bias),it performs better when with new data (low variance). When we allow misclassifications, the distance between the observations and the threshold is called a Soft Margin. To pick up the soft margin, we use cross validation to determine how many misclassifications and observations to allow inside of the Soft Margin to get the best classification. When we uses a Soft Margin to determine the location of a threshold, then we are using Soft Margin Classifier aka a Support Vector Classifier to classify observations. The name Support Vector Classifier (SVC) comes from the fact that the observations on the edge and within the Soft Margin are called Support Vectors. When the data is 2-dimensional, a Support Vector Classifier is a line. When the data is 3-dimensional, the SVC forms a plane. When the data are in 4+ dimensions, the SVC is a hyperplane (flat affine subspace. All flat affine subspaces are called hyperplanes. so point/line/plane are all flat affine hyperplanes technically, but usually used above 4D). <br/> <br/>
+Yes, to make a threshold that is not so sensitive to outliers we must allow misclassification. Choosing a threshold that allows misclassifications is an example of the Bias/Variance Tradeoff that plagues all of machine learning. in other words, before we allowed misclassifications, we picked a threshold that was very sensitive to the training data(low bias) and it performed poorly when we got new data (high variance). In contrast, when we picked a threshold that was less sensitive to the training data and allowed misclassification(high bias),it performs better when with new data (low variance). When we allow misclassifications, the distance between the observations and the threshold is called a **Soft Margin**. To pick up the soft margin, we use cross validation to determine how many misclassifications and observations to allow inside of the Soft Margin to get the best classification. When we uses a Soft Margin to determine the location of a threshold, then we are using **Soft Margin Classifier, aka Support Vector Classifier** to classify observations. The name Support Vector Classifier (SVC) comes from the fact that the observations on the edge and within the Soft Margin are called Support Vectors. When the data is 2-dimensional, a Support Vector Classifier is a line. When the data is 3-dimensional, the SVC forms a plane. When the data are in 4+ dimensions, the SVC is a hyperplane (flat affine subspace. All flat affine subspaces are called hyperplanes. so point/line/plane are all flat affine hyperplanes technically, but usually used above 4D). <br/> <br/>
 
 SVC can handle outliers, and because they allow miscliassifications, they can handle overlapping classifications. However, it won't perform well when one type are in sides while another type is in the middle. Because this training dataset had so much overlap, we were unable to find a satisfying SVC to separate them. Since Maximal Margin Classifiers and Support Vector Classifiers cannot handle this type of data, we need Support Vector Machines. <br/> <br/>
 
 
-The main ideas of SVM are: <br/>
+**The main ideas of SVM are**: <br/>
 1) Start with data in a relatively low dimension <br/>
 2) Move the data into a higher dimension <br/>
 3) Find Support Vector Classifier that separates the higher dimensional data into two groups <br/>
 
 How do we decide how to transform data? <br/>
-In order to make the mathematics possible, SVM use Kernel Functions to systematically find SVC in higher dimensions. <br/>
+In order to make the mathematics possible, SVM use **Kernel Functions** to systematically find SVC in higher dimensions. <br/>
 
-In the dosage example, Polynomial Kernel is used, which has a parameter d standing for the degree of polynomial. When d=1, the Polynomial Kernel computes the relationships between each pair of observations in 1D, and these relationships are used to find SVC. When d = 2, Polynomial Kernel computes 2d relationships between each pair of observations and those relationships are used to find SVC. In summary, the Polynomial Kernel systematically increases dimensions by setting d, the degree of polynomial, and the relationships between each pair of observations are used to find SVC. The good value of d can be found with Cross Validation. <br/>
+In the dosage example, **Polynomial Kernel** is used, which has a parameter d standing for the degree of polynomial. When d=1, the Polynomial Kernel computes the relationships between each pair of observations in 1D, and these relationships are used to find SVC. When d = 2, Polynomial Kernel computes 2d relationships between each pair of observations and those relationships are used to find SVC. In summary, the Polynomial Kernel systematically increases dimensions by setting d, the degree of polynomial, and the relationships between each pair of observations are used to find SVC. The good value of d can be found with Cross Validation. <br/>
 
 
-Another very commonly used Kernel is Radial Kernel, also known as Radial Basis Function (RBF) Kernel. This kernel finds SVC in infinite dimensions. It behaves like a weighted Nearest Neighbor model. The closest observations (nearest neighbor) have a lot of influence on how we classify the new observation. <br/>
+Another very commonly used Kernel is Radial Kernel, also known as **Radial Basis Function (RBF) Kernel**. This kernel finds SVC in infinite dimensions. It behaves like a weighted Nearest Neighbor model. The closest observations (nearest neighbor) have a lot of influence on how we classify the new observation. <br/>
 
 
 Kernel functions only calculate the relationships between every pair of points as if they are in the higher dimensions; they don't actually do the transformation. This trick, calculating the high-dimensional relationships without actually transforming the data to the higher dimension, is called The Kernel Trick. The kernel trick reduces the amount of computation required for SVM by avoiding the math that transforms the data from low to high dimensions, and it makes calculating relationships in the infinite dimensions used by Radial Kernel possible <br/>
 
+
 In summary, when we have two categories, but no obvious linear classifier that separates them in a nice way, Support Vector mahines work by moving the data into a relatively high dimensional space and finding a relatively high dimensional Support Vector Classifier that can effectively classify the observations. <br/> <br/>
 
+
 **PART 2: The Polynomial Kernel** <br/>
+In this example, We used a SVM with a polynomial kernel and then find a good SVC based on the high dimensional relationship.
+The kernel used looks like this : (a x b+r)^d.  a and b refer to two different observation in the dataset, r determines the coefficient of the polynomial, d sets the degree of the polynomial. In this example, let's set r = 1/2 and d = 2.<br/>
+
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/audrey617/Notes/blob/main/ML/images/SVMAdd1.JPG?raw=true">
+</p>
+
+It turns out that all we need to do to calculate the high-dimensional relationships is calculate the Dot Products between each pair of points. Since  (a x b+r)^d == (a,a^2,1/2) * (b,b^2,1/2), all we need to do is plug values into the **kernel** to get the high-dimensional relationships.<br/>
+
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/audrey617/Notes/blob/main/ML/images/SVMAdd2.JPG?raw=true">
+</p>
+
+To review, the Polynomial Kernel  (a x b + r)^d computes relationships between pairs of observation.  and b refer to two different observation we want to calculate the high dimensional relationship for, r determines the coefficient of the polynomial, d sets the degree of the polynomial. Note, r and d are determined using Cross-Validation. Once r and d are decided, we can plug in the observations and do the math<br/>
 
 
-
-
-
+**PART 3: The Radial Kernel e^(** <br/>
 
 
 
