@@ -494,12 +494,17 @@ The kernel used looks like this : (a x b+r)^d.  a and b refer to two different o
 It turns out that all we need to do to calculate the high-dimensional relationships is calculate the Dot Products between each pair of points. Since  (a x b+r)^d == (a,a^2,1/2) * (b,b^2,1/2), all we need to do is plug values into the **kernel** to get the high-dimensional relationships.<br/>
 
 <p align="center" width="100%">
-    <img width="100%" src="https://github.com/audrey617/Notes/blob/main/ML/images/SVMAdd2.JPG?raw=true">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/SVMAdd2.JPG?raw=true">
 </p>
 
 To review, the Polynomial Kernel  (a x b + r)^d computes relationships between pairs of observation.  and b refer to two different observation we want to calculate the high dimensional relationship for, r determines the coefficient of the polynomial, d sets the degree of the polynomial. Note, r and d are determined using Cross-Validation. Once r and d are decided, we can plug in the observations and do the math<br/>
 
+Note, in SVC Sklearn https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html <br/> 
+Kernel coefficient is gamma Parameter. here is r
+Degree Parameter(Degree of the polynomial kernel function) is degree.
 
+
+<br/> 
 **PART 3: The Radial Kernel e^(** <br/>
 
 
