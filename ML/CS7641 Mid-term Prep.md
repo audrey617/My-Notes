@@ -10,8 +10,12 @@
 - [Module: SL8  VC Dimensions](#9)
 - [Module: SL9  Bayesian Learning](#10)
 - [Module: SL10 Bayesian Inference](#11)
+- 
+- [Module: UL5 - Info Theory](#12)
+- [Module: UL1 - Randomized Optimization](#13)
 
 
+ 
 <h1 id="1">Module: ML is the ROX</h1>
 
 ## 1. Supervised Learning VS Unsupervised learning VS Reinforcement Learning
