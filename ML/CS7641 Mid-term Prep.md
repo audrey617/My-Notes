@@ -499,7 +499,6 @@ It turns out for any function that you use, there is some transformation into so
 </p>
 
 
-
 **Predefined kernels** <br/>
 Below From https://towardsdatascience.com/an-intro-to-kernels-9ff6c6a6a8dc<br/>
 The problem with mapping data onto higher dimensional space is that it can be computationally expensive. The mapping function 𝜙 has to be applied to each data point, and then we still have to perform our calculations on our data with the new features included. The computational costs can grow exponentially when dealing with large amounts of data and the addition of many new features.Fortunately for us, kernels come in to save the day. Since we only need the inner products of our data points to calculate the decision barrier for Support Vector Machines, which is a common classification model, kernels allow us to skip the process of mapping our data onto a higher dimensional space and calculate the inner product directly.<br/>
@@ -515,6 +514,15 @@ Below from https://towardsdatascience.com/understanding-support-vector-machine-p
 Apart from this predefined kernels, what conditions determine which functions can be considered as Kernels? This is given by Mercer’s theorem. <br/>
 First condition is rather trivial i.e. the Kernel function must be symmetric. <br/>
 in a finite input space, if the Kernel matrix (also known as Gram matrix) is positive semi-definite then, the matrix element i.e. the function K can be a kernel function<br/>
+
+**1.6 Kernel Methods & SVMs Summary**<br/>
+Margin: for generalization, find linear separator maximizing the margin. Finding the maximum margin with quadratic programming. Support vectors were the data points that were necessary for defining the maximum margin separator<br/>
+Kernel trick: K(X,Y) needs domain knowledge. Kernels have to satisfy Mercer Condition tho it's still okay to use in practice<br/><br/>
+
+**1.7 Boosting And Overfitting**<br/>
+
+
+
 
 ### 2. Support Vector Machines (SVMs) from StatQuest<br/>
 **Bias**: the inability for a machine learning method to capture the true relationship is called bias. <br/>
@@ -572,7 +580,7 @@ Kernel coefficient is gamma Parameter.Degree Parameter(Degree of the polynomial 
 
 
 **PART 3: The Radial Kernel** <br/>
-
+skip
 
 
 
