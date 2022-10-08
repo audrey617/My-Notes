@@ -590,8 +590,76 @@ skip
 
 
 
+<h1 id="8">Module: SL7  Computational Learning Theory</h1>
 
-<h1 id="8">Module: SL7  Comp Learning Theory</h1>
+### 1. Computational Learning Theory<br/>
+Learning Theory gets us a formal way of addressing three important questions : 1) Define learning problems 2) Show that specific algorithms work/don’t work for specific problems => upper bound 3) Show that some problems are fundamentally hard (No algorithm in a particular class will ever be able to solve them => lower bound<br/>
+The tools used for analyzing learning problems are similar to those used for analyzing algorithms in computing. Resources in machine learning or computational learning theory: Time, Space, Data samples<br/>
+Some of the resources useful in analyzing learning algorithms are time and space just like normal algorithms. Furthermore, learning algorithms are measured in terms of the number of samples or data they need to be effective<br/>
+
+### 2. Inductive Learning (learning from examples )<br/>
+**Factors affecting the resulting inductions**:<br/>
+1) Probability of successful trainings (1 − 𝛿)  =>the accuracy to which the target concept is approximated,𝛿 is the probability of failure<br/>
+2) Number of training examples (𝑚) <br/>
+3) Complexity of hypothesis class (Complexity of 𝐻) => Simple hypotheses might not be sufficient to express complex concepts, whereas complex hypotheses could overfit and need much more data <br/>
+4) Accuracy to which the target concept is approximated (𝜀) <br/>
+5) Manner in which training examples are presented => 1) Batch learning -  entire “batches” of data at once 2) Online learning - one at a time <br/>
+6) Manner in which training examples are selected => randome shuffling?<br/>
+
+<br/><br/>
+### 3. Ways to select training examples:<br/>
+Learner choose, teacher choose, nature choose (given by nature), mean teacher choose<br/>
+- The learner asks questions to the teacher: The learner selects 𝑥 and asks about 𝑐(𝑥) => the learner ask to get data<br/>
+- The teacher gives examples to help learner: the teacher gives (𝑥, 𝑐(𝑥)) pairs to the learner => teacher leads the learner to something good<br/>
+- Fixed distribution: 𝑥 chosen from 𝐷 by nature<br/>
+- Evil distribution: Intentionally misleading<br/><br/>
+
+
+<!---
+**Learner**<br/>
+X: x1x2....xk  k-bit input<br/>
+H: conjunctions of literals or negation<br/>
+Example: if k = 5, one input can be 00010 -> h 0 or 1<br/>
+
+For a set of hypotheses 𝐻:<br/>
+The teacher can help the learner get to the right answer using only one question.<br/>
+The learner would have to ask 𝑙𝑜𝑔𝐻 questions to get to the answer on its own<br/>
+<br/>
+Teacher with constrained queries:<br/>
+The teacher has to show what's irrelevant. This can be achieved using two positive examples.<br/>
+The teacher has to show what's relevant. This can be achieved using 𝑘 negative examples, where 𝑘 is the number of variables.<br/>
+The answer can be achieved in 2 + 𝑘 examples<br/>
+<br/>
+
+Learner with constrained queries:<br/>
+It would be very hard (exponential time) for the learner to come up with different cases for positive and negative examples on its own.<br/>
+<br/>
+
+Learner with mistake bounds:<br/>
+It's very hard to learn with constrained queries, so we change the rules: 1. Input arrives 2. Learner guesses answer 3. Wrong answer charged 4. Go to 1<br/>
+Total number of mistakes will be bound by a certain number.<br/>
+The algorithm is:<br/>
+1) Assume that each variable can be positive and negated<br/>
+2) Given input, compute output<br/>
+3) If wrong, set all positive variables that were 0 to absent,  and negative variables that were 1 to absent<br/>
+4) Go to 2<br/>
+Using these rules, we'll never make more than 𝑘 + 1 mistakes.<br/>
+
+
+**Definitions**<br/>
+Computational complexity: <br/>
+How much computational effort the learner needs to converge to a correct hypothesis, or to the best hypothesis in the available hypotheses space<br/>
+
+Sample complexity: - batch<br/>
+How much training examples the learner needs to create a successful hypothesis<br/>
+
+Mistake bounds: <br/>
+How many misclassifications can a learner make over an infinite run<br/>
+
+Version space: <br/>
+A consistent learner is a learner that produces a hypothesis that matches the data it had seen. Version space is the space of all the consistent hypotheses<br/>
+𝑉𝑆(𝑆) = {ℎ ∈ 𝐻 | ℎ(𝑥) = 𝑐(𝑥) ∀𝑥 ∈ 𝑆}<br/>
+-->
 
 ### ?.PCA from StatQuest<br/>
 
