@@ -460,19 +460,19 @@ In summary, AdaBoost 1) combines a lot of weak learner to make classficiations. 
 <h1 id="7">Module: SL6  Kernel Methods & SVMs</h1>
 
 ### 1. Support Vector Machines (SVMs)<br/>
-**About the margin** <br/>
+**1.1 About the margin** <br/>
 <p align="center" width="100%">
     <img width="100%" src="https://github.com/audrey617/Notes/blob/main/ML/images/SVM1.JPG?raw=true">
 </p>
 
 
-<br/>**Max margin math transform**<br/>
+<br/>**1.2 Max margin math transform**<br/>
 <p align="center" width="100%">
     <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/SVM2.JPG?raw=true">
 </p>
 
 
-**Properties of this 𝑊(∝) equaltion:**<br/>
+**1.3 Properties of this 𝑊(∝) equaltion:**<br/>
 1. Once you find alpha, you can recover W. W = ∑ ∝_𝑖 𝑦_𝑖 𝑥_𝑖  => Once you recover W, you can have b<br/>
 2. Most ∝_𝑖 are going to be 0. This measn buch of the data don't really factor into W. So you basically build machine with a few support vectors (∝_𝑖 are not 0). **Only few X_i matters**. The points that are far away from decision boundary and cannot be used to define the contours of that deicison boundary don't matter, whether they are plus or minus. <br/>
 3. It's like **KNN** except you alredy done the work of figuring out which points actually matter. So you don't need to keep all of them. It doesn't just take the nearest ones but actually does this complicated quadratic program to figure out which ones are actually going to contribute. It's another way to think about instance-based learning, except that rather than being completely lazy, you put some energy into figuring out which points you could stand to throw away <br/>
@@ -481,13 +481,38 @@ In summary, AdaBoost 1) combines a lot of weak learner to make classficiations. 
 Look back at 𝑊(∝), it basically tries to
 1) find all pairs of points
 2) figure out which ones matter for finding your decision boundry (a)
-3) think about how they relate to one another in term of their output labels (yy) with respect how similar (xTx) they are to each other.<br/>
+3) think about how they relate to one another in term of their output labels (yy) with respect how similar (xTx) they are to each other.<br/><br/>
 
 
-**Linearly Married**<br/>
+**1.4 Linearly Married**<br/>
+<p align="center" width="100%">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/SVM3.JPG?raw=true">
+</p>
+
+This is a cute trick. It takes data nad transform it into a higher dimensional space where suddenly I am able to separate it linearly. It not only fits the circle pattern, but also doesn't require that I do this particuilar transformation. I can simply compute the dot product. In this formulation of the quadratic program 𝑊(∝), if you write code to do that, each time in the code you want to compute that Xi transpose Xj (𝑥^𝑇𝑥), if you just squared it right before you use it, it would be as if you projected it into this third dimension and found a plane. This is called the **kernel trick**<br/>
+We care about maximizing some function 𝑊(∝) that depends highly upon how differnt data poins are alike defined by inner product 𝑥^𝑇𝑥. But instead, we can define similarity notion as (𝑥^𝑇𝑥)^2. In fact, we actually never use ϕ(q) = <q1^2,q2^2,sqrt(2)q1q2>. That just so happened to represent something in a higher dimensional space<br/>
+It turns out for any function that you use, there is some transformation into some higher dimensional space, that is equivalent <br/>
+
+**1.5 Kernel**<br/>
+<p align="center" width="100%">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/SVM4.JPG?raw=true">
+</p>
 
 
 
+**predefined kernels** Below From https://towardsdatascience.com/an-intro-to-kernels-9ff6c6a6a8dc
+The problem with mapping data onto higher dimensional space is that it can be computationally expensive. The mapping function 𝜙 has to be applied to each data point, and then we still have to perform our calculations on our data with the new features included. The computational costs can grow exponentially when dealing with large amounts of data and the addition of many new features.Fortunately for us, kernels come in to save the day. Since we only need the inner products of our data points to calculate the decision barrier for Support Vector Machines, which is a common classification model, kernels allow us to skip the process of mapping our data onto a higher dimensional space and calculate the inner product directly.<br/>
+
+There are a few requirements functions have to fulfill in order to be considered a kernel.<br/>
+The function needs to be continuous, meaning that can’t have any missing points in its domain<br/>
+It has to be symmetric, meaning that K(x, y) = K(y, x)<br/>
+It has positive semi-definiteness. This means that the kernel a symmetric matrix with non-negative eigenvalues.<br/>
+
+
+**Mercer’s theorem** Below from https://towardsdatascience.com/understanding-support-vector-machine-part-2-kernel-trick-mercers-theorem-e1e6848c6c4d
+Apart from this predefined kernels, what conditions determine which functions can be considered as Kernels? This is given by Mercer’s theorem. <br/>
+First condition is rather trivial i.e. the Kernel function must be symmetric. <br/>
+in a finite input space, if the Kernel matrix (also known as Gram matrix) is positive semi-definite then, the matrix element i.e. the function K can be a kernel function<br/>
 
 ### 2. Support Vector Machines (SVMs) from StatQuest<br/>
 **Bias**: the inability for a machine learning method to capture the true relationship is called bias. <br/>
