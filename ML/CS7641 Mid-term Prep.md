@@ -596,6 +596,8 @@ skip
 ### ?.PCA from StatQuest<br/>
 
 
-<h1 id="9">Module: SL8  VC Dimensions</h1> F
-<h1 id="10">Module: SL9  Bayesian Learning</h1> S
-<h1 id="11">Module: SL10 Bayesian Inference</h1> S
+<h1 id="9">Module: SL8  VC Dimensions</h1>
+<h1 id="10">Module: SL9  Bayesian Learning</h1>
+<h1 id="11">Module: SL10 Bayesian Inference</h1>
+<h1 id="12">Module: UL5 - Info Theory</h1>
+<h1 id="13">Module: UL1 - Randomized Optimization</h1>
