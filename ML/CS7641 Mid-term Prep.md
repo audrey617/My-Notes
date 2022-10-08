@@ -460,20 +460,22 @@ In summary, AdaBoost 1) combines a lot of weak learner to make classficiations. 
 <h1 id="7">Module: SL6  Kernel Methods & SVMs</h1>
 
 ### 1. Support Vector Machines (SVMs)<br/>
-About the margin <br/>
+**About the margin** <br/>
 <p align="center" width="100%">
     <img width="100%" src="https://github.com/audrey617/Notes/blob/main/ML/images/SVM1.JPG?raw=true">
 </p>
 
-<br/>Max margin math equals to ... <br/>
+
+<br/>**Max margin math transform**<br/>
 <p align="center" width="100%">
     <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/SVM2.JPG?raw=true">
 </p>
 
-**Properties of this equaltion:**<br/>
+
+**Properties of this 𝑊(∝) equaltion:**<br/>
 1. Once you find alpha, you can recover W. W = ∑ ∝_𝑖 𝑦_𝑖 𝑥_𝑖  => Once you recover W, you can have b<br/>
-2. Most ∝_𝑖 are going to be 0. This measn buch of the data don't really factor into W. So you basically build machine with a few support vectors (∝_𝑖 are not 0). Only few X_i matters. The points that are far away from decision boundary and cannot be used to define the contours of that deicison boundary don't matter, whether they are plus or minus. <br/>
-3. It's like KNN except you alredy done the work of figuring out which points actually matter. So you don't need to keep all of them. It doesn't just take the nearest ones but actually does this complicated quadratic program to figure out which ones are actually going to contribute. It's another way to think about instance-based learning, except that rather than being completely lazy, you put some energy into figuring out which points you could stand to throw away <br/>
+2. Most ∝_𝑖 are going to be 0. This measn buch of the data don't really factor into W. So you basically build machine with a few support vectors (∝_𝑖 are not 0). **Only few X_i matters**. The points that are far away from decision boundary and cannot be used to define the contours of that deicison boundary don't matter, whether they are plus or minus. <br/>
+3. It's like **KNN** except you alredy done the work of figuring out which points actually matter. So you don't need to keep all of them. It doesn't just take the nearest ones but actually does this complicated quadratic program to figure out which ones are actually going to contribute. It's another way to think about instance-based learning, except that rather than being completely lazy, you put some energy into figuring out which points you could stand to throw away <br/>
 4. What does the Xi transpose Xj (𝑥^𝑇𝑥) actaully means in 𝑊(∝) ?  It's dot product, which like the projection of one of those onto the other. it ends give you a number, which is the length of projection indicating how much they are pointing in the same direction. It's a measure of their similarity. So Xi transpose Xj is a notion of **similarity**.<br/><br/>
 
 Look back at 𝑊(∝), it basically tries to
@@ -482,8 +484,12 @@ Look back at 𝑊(∝), it basically tries to
 3) think about how they relate to one another in term of their output labels (yy) with respect how similar (xTx) they are to each other.<br/>
 
 
+**Linearly Married**<br/>
 
-### Support Vector Machines (SVMs) from StatQuest<br/>
+
+
+
+### 2. Support Vector Machines (SVMs) from StatQuest<br/>
 **Bias**: the inability for a machine learning method to capture the true relationship is called bias. <br/>
 **Variance**: In ML, the difference in fits between data set is called variance. Producing consistent predictions across different datasets means the model has low variance.  <br/>
 For a overfitted model, it has low bias as it fits training set well but high variability because it results in vastly different sums of squares for different datasets. <br/>
