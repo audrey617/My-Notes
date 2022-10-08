@@ -500,7 +500,8 @@ It turns out for any function that you use, there is some transformation into so
 
 
 
-**predefined kernels** Below From https://towardsdatascience.com/an-intro-to-kernels-9ff6c6a6a8dc
+**Predefined kernels** <br/>
+Below From https://towardsdatascience.com/an-intro-to-kernels-9ff6c6a6a8dc<br/>
 The problem with mapping data onto higher dimensional space is that it can be computationally expensive. The mapping function 𝜙 has to be applied to each data point, and then we still have to perform our calculations on our data with the new features included. The computational costs can grow exponentially when dealing with large amounts of data and the addition of many new features.Fortunately for us, kernels come in to save the day. Since we only need the inner products of our data points to calculate the decision barrier for Support Vector Machines, which is a common classification model, kernels allow us to skip the process of mapping our data onto a higher dimensional space and calculate the inner product directly.<br/>
 
 There are a few requirements functions have to fulfill in order to be considered a kernel.<br/>
@@ -509,7 +510,8 @@ It has to be symmetric, meaning that K(x, y) = K(y, x)<br/>
 It has positive semi-definiteness. This means that the kernel a symmetric matrix with non-negative eigenvalues.<br/>
 
 
-**Mercer’s theorem** Below from https://towardsdatascience.com/understanding-support-vector-machine-part-2-kernel-trick-mercers-theorem-e1e6848c6c4d
+**Mercer’s theorem** <br/>
+Below from https://towardsdatascience.com/understanding-support-vector-machine-part-2-kernel-trick-mercers-theorem-e1e6848c6c4d<br/>
 Apart from this predefined kernels, what conditions determine which functions can be considered as Kernels? This is given by Mercer’s theorem. <br/>
 First condition is rather trivial i.e. the Kernel function must be symmetric. <br/>
 in a finite input space, if the Kernel matrix (also known as Gram matrix) is positive semi-definite then, the matrix element i.e. the function K can be a kernel function<br/>
