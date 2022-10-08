@@ -614,6 +614,8 @@ Learner choose, teacher choose, nature choose (given by nature), mean teacher ch
 - Fixed distribution: 𝑥 chosen from 𝐷 by nature<br/>
 - Evil distribution: Intentionally misleading<br/><br/>
 
+
+<!---
 THe expression used in lectures are hidden in comment in this md. just use Kudrayvtsev's note for this part since I think it is more clear.
 <p align="center" width="100%">
     <img width="55%" src="https://github.com/audrey617/Notes/blob/main/ML/images/learning1.JPG?raw=true">
@@ -624,9 +626,8 @@ THe expression used in lectures are hidden in comment in this md. just use Kudra
 <p align="center" width="100%">
     <img width="55%" src="https://github.com/audrey617/Notes/blob/main/ML/images/learning3.JPG?raw=true">
 </p>
+-->
 
-
-<!---
 **Learner**<br/>
 X: x1x2....xk  k-bit input<br/>
 H: conjunctions of literals or negation<br/>
@@ -670,7 +671,7 @@ How many misclassifications can a learner make over an infinite run<br/>
 Version space: <br/>
 A consistent learner is a learner that produces a hypothesis that matches the data it had seen. Version space is the space of all the consistent hypotheses<br/>
 𝑉𝑆(𝑆) = {ℎ ∈ 𝐻 | ℎ(𝑥) = 𝑐(𝑥) ∀𝑥 ∈ 𝑆}<br/>
--->
+
 
 ### ?.PCA from StatQuest<br/>
 
