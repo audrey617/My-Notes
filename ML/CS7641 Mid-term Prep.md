@@ -515,13 +515,19 @@ Apart from this predefined kernels, what conditions determine which functions ca
 First condition is rather trivial i.e. the Kernel function must be symmetric. <br/>
 in a finite input space, if the Kernel matrix (also known as Gram matrix) is positive semi-definite then, the matrix element i.e. the function K can be a kernel function<br/>
 
+**SVMs Resistant overfitting** <br/>
+Below from https://stats.stackexchange.com/questions/35276/svm-overfitting-curse-of-dimensionality <br/>
+In practice, the reason that SVMs tend to be resistant to over-fitting, even in cases where the number of attributes is greater than the number of observations, is that it uses regularization. They key to avoiding over-fitting lies in careful tuning of the regularization parameter, C, and in the case of non-linear SVMs, careful choice of kernel and tuning of the kernel parameters.<br/>
+
+The SVM is an approximate implementation of a bound on the generalization error, that depends on the margin (essentially the distance from the decision boundary to the nearest pattern from each class), but is independent of the dimensionality of the feature space (which is why using the kernel trick to map the data into a very high dimensional space isn't such a bad idea as it might seem). So in principle SVMs should be highly resistant to over-fitting, but in practice this depends on the careful choice of C and the kernel parameters. Sadly, over-fitting can also occur quite easily when tuning the hyper-parameters as well.<br/>
+
 **1.6 Kernel Methods & SVMs Summary**<br/>
 Margin: for generalization, find linear separator maximizing the margin. Finding the maximum margin with quadratic programming. Support vectors were the data points that were necessary for defining the maximum margin separator<br/>
 Kernel trick: K(X,Y) needs domain knowledge. Kernels have to satisfy Mercer Condition tho it's still okay to use in practice<br/><br/>
 
 **1.7 Boosting And Overfitting**<br/>
-
-
+The reason why boosting is robust to overfitting even with adding more learners is that adding more learners increases the margin (the distance between boundaries), while maintaining constant error. Increasing the margin results in higher confidence in the prediction.<br/>
+Boosting tends to overfit if the underlying weak learner uses an algorithm that tends to overfit (e.g. a Neural Network with a lot of hidden layers).<br/>
 
 
 ### 2. Support Vector Machines (SVMs) from StatQuest<br/>
