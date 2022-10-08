@@ -616,13 +616,13 @@ Learner choose, teacher choose, nature choose (given by nature), mean teacher ch
 
 THe expression used in lectures are hidden in comment in this md. just use Kudrayvtsev's note for this part since I think it is more clear.
 <p align="center" width="100%">
-    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/learning1.JPG?raw=true">
+    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/learning1.JPG?raw=true">
 </p>
 <p align="center" width="100%">
-    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/learning2.JPG?raw=true">
+    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/learning2.JPG?raw=true">
 </p>
 <p align="center" width="100%">
-    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/learning3.JPG?raw=true">
+    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/learning3.JPG?raw=true">
 </p>
 
 
