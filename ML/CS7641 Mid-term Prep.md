@@ -607,12 +607,23 @@ Some of the resources useful in analyzing learning algorithms are time and space
 6) Manner in which training examples are selected => randome shuffling?<br/>
 
 <br/><br/>
-### 3. Ways to select training examples:<br/>
+### 3. Learner Learning:<br/>
 Learner choose, teacher choose, nature choose (given by nature), mean teacher choose<br/>
 - The learner asks questions to the teacher: The learner selects 𝑥 and asks about 𝑐(𝑥) => the learner ask to get data<br/>
 - The teacher gives examples to help learner: the teacher gives (𝑥, 𝑐(𝑥)) pairs to the learner => teacher leads the learner to something good<br/>
 - Fixed distribution: 𝑥 chosen from 𝐷 by nature<br/>
 - Evil distribution: Intentionally misleading<br/><br/>
+
+THe expression used in lectures are hidden in comment in this md. just use Kudrayvtsev's note for this part since I think it is more clear.
+<p align="center" width="100%">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/learning1.JPG?raw=true">
+</p>
+<p align="center" width="100%">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/learning2.JPG?raw=true">
+</p>
+<p align="center" width="100%">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/learning3.JPG?raw=true">
+</p>
 
 
 <!---
