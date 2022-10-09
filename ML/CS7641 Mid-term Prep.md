@@ -665,7 +665,7 @@ How much computational effort the learner needs to converge to a correct hypothe
 Sample complexity: - batch<br/>
 How much training examples the learner needs to create a successful hypothesis<br/>
 
-Mistake bounds: <br/>
+Mistake bounds: -online <br/>
 How many misclassifications can a learner make over an infinite run<br/>
 
 Version space: <br/>
