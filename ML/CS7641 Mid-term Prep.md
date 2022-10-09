@@ -657,7 +657,7 @@ The algorithm is:<br/>
 4) Go to 2<br/>
 Using these rules, we'll never make more than 𝑘 + 1 mistakes.<br/>
 
-
+### 4. PAC Learning:<br/>
 **Definitions**<br/>
 Computational complexity: <br/>
 How much computational effort the learner needs to converge to a correct hypothesis, or to the best hypothesis in the available hypotheses space<br/>
@@ -669,11 +669,47 @@ Mistake bounds: -online <br/>
 How many misclassifications can a learner make over an infinite run<br/>
 
 Version space: <br/>
-A consistent learner is a learner that produces a hypothesis that matches the data it had seen. Version space is the space of all the consistent hypotheses<br/>
+Consistent learner: Produes c(x) = h(x), where c is the true concept or true hypothesis and h is the candidate hypothesis. Learning from training set. Another way is to describe it, a consistent learner is a learner that produces a hypothesis that matches the data it had seen. It is consistent with data<br/>
+Version space is the space of all the consistent hypotheses<br/>
 𝑉𝑆(𝑆) = {ℎ ∈ 𝐻 | ℎ(𝑥) = 𝑐(𝑥) ∀𝑥 ∈ 𝑆}<br/>
 
+**probably approximately correct(PAC Learning) - Error of h**<br/>
+Training error: Fraction of training examples misclassified by h <br/>
+True error: fraction of examples that would be misclassified on sample drawen from D. Mathatically, error_D(h) = Pr_x~D [c(x) != h(x)]. That is, Error with respect to distribution D of some hypothesis h, is the probablity that if we draw the input X from that distribution that you are going to get a mismatch between the true label and the hypothesis that we are currently evaluating. This captures the notion that it is okay to misclassify examples you will never ever see. <br/>
 
-### ?.PCA from StatQuest<br/>
+**probably approximately correct(PAC Learning)**<br/>
+C: concept class<br/>
+L: Learner<br/>
+H: Hypothese space<br/>
+n: |H|, size of hypothesis space<br/>
+D: distribution over inputs<br/>
+0<= ε <= 1/2 error goal<br/>
+0<= 𝛿 <= 1/2 certainty goal. With the probability 1 - 𝛿, the algorithm has to work. And by work, we mean be able to produce a true error <= epsilon<br/>
+
+The PAC, P is probabily 1-𝛿, A is Approximately ε, and C is correct error_D(h) = 0. We cannot force ε and 𝛿 to be zero as samples from distribution  <br/>
+
+C is PAC-learnable by L using H iff learner L will, with probability 1-𝛿, output a hypothesis h such that error_D(h) <= ε in time and samples polynomial in 1/ε, 1/𝛿 and n.<br/>
+
+In another words, something is PAC-learnable if you can learn to get low error with high confidence that you will have a low error in time that is sort of polynomial in all parameters.<br/>
+To rephrase, a concept is PAC-learnable if it can be learned to a reasonable degree of correctness within a reasonable amount of time<br/>
+
+Is there an algorithm L such that C is PAC-learnable by L using H?<br/>
+1) Keep track of VS(S,H)<br/>
+2) Whever stop getting samples, uniformly pick one from VS<br/>
+3) However, why the number of samples it needs isn't exponential as we have 2^k possible input in this example. If we have to see all, that would be too big. We need to have it polynomial in K, not exponential in K. How we answer it? => epsilon exhaused<br/>
+
+
+**Epsilon Exhausted or Epsilon Exhausted Version Space**<br/>
+VS(S) is Epsilon Exhaustion iff for all h belonging to VS(S) have low error (error_D(h) ≤ ε) <br/>
+Something is epsilon exhausted, a version space is epsilon exhausted exactly in the case when everyhing that you might possible choose has an error less than epsilon. So if there is anything in there has error greater than epsilon, then it is not epsilon exhausted. <br/>
+
+
+**Haussler Theorem - Bound True Error**<br/>
+It bounds True Error of the number of training examples that are drawn. This gives us an upper bound that the version space is not ε-exhausted after m samples: m ≥ (1/ε) * (ln|H| + ln(1/δ)). The distribution is irrelevant.<br/>
+What if true concept is not in H? Still similar function<br/>
+What if infinite hypothese space? Haussler Theorem cannot handle<br/>
+
+### 5. ADDITION. PAC is covered in lecture. THEN What is PCA? IS PCA and PAC same thing? PCA from StatQuest<br/>
 We are going through principal component analysis(PCA) one step at a time using Singular Value Decomposition (SVD).<br/>
 To understand what PCA does and how it works, let's go back to the dataset that only had 2 genes<br/>
 **PCA1**
