@@ -723,7 +723,7 @@ To understand what PCA does and how it works, let's go back to the dataset that 
 
 **Even higher Dimension PCA**
 <p align="center" width="100%">
-    <img width="100%" src="https://github.com/audrey617/Notes/blob/main/ML/images/pca13.JPG?raw=true">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/pca13.JPG?raw=true">
 </p>
 
 
