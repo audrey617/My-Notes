@@ -700,6 +700,34 @@ To understand what PCA does and how it works, let's go back to the dataset that 
 </p>
 
 **PCA2**
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/audrey617/Notes/blob/main/ML/images/pca8.JPG?raw=true">
+</p>
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/audrey617/Notes/blob/main/ML/images/pca9.JPG?raw=true">
+</p>
+
+**Scree Plot**
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/audrey617/Notes/blob/main/ML/images/pca10.JPG?raw=true">
+</p>
+
+**3D PCA**
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/audrey617/Notes/blob/main/ML/images/pca11.JPG?raw=true">
+</p>
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/audrey617/Notes/blob/main/ML/images/pca12.JPG?raw=true">
+</p>
+
+
+**Even higher Dimension PCA**
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/audrey617/Notes/blob/main/ML/images/pca13.JPG?raw=true">
+</p>
+
+
+
 
 <h1 id="9">Module: SL8  VC Dimensions</h1>
 <h1 id="10">Module: SL9  Bayesian Learning</h1>
