@@ -678,25 +678,25 @@ We are going through principal component analysis(PCA) one step at a time using 
 To understand what PCA does and how it works, let's go back to the dataset that only had 2 genes<br/>
 **PCA1**
 <p align="center" width="100%">
-    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/pca1.JPG?raw=true">
+    <img width="100%" src="https://github.com/audrey617/Notes/blob/main/ML/images/pca1.JPG?raw=true">
 </p>
 <p align="center" width="100%">
-    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/pca2.JPG?raw=true">
+    <img width="100%" src="https://github.com/audrey617/Notes/blob/main/ML/images/pca2.JPG?raw=true">
 </p>
 <p align="center" width="100%">
-    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/pca3.JPG?raw=true">
+    <img width="100%" src="https://github.com/audrey617/Notes/blob/main/ML/images/pca3.JPG?raw=true">
 </p>
 <p align="center" width="100%">
-    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/pca4.JPG?raw=true">
+    <img width="100%" src="https://github.com/audrey617/Notes/blob/main/ML/images/pca4.JPG?raw=true">
 </p>
 <p align="center" width="100%">
-    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/pca5.JPG?raw=true">
+    <img width="100%" src="https://github.com/audrey617/Notes/blob/main/ML/images/pca5.JPG?raw=true">
 </p>
 <p align="center" width="100%">
-    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/pca6.JPG?raw=true">
+    <img width="100%" src="https://github.com/audrey617/Notes/blob/main/ML/images/pca6.JPG?raw=true">
 </p>
 <p align="center" width="100%">
-    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/pca7.JPG?raw=true">
+    <img width="100%" src="https://github.com/audrey617/Notes/blob/main/ML/images/pca7.JPG?raw=true">
 </p>
 
 **PCA2**
