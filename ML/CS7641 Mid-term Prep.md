@@ -674,7 +674,32 @@ A consistent learner is a learner that produces a hypothesis that matches the da
 
 
 ### ?.PCA from StatQuest<br/>
+We are going through principal component analysis(PCA) one step at a time using Singular Value Decomposition (SVD).<br/>
+To understand what PCA does and how it works, let's go back to the dataset that only had 2 genes<br/>
+**PCA1**
+<p align="center" width="100%">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/pca1.JPG?raw=true">
+</p>
+<p align="center" width="100%">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/pca2.JPG?raw=true">
+</p>
+<p align="center" width="100%">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/pca3.JPG?raw=true">
+</p>
+<p align="center" width="100%">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/pca4.JPG?raw=true">
+</p>
+<p align="center" width="100%">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/pca5.JPG?raw=true">
+</p>
+<p align="center" width="100%">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/pca6.JPG?raw=true">
+</p>
+<p align="center" width="100%">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/pca7.JPG?raw=true">
+</p>
 
+**PCA2**
 
 <h1 id="9">Module: SL8  VC Dimensions</h1>
 <h1 id="10">Module: SL9  Bayesian Learning</h1>
