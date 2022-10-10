@@ -690,7 +690,7 @@ The PAC, P is probabily 1-𝛿, A is Approximately ε, and C is correct error_D(
 
 C is PAC-learnable by L using H iff learner L will, with probability 1-𝛿, output a hypothesis h such that error_D(h) <= ε in time and samples polynomial in 1/ε, 1/𝛿 and n.<br/>
 
-In another words, something is PAC-learnable if you can learn to get low error with high confidence that you will have a low error in time that is sort of polynomial in all parameters.<br/>
+In another words, something is PAC-learnable if you can learn to get low error with high confidence that you will have a low error in polynomial time in all parameters.<br/>
 To rephrase, a concept is PAC-learnable if it can be learned to a reasonable degree of correctness within a reasonable amount of time<br/>
 
 Is there an algorithm L such that C is PAC-learnable by L using H?<br/>
@@ -709,7 +709,7 @@ It bounds True Error of the number of training examples that are drawn. This giv
 What if true concept is not in H? Still similar function<br/>
 What if infinite hypothese space? Haussler Theorem cannot handle<br/>
 
-### 5. ADDITION. PAC is covered in lecture. THEN What is PCA? IS PCA and PAC same thing? PCA from StatQuest<br/>
+### 5. ADDITION (NOT IN EXAM). PAC is covered in lecture. THEN What is PCA? PCA from StatQuest<br/>
 We are going through principal component analysis(PCA) one step at a time using Singular Value Decomposition (SVD).<br/>
 To understand what PCA does and how it works, let's go back to the dataset that only had 2 genes<br/>
 **PCA1**
@@ -763,10 +763,54 @@ To understand what PCA does and how it works, let's go back to the dataset that 
 </p>
 
 
-
-
 <h1 id="9">Module: SL8  VC Dimensions</h1>
+### 1. Infinite Hypothesis<br/>
+Haussler Theorem states that number of examples 𝑚 ≥ 1/𝜀(𝑙𝑛|𝐻| + 𝑙𝑛1/𝛿). This formula tells us that we are okay as long as our sample size is above 1/𝜀(𝑙𝑛|𝐻| + 𝑙𝑛1/𝛿) <br/>
+The problem is, Haussler Theorem breaks with infinite hypotheses spaces.<br/>
+If you have an infinite set of hypotheses, the above equation will be infinite.<br/>
+Linear separators, artificial neural networks and decision trees with continuous inputs all have infinite hypotheses spaces.<br/>
+Note that there is a notion of syntactic hypothesis space, which is anything that can be written as the hypothesis. However, there is also semantic hypothesis or only the meaningfully different hypothesis space<br/>
+<br/>
+
+### 2. Infinite Hypothesis to Finite meaningful hypothesis - VC Dimension<br/>
+We want to differentiate between hypotheses that matter (of which there are few) from the hypotheses that don’t (of which there are infinite).<br/>
+
+VC Dimension (Vapnik-Chervonenkis Dimension) is the largest set of inputs that the hypothesis class can shatter (label in all possible ways)<br/>
+They can relate VC dimension of a class to the amount of data that you need to be able to learn effectively in that class. So as long as the VC dimensionality is finite, even the hypothesis class is infinite, we are able to say things about how much data we need to learn <br/>
+<br/>
+Interval training:<br/>
+- To prove that a specific VC dimension is possible, you need to prove that there's some set of points you can shatter.<br/>
+- To prove that a specific VC dimension is not possible, you need to prove that there's no example that can be shattered<br/>
+<br/>
+For any n-dimensional hyperplane hypothesis class, the VC dimension will be n + 1.<br/>
+If our hypothesis is points inside convex polygon, VC dimension is infinite.<br/>
+<br/>
+Sample Complexity & VC Dimension:<br/>
+𝑚 ≥ 1/𝜀 * (8 * 𝑉C(𝐻) * 𝑙𝑜𝑔 (13/𝜀) + 4 * 𝑙𝑜𝑔 (2/𝛿) )   where log base is 2<br/>
+
+VC Dimension of Finite H:<br/>
+𝐻 is PAC-learnable if, and only if, VC dimension is finite<br/>
+
+
 <h1 id="10">Module: SL9  Bayesian Learning</h1>
+
+
 <h1 id="11">Module: SL10 Bayesian Inference</h1>
+
+
 <h1 id="12">Module: UL5 - Info Theory</h1>
+Are these input feature vectors similar? => mutual information<br/>
+Does this feature have any information? => entropy <br/>
+High entropy <-> high information <-> high uncertainty<br/>
+The unfair coin's output (HHHHHHH) is completely predictable without extra information. message size 0<br/>
+<p align="center" width="100%">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/information1.JPG?raw=true">
+</p>
+Information gain : I(x, Y) = h(Y) − h(Y|x)<br/>
+<br/>
+Kullback-Leibler Divergence<br/>
+<p align="center" width="100%">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/information2.JPG?raw=true">
+</p>
+
 <h1 id="13">Module: UL1 - Randomized Optimization</h1>
