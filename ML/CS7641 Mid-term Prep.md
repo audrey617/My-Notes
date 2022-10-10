@@ -815,7 +815,7 @@ The probability of hypothesis h given input data D: 𝑃𝑟(ℎ|𝐷)<br/>
 We're trying to find hypothesis h with the highest probability Pr:𝑎𝑟𝑔𝑚𝑎𝑥_ℎ ∈ 𝐻(𝑃𝑟(ℎ|𝐷))<br/>
 
 ### 1. Bayes Rule<br/>
-𝑃𝑟(ℎ|𝐷) = 𝑃𝑟(𝐷|ℎ)𝑃𝑟(ℎ)/𝑃𝑟(𝐷)<br/>
+𝑃𝑟(ℎ|𝐷) = 𝑃𝑟(𝐷|ℎ)𝑃𝑟(ℎ) / 𝑃𝑟(𝐷)<br/>
 𝑃𝑟(ℎ|𝐷): The probability of a specific hypothesis given input data (Posterior probability)<br/>
 𝑃𝑟(𝐷|ℎ): The probability of data given the hypothesis. It's the (likelihood) of seeing some particular labels associated with input points, given a world where some hypothesis h is true.<br/>
 𝑃𝑟(𝐷): The likelihood of the data under all hypotheses (A normalizing term)<br/>
