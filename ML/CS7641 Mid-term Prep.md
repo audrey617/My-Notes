@@ -812,7 +812,8 @@ VC Dimension of Finite H:<br/>
 <h1 id="10">Module: SL9  Bayesian Learning</h1>
 We're trying to learn the best (best means most probable/likely) hypothesis 𝐻 given data and domain knowledge <br/>
 The probability of hypothesis h given input data D: 𝑃𝑟(ℎ|𝐷)<br/>
-We're trying to find hypothesis h with the highest probability Pr:𝑎𝑟𝑔𝑚𝑎𝑥_ℎ ∈ 𝐻(𝑃𝑟(ℎ|𝐷))<br/>
+We're trying to find hypothesis h with the highest probability Pr:  𝑎𝑟𝑔𝑚𝑎𝑥_ℎ ∈ 𝐻(𝑃𝑟(ℎ|𝐷))<br/>
+Check https://en.wikipedia.org/wiki/Bayesian_inference
 
 ### 1. Bayes Rule<br/>
 𝑃𝑟(ℎ|𝐷) = 𝑃𝑟(𝐷|ℎ)𝑃𝑟(ℎ) / 𝑃𝑟(𝐷)<br/>
@@ -825,6 +826,23 @@ Chain rule example<br/>
 <p align="center" width="100%">
     <img width="60%" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1386ec6778f1816c3fa6e9de68f89cee2e938066">
 </p>
+
+
+### 2. Bayes Learning<br/>
+**Bayesian Learning algorithm:**<br/>
+For each ℎ ∈ 𝐻: Calculate 𝑃𝑟(ℎ|𝐷) = 𝑃𝑟(𝐷|ℎ)𝑃𝑟(ℎ) / 𝑃𝑟(𝐷) => Pr(h|D) ∝ Pr(D|h)Pr(h)<br/>
+Output: ℎ = 𝑎𝑟𝑔𝑚𝑎𝑥_ℎ ∈ 𝐻(𝑃𝑟(ℎ | 𝐷))<br/>
+
+From there, we get<br/>
+The maximum a posteriori hypothesis (MAP): h_map = argmax Pr(h|D) = argmax Pr(D|h)Pr(h)<br/>
+The maximum likelihood hypothesis (ML) : h_ml = argmax Pr(D|h)  (Assume uniform distribution of h, equally likely)<br/>
+However, this is not pratical since we need to look at each h, unless H size is small<br/>
+
+**Bayesian Learning Without Noise:**<br/>
+<p align="center" width="100%">
+    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/bayes1.JPG?raw=true">
+</p>
+
 
 
 
