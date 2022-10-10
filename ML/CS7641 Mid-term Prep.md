@@ -764,6 +764,7 @@ To understand what PCA does and how it works, let's go back to the dataset that 
 
 
 <h1 id="9">Module: SL8  VC Dimensions</h1>
+
 ### 1. Infinite Hypothesis<br/>
 Haussler Theorem states that number of examples 𝑚 ≥ 1/𝜀(𝑙𝑛|𝐻| + 𝑙𝑛1/𝛿). This formula tells us that we are okay as long as our sample size is above 1/𝜀(𝑙𝑛|𝐻| + 𝑙𝑛1/𝛿) <br/>
 The problem is, Haussler Theorem breaks with infinite hypotheses spaces.<br/>
