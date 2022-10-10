@@ -523,7 +523,7 @@ The SVM is an approximate implementation of a bound on the generalization error,
 
 **1.6 Kernel Methods & SVMs Summary**<br/>
 Margin: for generalization, find linear separator maximizing the margin. Finding the maximum margin with quadratic programming. Support vectors were the data points that were necessary for defining the maximum margin separator<br/>
-Kernel trick: K(X,Y) needs domain knowledge. Kernels have to satisfy Mercer Condition tho it's still okay to use in practice<br/><br/>
+Kernel trick: K(X,Y) needs domain knowledge. Kernels have to satisfy Mercer Condition tho it's still okay to use in practice even not meet<br/><br/>
 
 **1.7 Boosting And Overfitting**<br/>
 The reason why boosting is robust to overfitting even with adding more learners is that adding more learners increases the margin (the distance between boundaries), while maintaining constant error. Increasing the margin results in higher confidence in the prediction.<br/>
