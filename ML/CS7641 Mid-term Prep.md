@@ -804,13 +804,13 @@ Does this feature have any information? => entropy <br/>
 High entropy <-> high information <-> high uncertainty<br/>
 The unfair coin's output (HHHHHHH) is completely predictable without extra information. message size 0<br/>
 <p align="center" width="100%">
-    <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/information1.JPG?raw=true">
+    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/information1.JPG?raw=true">
 </p>
 Information gain : I(x, Y) = h(Y) − h(Y|x)<br/>
 <br/>
 Kullback-Leibler Divergence/relative entropy<br/>
-<p align="center" width="70%">
-    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/information2.JPG?raw=true">
+<p align="center" width="100%">
+    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/information2.JPG?raw=true">
 </p>
 
 <h1 id="13">Module: UL1 - Randomized Optimization</h1>
