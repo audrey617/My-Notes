@@ -776,17 +776,29 @@ Note that there is a notion of syntactic hypothesis space, which is anything tha
 ### 2. Infinite Hypothesis to Finite meaningful hypothesis - VC Dimension<br/>
 We want to differentiate between hypotheses that matter (of which there are few) from the hypotheses that don’t (of which there are infinite).<br/>
 
-VC Dimension (Vapnik-Chervonenkis Dimension) is the largest set of inputs that the hypothesis class can shatter (label in all possible ways)<br/>
+VC Dimension (Vapnik-Chervonenkis Dimension) is the largest set of inputs that the hypothesis class can **shatter** (label in all possible ways)<br/>
 They can relate VC dimension of a class to the amount of data that you need to be able to learn effectively in that class. So as long as the VC dimensionality is finite, even the hypothesis class is infinite, we are able to say things about how much data we need to learn <br/>
-<br/>
-Interval training:<br/>
+
+<p align="center" width="100%">
+    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/vc1.JPG?raw=true">
+</p>
+When we want to say yes, when there exists a set of points of a certain size, since that for all labelings, no matter how we want to label it, there are some hypothesis that work.<br/>
+When we want to say no, for all points, no matter how you arrange the points, there are some labeling where there is no hypothesis that's going to work.<br/>
+To show a lower bound for a VC dimension, all you need to do is find a single example of inputs for which all labeling combinations can be done. For "No" case, you have to prove that no example exists.<br/>
+
+**In summary, Interval training**:<br/>
 - To prove that a specific VC dimension is possible, you need to prove that there's some set of points you can shatter.<br/>
 - To prove that a specific VC dimension is not possible, you need to prove that there's no example that can be shattered<br/>
 <br/>
-For any n-dimensional hyperplane hypothesis class, the VC dimension will be n + 1.<br/>
-If our hypothesis is points inside convex polygon, VC dimension is infinite.<br/>
+
+
+For any n-dimensional hyperplane hypothesis class, the VC dimension will be **n + 1**.<br/>
+If our hypothesis is points inside convex polygon (On edge counts as inside), VC dimension is infinite.<br/>
 <br/>
-Sample Complexity & VC Dimension:<br/>
+**Sample Complexity & VC Dimension**:<br/>
+<p align="center" width="100%">
+    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/vc2.JPG?raw=true">
+</p>
 𝑚 ≥ 1/𝜀 * (8 * 𝑉C(𝐻) * 𝑙𝑜𝑔 (13/𝜀) + 4 * 𝑙𝑜𝑔 (2/𝛿) )   where log base is 2<br/>
 
 VC Dimension of Finite H:<br/>
