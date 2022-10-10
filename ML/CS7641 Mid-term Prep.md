@@ -810,6 +810,25 @@ VC Dimension of Finite H:<br/>
 
 
 <h1 id="10">Module: SL9  Bayesian Learning</h1>
+We're trying to learn the best (best means most probable/likely) hypothesis 𝐻 given data and domain knowledge <br/>
+The probability of hypothesis h given input data D: 𝑃𝑟(ℎ|𝐷)<br/>
+We're trying to find hypothesis h with the highest probability Pr:𝑎𝑟𝑔𝑚𝑎𝑥_ℎ ∈ 𝐻(𝑃𝑟(ℎ|𝐷))<br/>
+
+### 1. Bayes Rule<br/>
+𝑃𝑟(ℎ|𝐷) = 𝑃𝑟(𝐷|ℎ)𝑃𝑟(ℎ)/𝑃𝑟(𝐷)<br/>
+𝑃𝑟(ℎ|𝐷): The probability of a specific hypothesis given input data (Posterior probability)<br/>
+𝑃𝑟(𝐷|ℎ): The probability of data given the hypothesis. It's the (likelihood) of seeing some particular labels associated with input points, given a world where some hypothesis h is true.<br/>
+𝑃𝑟(𝐷): The likelihood of the data under all hypotheses (A normalizing term)<br/>
+𝑃𝑟(ℎ): The prior probability of a particular hypothesis. This value encapsulates our prior belief that one hypothesis is likely or unlikely compared to other hypotheses. This is basically the domain knowledge<br/>
+
+Chain rule example<br/>
+<p align="center" width="100%">
+    <img width="60%" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1386ec6778f1816c3fa6e9de68f89cee2e938066">
+</p>
+
+
+
+
 
 
 <h1 id="11">Module: SL10 Bayesian Inference</h1>
