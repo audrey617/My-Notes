@@ -408,7 +408,7 @@ The term boosting refers to a family of algorithms that are able to convert weak
 Why we consider this way? Is it same as considering only the number of mismatches in classification case? <br/>
 No. Even you may get many examples wrong, in some sense, some examples are more important than others as some may be very rare.  It's not about the number of distinct mistakes you can make but rather the amount of time you will be wrong. This becomes important when you think about the underlying distribution of examples <br/>
 
-**3.4 Weak Learner**: No matter what the distribution is over data, a learner will do better than chance (better than chance: the error rate Pr_𝔻(.) is always less than a half). ∀𝔻 : Pr_𝔻(.) ≤ 1/2 − ε. ε here means a very small number. Technically you are bounded away from one half. Another way to think about that is, you always get some information from learner. Ther learner is always able to learn something. Chance would be the case where your probability is 1/2 and you actually learn nothing at all.<br/>
+**3.4 Weak Learner**: No matter what the distribution is over data, a learner will do better than chance (better than chance: the error rate Pr_𝔻(.) is always less than a half). ∀𝔻 : Pr_𝔻(.) ≤ 1/2 − ε. ε here means a very small number. Technically you are bounded away from one half. Another way to think about that is, you always get some information from learner. The learner is always able to learn something. Chance would be the case where your probability is 1/2 and you actually learn nothing at all.<br/>
 
 Strong Learners vs. Weak Learners (The Strength of Weak Learnability, 1990):<br/>
 A weak learner produces a classifier which is only slightly more accurate than random classification.<br/>
