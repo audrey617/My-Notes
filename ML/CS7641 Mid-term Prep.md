@@ -795,6 +795,7 @@ To show a lower bound for a VC dimension, all you need to do is find a single ex
 For any n-dimensional hyperplane hypothesis class, the VC dimension will be **n + 1**.<br/>
 If our hypothesis is points inside convex polygon (On edge counts as inside), VC dimension is infinite.<br/>
 <br/>
+
 **Sample Complexity & VC Dimension**:<br/>
 <p align="center" width="100%">
     <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/vc2.JPG?raw=true">
@@ -803,6 +804,9 @@ If our hypothesis is points inside convex polygon (On edge counts as inside), VC
 
 VC Dimension of Finite H:<br/>
 𝐻 is PAC-learnable if, and only if, VC dimension is finite<br/>
+<p align="center" width="100%">
+    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/vc3.JPG?raw=true">
+</p>
 
 
 <h1 id="10">Module: SL9  Bayesian Learning</h1>
