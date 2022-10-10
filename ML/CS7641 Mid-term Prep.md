@@ -831,11 +831,11 @@ Chain rule example<br/>
 ### 2. Bayes Learning<br/>
 **Bayesian Learning algorithm:**<br/>
 For each ℎ ∈ 𝐻: Calculate 𝑃𝑟(ℎ|𝐷) = 𝑃𝑟(𝐷|ℎ)𝑃𝑟(ℎ) / 𝑃𝑟(𝐷) => Pr(h|D) ∝ Pr(D|h)Pr(h)<br/>
-Output: ℎ = 𝑎𝑟𝑔𝑚𝑎𝑥_ℎ ∈ 𝐻(𝑃𝑟(ℎ | 𝐷))<br/>
+Output: ℎ = 𝑎𝑟𝑔𝑚𝑎𝑥_ℎ ∈ 𝐻(𝑃𝑟(ℎ|𝐷))<br/>
 
-From there, we get<br/>
-The maximum a posteriori hypothesis (MAP): h_map = argmax Pr(h|D) = argmax Pr(D|h)Pr(h)<br/>
-The maximum likelihood hypothesis (ML) : h_ml = argmax Pr(D|h)  (Assume uniform distribution of h, equally likely)<br/>
+From there, we get : <br/>
+**The maximum a posteriori hypothesis (MAP)**: h_map = argmax Pr(h|D) = argmax Pr(D|h)Pr(h)<br/>
+**The maximum likelihood hypothesis (ML)** : h_ml = argmax Pr(D|h)  (Assume uniform distribution of h, equally likely)<br/>
 However, this is not pratical since we need to look at each h, unless H size is small<br/>
 
 **Bayesian Learning Without Noise:**<br/>
@@ -843,9 +843,20 @@ However, this is not pratical since we need to look at each h, unless H size is 
     <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/bayes1.JPG?raw=true">
 </p>
 
+Pr(D|h) = 1 or 0. This asks what's the probability I would see data with these labels in a universe where h is actually true<br/>
 
+**Bayesian Learning With Noise:**<br/>
+Assumption:<br/>
+Given {〈𝑥𝑖, 𝑑𝑖〉} <br/>
+𝑑𝑖 = 𝑓(𝑥𝑖) + 𝜀𝑖 => f is juse some functions, doesn't mean it is linear<br/>
+𝜀𝑖 ~ 𝑁(0, 𝜎^2 ) => The error follws Gaussian distribution and it is IID (Independent and Identically Distributed)<br/>
 
-
+Target: What is the maximum likelihood hypothesis?<br/>
+<p align="center" width="100%">
+    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/bayes2.JPG?raw=true">
+</p>   
+This means: If you're looking for the maximum likelihood hypothesis, you should minimize the sum of squared error<br/>
+This model will not work if the data is corrupted with any sort of noise other than Gaussian noise<br/>
 
 
 
