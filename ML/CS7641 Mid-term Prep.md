@@ -873,19 +873,60 @@ This means that in order to maximize the Maximum a Posteriori hypothesis, we nee
 This is the length of the hypothesis, which is the number of bits needed to represent this hypothesis<br/>
 **-𝑙𝑜𝑔 𝑃𝑟(𝐷|ℎ)**: <br/>
 "misclassification, or error in general"
-This is the length of the data given a particular hypothesis. If the hypothesis perfectly describes the data, so we don’t need any points. But if the hypothesis labels some points wrong, so we need the correct labels for these points to be able to come up with a better hypothesis. So basically this term captures the error.<br/>
+This is the length of the data given a particular hypothesis. If the hypothesis perfectly describes the data, so we don’t need any points. But if the hypothesis labels some points wrong, so we need the correct labels for these points to be able to come up with a better hypothesis. So basically this term captures the error.<br/><br/>
 
+This h_map function actually tells us, the hypothesis with the maximum probability is the one that minimizes error and the size of your hypothesis. So you want the most simplest hypothesis that minimizes error. This is pretty much the Occum's razor.
+This hypothesis is called the Minimum Description<br/><br/>
 
-This is always a trade of, a more complex hypothesis will drive down error, while a simple hypothesis will have some error<br/>
-We need to find the best hypothesis, which is the simplest hypothesis that minimizes error. This hypothesis is called the Minimum Description<br/>
-
+In reality, these error and simple usually has a tradeoff. A more complex hypothesis will drive down error. A simple hypothesis will have some error<br/><br/>
 
 **Bayesian Classification:**<br/>
 The question in classification is “What is the best label?” not the best hypothesis<br/>
 To find the best label, we need to do a weighted vote for every single hypothesis in the hypotheses set, where the weight is the probability 𝑃𝑟(ℎ|𝐷) <br/>
 Important takeaway is that the best hypothesis does not always provide the best label. However, allowing all hypotheses to (do a weighted) vote leads to Bayes's optimal classifier. This is another important result: on average, you cannot do better than a weighted vote from all of the hypotheses<br/>
 
+
+
 <h1 id="11">Module: SL10 Bayesian Inference</h1>
+If we added another variable (like, “Is it thundering?”), our table would double in size. For n Boolean variables, we have a massive 2^n-entry joint distribution. We can represent it a different, more-efficient that instead takes 2n entries via factoring.<br/>
+**Conditional Independence**: 𝑃𝑟(𝑋 | 𝑌, 𝑍) = 𝑃𝑟(𝑋 | 𝑍),  𝑃𝑟(𝑋, 𝑌| 𝑍) =𝑃𝑟(𝑋 | 𝑍)𝑃𝑟(Y | 𝑍)   <br/>
+
+
+**Bayes Network/Belief Networks**: A representation for probabilistic quantitates over complex spaces. It’s a graphical representation of the conditional independence relationships between all the variables in a joint distribution, with nodes corresponding to the variables and edges corresponding to the dependencie. 𝑃𝑟(𝑦1, … , 𝑦𝑛) = ∏𝑃𝑟(𝑦𝑖| 𝑃𝑎𝑟𝑒𝑛𝑡𝑠(𝑦𝑖))<br/>
+In belief networks, we define the Parents of a variable to be the variable’s immediate predecessors in the network<br/>
+
+
+**Sampling**: Calculating independent probabilities of variables in a distribution from the graph<br/>
+Why sampling from a distribution is useful?<br/>
+- Simulation of a complex process.<br/>
+- Approximate inference: What might happen given some conditions?<br/>
+- Facilitates visualizing the information provided by data<br/>
+
+**Inferencing Rules**:
+Marginalization: 𝑃𝑟(𝑥) = ∑𝑃𝑟(𝑥, 𝑦)<br/>
+Chain Rule: 𝑃𝑟(𝑥, 𝑦) = 𝑃𝑟(𝑥 | 𝑦) 𝑃𝑟(𝑦)<br/>
+Bayes Rule: ignore<br/><br/><br/>
+
+
+**Naïve Bayes**:
+Naïve Bayes classifiers are classifiers that represent a special case of the belief networks, but with stronger independence assumptions. For our classifier to be a Naïve Bayes classifier, we make the naïve assumption that every attribute variable is conditionally independent of every other attribute variable<br/>
+For the classification variable 𝑉, we would like to find the most probable target value 𝑉𝑚𝑎𝑝, given the values for attributes (𝑎1, 𝑎2, … . , 𝑎𝑛). We can write the expression for 𝑉𝑚𝑎𝑝 and then use Bayes theorem to manipulate the expression as follows<br/>
+𝑉𝑚𝑎𝑝 = 𝑎𝑟𝑔𝑚𝑎𝑥_𝑣𝑗 𝑃𝑟(𝑎1, 𝑎2, … . , 𝑎𝑛 | 𝑣𝑗)𝑃𝑟(𝑣𝑗)<br/>
+where 𝑃𝑟(𝑎1, 𝑎2, … . , 𝑎𝑛 | 𝑣𝑗)= 𝑃𝑟(𝑎1 | 𝑣𝑗)𝑃𝑟(𝑎2 | 𝑣𝑗) … 𝑃𝑟(𝑎𝑛 | 𝑣𝑗)<br/>
+𝑉𝑚𝑎𝑝 = 𝑎𝑟𝑔𝑚𝑎𝑥_𝑣𝑗 𝑃𝑟(𝑣𝑗)∏(𝑎𝑖| 𝑣𝑗)<br/><br/>
+
+Why Naïve Bayes is useful?<br/>
+- Inference is cheap: Each of the terms to be estimated is a one dimensional probability, which can be estimated with a smaller data set than the joint probability.<br/>
+- Few parameters: The total number of terms to be estimated is the number of attributes 𝑛 multiplied by the number of distinct values that 𝑣 can take.<br/>
+- We can estimate the parameters with labeled data.<br/>
+- Connects inference and classification.<br/>
+- Empirically successful and can handle missing attributes<br/>
+
+Disadvantages:
+- Because of the strong conditional independence assumption placed on the attributes in the
+model, Naïve Bayes doesn’t model the inner relationships between attributes<br/><br/>
+
+
 
 
 <h1 id="12">Module: UL5 - Info Theory</h1>
