@@ -868,8 +868,8 @@ This model will not work if the data is corrupted with any sort of noise other t
 
 Information theory: The optimal code for some event 𝑤 with probability 𝑃r has a length of −log𝑃r<br/>
 This means that in order to maximize the Maximum a Posteriori hypothesis, we need to minimize two terms that can be described as length:<br/>
-**𝑙𝑜𝑔 𝑃𝑟(ℎ)**: This is the length of the hypothesis, which is the number of bits needed to represent this hypothesis<br/>
-**𝑙𝑜𝑔 𝑃𝑟(𝐷|ℎ)**: This is the length of the data given a particular hypothesis. If the hypothesis perfectly describes the data, so we don’t need any points. But if the hypothesis labels some points wrong, so we need the correct labels for these points to be able to come up with a better hypothesis. So basically this term captures the error.<br/>
+**-𝑙𝑜𝑔 𝑃𝑟(ℎ)**: This is the length of the hypothesis, which is the number of bits needed to represent this hypothesis<br/>
+**-𝑙𝑜𝑔 𝑃𝑟(𝐷|ℎ)**: This is the length of the data given a particular hypothesis. If the hypothesis perfectly describes the data, so we don’t need any points. But if the hypothesis labels some points wrong, so we need the correct labels for these points to be able to come up with a better hypothesis. So basically this term captures the error.<br/>
 
 
 This is always a trade of, a more complex hypothesis will drive down error, while a simple hypothesis will have some error<br/>
