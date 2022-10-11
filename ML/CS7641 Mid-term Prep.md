@@ -875,6 +875,12 @@ This means that in order to maximize the Maximum a Posteriori hypothesis, we nee
 This is always a trade of, a more complex hypothesis will drive down error, while a simple hypothesis will have some error<br/>
 We need to find the best hypothesis, which is the simplest hypothesis that minimizes error. This hypothesis is called the Minimum Description<br/>
 
+
+**Bayesian Classification:**<br/>
+The question in classification is “What is the best label?” not the best hypothesis<br/>
+To find the best label, we need to do a weighted vote for every single hypothesis in the hypotheses set, where the weight is the probability 𝑃𝑟(ℎ|𝐷) <br/>
+Important takeaway is that the best hypothesis does not always provide the best label. However, allowing all hypotheses to (do a weighted) vote leads to Bayes's optimal classifier. This is another important result: on average, you cannot do better than a weighted vote from all of the hypotheses<br/>
+
 <h1 id="11">Module: SL10 Bayesian Inference</h1>
 
 
