@@ -857,10 +857,8 @@ Target: What is the maximum likelihood hypothesis?<br/>
 <p align="center" width="100%">
     <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/bayes2.JPG?raw=true">
 </p>   
-This means: If you're looking for the maximum likelihood hypothesis, you should minimize the sum of squared error<br/>
-This model will not work if the data is corrupted with any sort of noise other than Gaussian noise<br/>
-
-
+If you're looking for the maximum likelihood hypothesis, you should minimize the sum of squared error<br/>
+This model will not work if the data is corrupted with any sort of noise other than Gaussian noise<br/><br/><br/>
 
 
 **Minimum Description Length:**<br/>
