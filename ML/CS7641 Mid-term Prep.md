@@ -923,8 +923,11 @@ Why Naïve Bayes is useful?<br/>
 - Empirically successful and can handle missing attributes<br/>
 
 Disadvantages:
-Because of the strong conditional independence assumption placed on the attributes in the model, Naïve Bayes doesn’t model the inner relationships between attributes<br/>
-Naive Bayes is called naive because it assumes that each input variable is independent.<br/><br/>
+1) Because of the strong conditional independence assumption placed on the attributes in the model, Naïve Bayes doesn’t model the inner relationships between attributes.Naive Bayes is called naive because it assumes that each input variable is independent.<br/>
+2) There is also a flaw in the “counting” approach: notice that if a particular attribute has never been seen or associated with a particular v ∈ V . Then, the entire product is zero. This is not intuitive and is exactly why this doesn’t happen in practice: the probabilities need to be smoothed out so that one bad apple doesn’t spoil the bunch.<br/><br/>
+
+
+
 
 
 <h1 id="12">Module: UL5 - Info Theory</h1>
