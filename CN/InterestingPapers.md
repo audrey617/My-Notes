@@ -1,4 +1,4 @@
-Interesting Papers mentioned in the course for future reference
+Interesting Papers mentioned in the course, for future reference
 
 ## SDN:<br>
 1. Feamster, Nick, Jennifer Rexford, and Ellen Zegura. "The road to SDN: an intellectual history of programmable networks." ACM SIGCOMM Computer Communication Review 44.2 (2014): 87-98.<br>
