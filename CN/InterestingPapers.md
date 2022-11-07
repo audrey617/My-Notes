@@ -24,3 +24,28 @@ P4 Language tutorial - https://github.com/p4lang/tutorials/tree/master/exercises
 9. Stellar: Network Attack Mitigation using Advanced Blackholing<br>
 10. Inferring BGP Blackholing Activity in the Internet<br>
 11. Next Gen Blackholing to Counter DDoS<br>
+
+
+## Internet Surveillance and Censorship<br>
+1. Towards a Comprehensive Picture of the Great Firewall’s DNS Censorship
+https://www.usenix.org/system/files/conference/foci14/foci14-anonymous.pdf
+
+2. Ignoring the Great Firewall of China
+https://www.cl.cam.ac.uk/~rnc1/ignoring.pdf
+
+3. Global Measurement of DNS Manipulation
+https://www.cc.gatech.edu/~pearce/papers/dns_usenix_2017.pdf
+
+4. Analysis of Country-wide Internet Outages Caused by Censorship
+https://www.caida.org/publications/papers/2011/outages_censorship/outages_censorship.pdf
+
+5. Augur: Internet-Wide Detection of Connectivity Disruptions
+https://frankli.ece.gatech.edu/papers/augur_oakland_2017.pdf 
+
+6. Adapting Social Spam Infrastructure for Political Censorship
+http://www.icir.org/vern/papers/kremlin-bots.leet11.pdf
+
+7. Five incidents, one theme: Twitter spam as a weapon to drown voices of protests 
+https://www.usenix.org/system/files/conference/foci13/foci13-verkamp.pdf
+
+
