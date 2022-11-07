@@ -9,3 +9,18 @@ Interesting Papers mentioned in the course, for future reference
 6. Gupta, Arpit, et al. "An Industrial-Scale Software Defined Internet Exchange Point." 13th USENIX Symposium on Networked Systems Design and Implementation (NSDI 16). 2016.<br>
 
 P4 Language tutorial - https://github.com/p4lang/tutorials/tree/master/exercises/basic
+
+
+
+## Internet Security:<br>
+Measuring and Detecting Fast-Flux Service Networks<br>
+FIRE: FInding Rogue nEtworks<br>
+ASwatch: An AS Reputation System to ExposeBulletproof Hosting ASes<br>
+Cloudy with a Chance of Breach: Forecasting Cyber Security Incident<br>
+ARTEMIS: Neutralizing BGP HijackingWithin a Minute<br>
+BGP Anomaly Detection Techniques: A Survey<br>
+A Forensic Case Study on AS Hijacking:The Attacker’s Perspective<br>
+An Analysis of Using Reflectors for Distributed Denial-of-Service Attacks<br>
+Stellar: Network Attack Mitigation using Advanced Blackholing<br>
+Inferring BGP Blackholing Activity in the Internet<br>
+Next Gen Blackholing to Counter DDoS<br>
