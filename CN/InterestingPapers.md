@@ -25,6 +25,9 @@ P4 Language tutorial - https://github.com/p4lang/tutorials/tree/master/exercises
 10. Inferring BGP Blackholing Activity in the Internet<br>
 11. Next Gen Blackholing to Counter DDoS<br>
 
+Understanding Resiliency of Internet Topology Against Prefix Hijack Attacks<br>
+What is BGP hijacking: https://www.cloudflare.com/learning/security/glossary/bgp-hijacking/ <br>
+
 
 ## Internet Surveillance and Censorship<br>
 1. Towards a Comprehensive Picture of the Great Firewall’s DNS Censorship
