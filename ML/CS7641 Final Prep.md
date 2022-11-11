@@ -42,8 +42,8 @@ Key Probelms specific to RL: <br/>
 1) Credit assignment: which decisions were the good/bad ones <br/>
 2) Exploration VS Exploitation: Yes, trail-and-error, but how to pick what tor try?<br/><br/>
 
-When do we no need to worry about sequential decision making: <br/>
-when your system is making a single isolated decision that does not affect future decision, e.g. classficication, regression<br/>
+When do we no need to worry about sequential decision making:your system is making a single isolated decision that does not affect future decision, e.g. classficication, regression<br/>
+
 When should we worry about sequential decision making: <br/>
 1) limited supervision: you know what you want, but not how to get it <br/>
 2) actions have consequences<br/><br/>
