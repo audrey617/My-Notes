@@ -40,7 +40,7 @@ Characteristics of RL probelms: <br/>
 
 Key Probelms specific to RL: <br/>
 1) Credit assignment: which decisions were the good/bad ones <br/>
-2) 2) Exploration VS Exploitation: Yes, trail-and-error, but how to pick what tor try?<br/><br/>
+2) Exploration VS Exploitation: Yes, trail-and-error, but how to pick what tor try?<br/><br/>
 
 When do we no need to worry about sequential decision making: <br/>
 when your system is making a single isolated decision that does not affect future decision, e.g. classficication, regression<br/>
