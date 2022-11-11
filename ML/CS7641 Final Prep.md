@@ -23,9 +23,13 @@
 
 RL: given observations and occasional rewards as the agent performs sequential actions in an environment. Compared to supervised learning and unsupervised learning, you no longer have dataset given in advance. Instead, you receive your data as the agent performs some sequential actions in an environment. That process of performing sequential actions generates some obversations accompained by rewards. So there is no label but the reward essentially tells you whether the actions that you performed were good or not.<br/><br/>
 
-The aim of RL is to make sequential decisions in an environment. For example, driving a car. How to learn to do these things? 1) RL assumes only occasional feedback, for example, a car crash 2) RL aims to use this feedback to learn through trail and error, as cleverly as possible.<br/>
+The aim of RL is to make sequential decisions in an environment. For example, driving a car. How to learn to do these things? 1) RL assumes only occasional feedback, for example, a car crash 2) RL aims to use this feedback to learn through trail and error, as cleverly as possible.<br/><br/>
 
-Main Idea/Turn-by-turn abstraction: agent + environment. Agent's goal is to maximize expected rewards. Step1) Agent receives observations(state of the environment s_t) and feedback(reward r_t) from the world. Often, agent observers features, rather than the true state. For example, the car may not observe a pedestrain is hidden behind a car. In addition, we don't always get a reward at time t as reward is only occasional. Step2) Agent emits an action a_t into the environment.  Step3)Loop back to Step1, gets updated state and reward<br/>
+Main Idea/Turn-by-turn abstraction: <br/>
+Agent + environment. Agent's goal is to maximize expected rewards. <br/>
+Step1) Agent receives observations(state of the environment s_t) and feedback(reward r_t) from the world. Often, agent observers features, rather than the true state. For example, the car may not observe a pedestrain is hidden behind a car. In addition, we don't always get a reward at time t as reward is only occasional. <br/>
+Step2) Agent emits an action a_t into the environment.  <br/>
+Step3) Loop back to Step1, gets updated state and reward<br/>
 
 With this abstraction, the goal of RL is to learn a policy π(s): S -> A (mapping from states to actions) for acting in the environment<br/><br/>
 
@@ -36,7 +40,8 @@ Characteristics of RL probelms: <br/>
 
 Key Probelms specific to RL: 1) Credit assignment: which decisions were the good/bad ones 2) Exploration VS Exploitation: Yes, trail-and-error, but how to pick what tor try?<br/><br/>
 
-When do we no need to worry about sequential decision making: when your system is making a single isolated decision that does not affect future decision, e.g. classficication, regression<br/>
+When do we no need to worry about sequential decision making: <br/>
+when your system is making a single isolated decision that does not affect future decision, e.g. classficication, regression<br/>
 When should we worry about sequential decision making: <br/>
 1) limited supervision: you know what you want, but not how to get it <br/>
 2) actions have consequences<br/><br/>
