@@ -170,7 +170,7 @@ Think about how it relates to value iteration. What happens if you do only one i
 </p>
 
 **Comparison of methods for solving MDPs**: <br/>
-Value iteration: Each iteration updates both utilities (explicitylu, based on the current utilities) and the policy (possibly implicitly, based on the current utilities)<br/>
+Value iteration: Each iteration updates both utilities (explicitly, based on the current utilities) and the policy (possibly implicitly, based on the current utilities)<br/>
 Policy Iteration: Several iterations to update utilities for a fixed policy, occasional iterations to update policies <br/>
 Hybrid methods (asynchronous policy iteration): Any sequences of partial updates to either policies or utilities will converge if every sate is visited infinitely often
 
