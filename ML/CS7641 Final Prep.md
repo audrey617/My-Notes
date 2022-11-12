@@ -143,10 +143,10 @@ Bellman equation gives us a recursive definition of the optimal value. We can sl
 
 **Value Iteration**: <br/>
 <p align="center" width="100%">
-    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rladdition10.JPG?raw=true">
+    <img width="90%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rladdition10.JPG?raw=true">
 </p>
 <p align="center" width="100%">
-    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rladdition9.JPG?raw=true">
+    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rladdition9.JPG?raw=true">
 </p>
 
 **Policy Iteration**: <br/>
