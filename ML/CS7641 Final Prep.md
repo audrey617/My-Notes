@@ -5,8 +5,7 @@
 ----------------------------------------------
 - [Module: RL1 - Markov Decision Processes](#4)
 - [Module: RL2 - Reinforcement Learning](#5)
-- [Module: RL3 - Game Theory](#6)
-- [Module: RL4 - Game Theory Continued](#7)
+- [Module: RL3&4 - Game Theory](#6)
 
 <h1 id="1">Module: UL2 - Clustering</h1>
 
@@ -18,7 +17,7 @@
 
 <h1 id="5">Module: RL2 - Reinforcement Learning</h1>
 
-## Extra - Intro to RL, from CIS 522 [Deep Learning @ Penn](https://www.youtube.com/watch?v=cVTud58UfpQ&list=PLYgyoWurxA_8ePNUuTLDtMvzyf-YW7im2&index=2)
+## Extra, Great content! Intro to RL, from CIS 522 [Deep Learning @ Penn] (https://www.youtube.com/watch?v=cVTud58UfpQ&list=PLYgyoWurxA_8ePNUuTLDtMvzyf-YW7im2&index=2)
 ### CIS522.1 Intro to RL
 
 RL: given observations and occasional rewards as the agent performs sequential actions in an environment. Compared to supervised learning and unsupervised learning, you no longer have dataset given in advance. Instead, you receive your data as the agent performs some sequential actions in an environment. That process of performing sequential actions generates some obversations accompained by rewards. So there is no label but the reward essentially tells you whether the actions that you performed were good or not.<br/><br/>
@@ -72,6 +71,108 @@ MDP Search Trees: Each MDP state has an associated expectimax-like tree of futur
 </p>
 
 Define Utility<br/>
+At each step, agent chooses an action to maximize expected rewards. So we must consider utility over sequences of rewards List(r_t, r_t+1, r_t+2 .... r_inf)<br/>
+Probelm: Infinite sequences yield infinite rewards<br/>
+Solutions:<br/>
+1) Finite horizon - episode terminates after a fixed number of steps. This yields nonstationary policies that vary depending on the amount of time left. Note from online, Episodic tasks are the tasks that have a terminal state (end). In RL, **episodes** are considered agent-environment interactions from initial to final states (Episode: All states that come in between an initial-state and a terminal-state). For example, in a car racing video game, you start the game (initial state) and play the game until it is over (final state). This is called an episode. Once the game is over, you start the next episode by restarting the game, and you will begin from the initial state irrespective of the position you were in the previous game. So, **each episode is independent of the other**. In a continuous task, there is not a terminal state. Continuous tasks will never end. For example, a personal assistance robot does not have a terminal state.<br/>
+2) Absorbing state - guarantee that every policy reaches a terminal state. So you can engineer your mdp such taht it has the absorbing state no matter what you do<br/>
+3) Discounted rewards (most generally used) - (uncertain) future rewards are worth exponentially less than current rewards.<br/><br/>
+
+Discounted rewards<br/>
+Idea: uncertain future rewards are worth exponentially less than the current reward. So future rewards matter less to the decision than the more recent rewards<br/>
+<p align="center" width="100%">
+    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rladdition3.JPG?raw=true">
+</p>
+
+MDP quantities so far<br/>
+1) policy = choice of action for each state<br/>
+2) utility/return = sum of discounted rewards<br/><br/>
+
+stackexchange: Understanding the role of the discount factor in reinforcement learning https://stats.stackexchange.com/questions/221402/understanding-the-role-of-the-discount-factor-in-reinforcement-learning<br/>
+The fact that the discount rate is bounded to be smaller than 1 is a mathematical trick to make an infinite sum finite. This helps proving the convergence of certain algorithms.<br/>
+
+In practice, the discount factor could be used to model the fact that the decision maker is uncertain about if in the next decision instant the world (e.g., environment / game / process ) is going to end.<br/>
+
+For example:<br/>
+If the decision maker is a robot, the discount factor could be the probability that the robot is switched off in the next time instant (the world ends in the previous terminology). That is the reason why the robot is short sighted and does not optimize the sum reward but the discounted sum reward.<br/>
+
+
+### CIS522.4 The Bellman Equation
+combined with https://www.datascienceblog.net/post/reinforcement-learning/mdps_dynamic_programming/<br/>
+In a simplified setting MDP(S,A,P,R,γ) where we know S,A,P,R,γ. <br/>
+
+**State-value function**<br/>
+ State Value Functions of Policies is a function of both the state and policy that you are currently following.<br/>
+<p align="center" width="100%">
+    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rladdition4.JPG?raw=true">
+</p>
+
+**Policy**: Which actions the agent should execute in which state. A policy, π(s,a), determines the probability of executing action a in state s. In deterministic environments, a policy directly maps from states to actions.<br/>
+**State-value function**: The expected value of each state with regard to future rewards<br/>
+<p align="center" width="100%">
+    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rladdition5.JPG?raw=true">
+</p>
+
+
+**Action-value function**<br/>
+Compared to the State-value function, we are no longer computing the expected future rewards conditions on being in a state, instead, we are computing the expected future rewards conditions both on being in a state and perform a particular action from that state. The computation result is not true state, but Q-state corresponding to kind of an imaginary state that exists after having executed a particular action a from state s. So the Action-value function is also called Q-function <br/>
+
+If you have the optimal Q*, then you can easily determine what the policy π* is. Remember Q* is telling you what is the value/utility to be gained by executing an action a at the state s, and then it follows the optimal policy. That means, you don't have to worry about things that happen after that first step, because afterwards you are guaranteed to be following the optimal policy that's what the definition of Q* is. So now what you need to optimize over is the first action a. That would give you the policy. <br/>
+
+<p align="center" width="100%">
+    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rladdition6.JPG?raw=true">
+</p>
+Action-value function: The expected value of performing a specific action in a specific state with regard to future rewards<br/>
+<p align="center" width="100%">
+    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rladdition7.JPG?raw=true">
+</p>
+
+
+**Bellman Equations**<br/>
+<p align="center" width="100%">
+    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rladdition8.JPG?raw=true">
+</p>
+
+### CIS522.5 Value and Policy iteration (solving MDPs with Known P and R)
+<!-- Combined with articles: Not done yet<br/>
+1) https://medium.com/@ngao7/markov-decision-process-basics-3da5144d3348
+2) https://medium.com/@ngao7/markov-decision-process-policy-iteration-42d35ee87c82
+3) https://medium.com/@ngao7/markov-decision-process-value-iteration-2d161d50a6ff#8adf -->
+
+Bellman equation gives us a recursive definition of the optimal value. We can slove iteratively via dynamic programming<br/>
+
+**Value Iteration**: <br/>
+<p align="center" width="100%">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rladdition10.JPG?raw=true">
+</p>
+<p align="center" width="100%">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rladdition9.JPG?raw=true">
+</p>
+
+**Policy Iteration**: <br/>
+<p align="center" width="100%">
+    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rladdition11.JPG?raw=true">
+</p>
+
+Simply means to compute the value function corresponding to a policy. The value function is associated with some particular policy. The optimal value function is associated with the optimal policy. In value iteration, we were dealing throughout with the optimal value function. But now with policy iteration, we try to compute value function for some random policies. It turns out there is actually an existing version of the update rule for bellman equation. Just like we use the bellman equation for optimal value functions in value iteration, we use bellman equation for arbitrary policies in policy iteration   <br/>
+
+<p align="center" width="100%">
+    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rladdition12.JPG?raw=true">
+</p>
+
+Go back and forth between policy evalution and policy improvement until convergence. Example see below chart. <br/>
+Think about how it relates to value iteration. What happens if you do only one iteration in the policy evaluation? This means in the policy evaluation setup, you don't wait for value to converge. Just do one iteration of policy evaluation. Actually if you do so, this reduce policy iteration to the value iteration. <br/>
+
+<p align="center" width="100%">
+    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rladdition12.JPG?raw=true">
+</p>
+
+**Comparison of methods for solving MDPs**: <br/>
+Value iteration: Each iteration updates both utilities (explicitylu, based on the current utilities) and the policy (possibly implicitly, based on the current utilities)<br/>
+Policy Iteration: Several iterations to update utilities for a fixed policy, occasional iterations to update policies
+Hybrid methods (asynchronous policy iteration): Any sequences of partial updates to either policies or utilities will converge if every sate is visited infinitely often
+
+### CIS522.6 Temporal Differencing (TD) and Q Learning
 
 
 
@@ -87,6 +188,13 @@ Define Utility<br/>
 
 
 
-<h1 id="6">Module: RL3 - Game Theory</h1>
 
-<h1 id="7">Module: RL4 - Game Theory Continued</h1>
+
+
+
+
+
+
+
+<h1 id="6">Module: RL3&4 - Game Theory</h1>
+
