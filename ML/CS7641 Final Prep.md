@@ -166,7 +166,7 @@ Go back and forth between policy evalution and policy improvement until converge
 Think about how it relates to value iteration. What happens if you do only one iteration in the policy evaluation? This means in the policy evaluation setup, you don't wait for value to converge. Just do one iteration of policy evaluation. Actually if you do so, this reduce policy iteration to the value iteration. <br/>
 
 <p align="center" width="100%">
-    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rladdition13.JPG?raw=true">
+    <img width="100%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rladdition13.JPG?raw=true">
 </p>
 
 **Comparison of methods for solving MDPs**: <br/>
