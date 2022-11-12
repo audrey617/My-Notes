@@ -17,7 +17,7 @@
 
 <h1 id="5">Module: RL2 - Reinforcement Learning</h1>
 
-## Extra, Great content! Intro to RL, from CIS 522 [Deep Learning @ Penn] (https://www.youtube.com/watch?v=cVTud58UfpQ&list=PLYgyoWurxA_8ePNUuTLDtMvzyf-YW7im2&index=2)
+## Extra, Great content! Intro to RL, from CIS 522 [Deep Learning @ Penn](https://www.youtube.com/watch?v=cVTud58UfpQ&list=PLYgyoWurxA_8ePNUuTLDtMvzyf-YW7im2&index=2)
 ### CIS522.1 Intro to RL
 
 RL: given observations and occasional rewards as the agent performs sequential actions in an environment. Compared to supervised learning and unsupervised learning, you no longer have dataset given in advance. Instead, you receive your data as the agent performs some sequential actions in an environment. That process of performing sequential actions generates some obversations accompained by rewards. So there is no label but the reward essentially tells you whether the actions that you performed were good or not.<br/><br/>
