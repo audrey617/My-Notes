@@ -172,30 +172,31 @@ Think about how it relates to value iteration. What happens if you do only one i
 **Comparison of methods for solving MDPs**: <br/>
 Value iteration: Each iteration updates both utilities (explicitly, based on the current utilities) and the policy (possibly implicitly, based on the current utilities)<br/>
 Policy Iteration: Several iterations to update utilities for a fixed policy, occasional iterations to update policies <br/>
-Hybrid methods (asynchronous policy iteration): Any sequences of partial updates to either policies or utilities will converge if every sate is visited infinitely often
+Hybrid methods (asynchronous policy iteration): Any sequences of partial updates to either policies or utilities will converge if every sate is visited infinitely often<br/>
+
 
 ### CIS522.6 Temporal Differencing (TD) and Q Learning
 
+**Temporal Differencing (TD)**: <br/>
+Look at policy evaluation under fully known MDPs, we evaluate any policy by assigning values to each state under a fix policy. Here transition probability P and R are known.<br/>
+So, how to extend this policy evaluation to when the functions P and R are unknown and only revealed gradually through experience? Everytime when you perform an action in the environment, you will get a sample from each of these distributions. In particular, the state that you end up at is observable to you. This gives you information about transition function P and you do get corresponding reward from the environment. So you get samples from the two unknown functions.<br/>
+<br/>
 
 
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rladdition14.JPG?raw=true">
+</p>
 
 
+**Q-learning**: <br/>
+Same as policy evaluation TD, setting alpha as 1 is a bad idea because the update is completely noisy. Instead, small alpha let us not only use the new single sample but also bring in the knowledge Q(s,a) from the past interactions.<br/>
+<p align="center" width="100%">
+    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rladdition15.JPG?raw=true">
+</p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<p align="center" width="100%">
+    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rladdition16.JPG?raw=true">
+</p>
 
 
 <h1 id="6">Module: RL3&4 - Game Theory</h1>
