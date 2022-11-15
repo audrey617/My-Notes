@@ -52,3 +52,26 @@ http://www.icir.org/vern/papers/kremlin-bots.leet11.pdf
 https://www.usenix.org/system/files/conference/foci13/foci13-verkamp.pdf
 
 
+## Applications Video
+VoIP: A comprehensive survey on a promising technology
+https://www.sciencedirect.com/science/article/abs/pii/S1389128609001200
+
+MPEG: A Video Compression Standard for Multimedia Application
+https://web.stanford.edu/class/ee398a/handouts/papers/Gall%20-%20MPEG.pdf
+ 
+The JPEG Compression standard
+https://ieeexplore.ieee.org/document/125072
+
+
+JPEG File Interchange Format
+https://www.w3.org/Graphics/JPEG/jfif3.pdf
+
+
+Watching Video over the Web: Part 1: Streaming Protocols
+https://ieeexplore.ieee.org/document/5677508
+
+A Quest for an Internet Video: Quality-of-Experience Metric
+https://www.cs.cmu.edu/~xia/resources/Documents/Balachandran-hotnets2012.pdf
+ 
+Confused, Timid, and Unstable: Picking a Video Streaming Rate is Hard
+https://dl.acm.org/doi/pdf/10.1145/2398776.2398800
