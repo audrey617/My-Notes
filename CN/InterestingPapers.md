@@ -75,3 +75,45 @@ https://www.cs.cmu.edu/~xia/resources/Documents/Balachandran-hotnets2012.pdf
  
 Confused, Timid, and Unstable: Picking a Video Streaming Rate is Hard
 https://dl.acm.org/doi/pdf/10.1145/2398776.2398800
+
+
+
+## Application CDN
+The Akamai Network: A Platform for High-Performance Internet Applications
+
+Open Connect Everywhere: A Glimpse at the Internet Ecosystem through the Lens of the Netflix CDN
+
+Kurose-Ross Edition 7th, Chapters 2.5 and 9
+
+C3: Internet-Scale Control Plane for Video Quality Optimization
+
+Shedding Light on the Structure of Internet Video Quality Problems in the Wild
+
+Where Do You “Tube”? Uncovering YouTube Server Selection Strategy
+
+Understanding Hybrid CDN-P2P: Why Limelight Needs Its Own Red Swoosh,
+
+EONA: Experience-Oriented Network Architecture
+
+Assessing Affinity Between Users and CDN Sites
+
+Developing a Predictive Model ofQuality of Experience for Internet Video
+
+Chord:A Scalable Peer-to-peer Lookup Service for Internet Applications
+
+Reverse Engineering the Youtube Video Delivery Cloud
+
+Pushing CDN-ISP Collaboration to the Limit
+
+On P-2-P and Gaming: 
+
+http://ccr.sigcomm.org/online/files/p315.pdf
+
+https://conferences.sigcomm.org/sigcomm/2011/papers/sigcomm/p474.pdf
+
+http://ccr.sigcomm.org/online/files/p2p_gaming.pdf
+
+https://www.cs.cmu.edu/~junchenj/c3.pdf
+
+
+
