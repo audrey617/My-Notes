@@ -5,4 +5,4 @@ Chord - Is chord really correct?</br>
 2. https://arxiv.org/pdf/1502.06461.pdf </br>
 
 RDMA - When can't it bypass CPU? </br>
-1. https://wreda.github.io/papers/redn-nsdi22.pdf </br>
+1. Reda, Waleed, et al. "{RDMA} is Turing complete, we just did not know it yet!." 19th USENIX Symposium on Networked Systems Design and Implementation (NSDI 22). 2022. https://wreda.github.io/papers/redn-nsdi22.pdf </br>
