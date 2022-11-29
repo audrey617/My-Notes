@@ -11,7 +11,7 @@ Some topics I'm interested in. Outside of the lecture/exam scope.</br>
 
 
 **Spanner vs BigQuery** </br>
-This was the question bothered me for a while as they look very similar to me as a product. I previously used BQ a lot at work but was never exposed to Spanner. Both BQ and Spanner are built on Colossus and on Borg, can scale up well, and use relational DBMS as primary database model. Now I think what actually distinguish them is the difference between OLAP data warehouse and OLTP database, which can also explain how to use them together. Please feel free to correct me</br>
+This was the question bothered me for a while as these two products look very similar to me. I previously used BQ a lot at work but was never exposed to Spanner. Both BQ and Spanner are built on Colossus and on Borg, can scale up well, and use relational DBMS as primary database model. Now I think what actually distinguish them is the difference between OLAP data warehouse and OLTP database, which can also explain how to use them together. Please feel free to correct me</br>
 
 https://cloud.google.com/blog/topics/developers-practitioners/how-spanner-and-bigquery-work-together-handle-transactional-and-analytical-workloads</br>
 https://aws.amazon.com/data-warehouse/</br>
