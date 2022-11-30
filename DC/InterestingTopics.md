@@ -1,4 +1,4 @@
-Some topics I'm interested in. Outside of the lecture/exam scope.</br>
+Some topics I'm interested in or just some comments. Outside of the lecture/exam scope.</br>
 
 
 **Chord - Is chord really correct?** </br>
@@ -20,12 +20,13 @@ https://db-engines.com/en/system/Google+BigQuery%3BGoogle+Cloud+Spanner</br>
 https://hevodata.com/learn/spanner-vs-bigquery/#1 </br>
 
 
-**More about Serializability & Transaction** </br>
+**More about Transaction** </br>
+Unfortunately the CS6400 Database course focuses too much on SQL & basic design applicaiton but has little depth of/completely skipped advanced system-level topics including transaction. This bites me for the DC class as it took me time to understand transaction and distributed design regarding Database. For these concepts, good to read the DB textbook fundamentals of database systems Part 9 transaction and Part 10 distributed database for more information. And Peter Bailis's blog is also helpful.</br>
 From Peter Bailis's blog:</br>
 "Serializability is a sufficient condition for ACID consistency but it is not strictly necessary. A database with serializability (“I” in ACID), provides arbitrary read/write transactions and guarantees consistency (“C” in ACID)"</br>
 "For distributed systems nerds: achieving linearizability for reads and writes is, in a formal sense, “easier” to achieve than serializability. here’s some intuition: terminating atomic register read/write operations are achievable in a fail-stop model. Yet atomic commitment—which is needed to execute multi-site serializable transactions (think: AC is to 2PC as consensus is to Paxos)—is not: the FLP result says consensus is unachievable in a fail-stop model (hence with One Faulty Process), and (non-blocking) atomic commitment is “harder” than consensus (see also). Also, keep in mind that linearizability for read-modify-write is harder than linearizable read/write. " </br>
 [When is "ACID" ACID? Rarely](http://www.bailis.org/blog/when-is-acid-acid-rarely/)</br>
 [Without Conflicts, Serializability Is Free](http://www.bailis.org/blog/without-conflicts-serializability-is-free/)</br>
-[Linearizability versus Serializability](http://www.bailis.org/blog/linearizability-versus-serializability/)</br></br>
-[Understanding Weak Isolation Is a Serious Problem](http://www.bailis.org/blog/understanding-weak-isolation-is-a-serious-problem/)
+[Linearizability versus Serializability](http://www.bailis.org/blog/linearizability-versus-serializability/)</br>
+[Understanding Weak Isolation Is a Serious Problem](http://www.bailis.org/blog/understanding-weak-isolation-is-a-serious-problem/)</br>
 More posts from Peter Bailis blog http://www.bailis.org/blog/</br>
