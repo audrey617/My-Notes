@@ -1,4 +1,4 @@
-Some topics I'm interested in or just some comments. Outside of the lecture/exam scope.</br>
+Some topics I'm interested in or just some thoughts. Outside of the lecture/exam scope.</br>
 
 
 **Chord - Is chord really correct?** </br>
