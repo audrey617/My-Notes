@@ -14,6 +14,9 @@ OpenFlow: https://github.com/mininet/openflow-tutorial/wiki
 
 OVSDB: http://docs.openvswitch.org/en/latest/ref/ovsdb.7/
 
+Architecture design from the paper - ONOS: towards an open, distributed SDN OS
+![image](https://user-images.githubusercontent.com/62491253/205837435-fff0b9df-b3b1-4daf-a783-2f61a2350a5c.png)
+
 
 ## Internet Security:<br>
 1. Measuring and Detecting Fast-Flux Service Networks<br>
