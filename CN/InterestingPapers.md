@@ -10,6 +10,9 @@ Interesting Papers mentioned in the course, for future reference
 
 P4 Language tutorial - https://github.com/p4lang/tutorials/tree/master/exercises/basic
 
+OpenFlow: https://github.com/mininet/openflow-tutorial/wiki
+
+OVSDB: http://docs.openvswitch.org/en/latest/ref/ovsdb.7/
 
 
 ## Internet Security:<br>
