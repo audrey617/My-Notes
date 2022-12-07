@@ -26,12 +26,11 @@ SLC is hierarchical agglomerative clustering (HAC) of algorithm. Steps: <br/>
 • Repeat 𝑛 − 𝑘 times to make 𝑘 clusters.<br/>
 
 Running time of SLC: simplest case of SLC 𝑂(𝑛^3): evaluate and compare n^2 pairs of points at least k times (k = n in the worst case). <br/>
-Issues with SLC: Clusters lean towards connected neighbouring points, which is not necassarily accurate <br/>
+Issues with SLC: Clusters lean towards connected neighbouring points, which is not necassarily accurate. It might end up with wrong clusters due to noise
+<br/>
 
 Hierarchical clustering. Distance metrics: https://towardsdatascience.com/understanding-the-concept-of-hierarchical-clustering-technique-c6e8243758ec
 
-
-Issues with SLC: It might end up with wrong clusters due to bias towards globular clusters, depending on the distance definition
 
 
 <h1 id="2">Module: UL3 - Feature Selection</h1>
