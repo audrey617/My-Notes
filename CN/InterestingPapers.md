@@ -69,10 +69,8 @@ https://web.stanford.edu/class/ee398a/handouts/papers/Gall%20-%20MPEG.pdf
 The JPEG Compression standard
 https://ieeexplore.ieee.org/document/125072
 
-
 JPEG File Interchange Format
 https://www.w3.org/Graphics/JPEG/jfif3.pdf
-
 
 Watching Video over the Web: Part 1: Streaming Protocols
 https://ieeexplore.ieee.org/document/5677508
@@ -83,6 +81,10 @@ https://www.cs.cmu.edu/~xia/resources/Documents/Balachandran-hotnets2012.pdf
 Confused, Timid, and Unstable: Picking a Video Streaming Rate is Hard
 https://dl.acm.org/doi/pdf/10.1145/2398776.2398800
 
+
+Neural Adaptive Video Streaming with Pensieve
+
+A Control-Theoretic Approach for Dynamic Adaptive Video Streaming over HTTP
 
 
 ## Application CDN
