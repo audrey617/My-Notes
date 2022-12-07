@@ -31,7 +31,7 @@ Issues with SLC: Clusters lean towards connected neighbouring points, which is n
 Hierarchical clustering. Distance metrics: https://towardsdatascience.com/understanding-the-concept-of-hierarchical-clustering-technique-c6e8243758ec
 
 
-Issues with SLC: It might end up with wrong clusters, depending on the distance definition.
+Issues with SLC: It might end up with wrong clusters due to bias towards globular clusters, depending on the distance definition
 
 
 <h1 id="2">Module: UL3 - Feature Selection</h1>
