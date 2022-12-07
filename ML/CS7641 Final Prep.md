@@ -13,6 +13,7 @@
 Input:  
 1) A set of objects X   <br/>
 2) A distance metric D(point_a, point_b) defining inter-object distances such that D(x,y) = D(y,x) where x,y ∈ X <br/>
+
 Output: A partition of the objects such that P_D(x) = P_D(y) if x and y belong to the same cluster<br/>
 The distance metric defines the similarity, like KNN. But it doesn't measure/differentiate good/bad clustering. The clustering is algorithm-driven. Each clustering probelm is its own probelm.<br/>
 
