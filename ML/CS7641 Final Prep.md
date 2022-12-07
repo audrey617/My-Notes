@@ -10,7 +10,9 @@
 <h1 id="1">Module: UL2 - Clustering</h1>
 
 ### The Clustering Problem ###
-Input:  1) A set of objects X  2) A distance metric D(point_a, point_b) defining inter-object distances such taht D(x,y) = D(y,x) where x,y ∈ X<br/>
+Input:  
+1) A set of objects X   <br/>
+2) 2) A distance metric D(point_a, point_b) defining inter-object distances such taht D(x,y) = D(y,x) where x,y ∈ X <br/>
 Output: A partition of the objects such that P_D(x) = P_D(y) if x and y belong to the same cluster<br/>
 The distance metric defines the similarity, like KNN. But it doesn't measure/differentiate good/bad clustering. The clustering is algorithm-driven. Each clustering probelm is its own probelm.<br/>
 
@@ -21,8 +23,8 @@ SLC is hierarchical agglomerative clustering (HAC) of algorithm. Steps: <br/>
 • Merge the two closest clusters.<br/>
 • Repeat 𝑛 − 𝑘 times to make 𝑘 clusters.<br/>
 
-Running time of SLC: simplest case of SLC 𝑂(𝑛^3): evaluate and compare n^2 pairs of points at least k times (k = n in the worst case).
-Issues with SLC: Clusters lean towards connected neighbouring points, which is not necassarily accurate
+Running time of SLC: simplest case of SLC 𝑂(𝑛^3): evaluate and compare n^2 pairs of points at least k times (k = n in the worst case). <br/>
+Issues with SLC: Clusters lean towards connected neighbouring points, which is not necassarily accurate <br/>
 
 Hierarchical clustering. Distance metrics: https://towardsdatascience.com/understanding-the-concept-of-hierarchical-clustering-technique-c6e8243758ec
 
