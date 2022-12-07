@@ -8,12 +8,13 @@
 - [Module: RL3&4 - Game Theory](#6)
 
 <h1 id="1">Module: UL2 - Clustering</h1>
-## The Clustering Problem ## 
+
+### The Clustering Problem ###
 Input:  1) A set of objects X  2) A distance metric D(point_a, point_b) defining inter-object distances such taht D(x,y) = D(y,x) where x,y ∈ X<br/>
 Output: A partition of the objects such that P_D(x) = P_D(y) if x and y belong to the same cluster<br/>
 The distance metric defines the similarity, like KNN. But it doesn't measure/differentiate good/bad clustering. The clustering is algorithm-driven. Each clustering probelm is its own probelm.<br/>
 
-## Single Linkage Clustering (SLC) ## 
+### Single Linkage Clustering (SLC) ### 
 SLC is hierarchical agglomerative clustering (HAC) of algorithm. Steps: <br/>
 • Consider each object a cluster (n objects).<br/>
 • Define inter-cluster distance as the distance between the closest points in the two clusters.<br/>
