@@ -180,6 +180,7 @@ Cons: <br/>
 1) Can also be slower because you look at features in isolation <br/> 
 2) Doesn't account for the relationships between features<br/>   
 3) Ignores the learning process (no feedback)<br/> 
+
 We can use an algorithm that can select the best features, like Decision Tree, then use another algorithm, with another inductive bias, for learning. <br/>
 We can use different criterion to evaluate the usefulness of a subset of features. This is where the domain knowledge comes in: 1. Information gain 2. Variance 3. Entropy 4. Eliminate dependent features<br/> 
 What about using a Neural Network in search box and pruning the lowest weighted features? You could prune correlated or dependent features.<br/> 
@@ -206,9 +207,9 @@ Usefulness  ∼  Error given a Model/learner<br/>
 Let B.O.C. = Bayes Optimal Classifier<br/>
 
 • xi  is strongly relevant if removing it degrades B.O.C.<br/>
-• xi  is weakly relevant if<br/>
-    1) Not strognly relavant<br/>
-    2) ∃ a subset of features S, such that adding  xi  to S improves B.O.C.<br/>
+• xi  is weakly relevant if:
+    1) Not strognly relavant 
+    2) ∃ a subset of features S, such that adding  xi  to S improves B.O.C.
 • xi  is otherwise irrelevant<br/>
 
 **Usefulness**<br/>
