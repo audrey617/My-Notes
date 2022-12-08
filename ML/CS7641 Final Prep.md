@@ -25,11 +25,10 @@ SLC is hierarchical agglomerative clustering (HAC) of algorithm. Steps: <br/>
 • Merge the two closest clusters.<br/>
 • Repeat 𝑛 − 𝑘 times to make 𝑘 clusters.<br/>
 
-Running time of SLC: simplest case of SLC 𝑂(𝑛^3): evaluate and compare n^2 pairs of points at least k times (k = n in the worst case). <br/>
-Properties: It is deterministic, and it actually equates to a minimum spanning tree algorithm if we treat distances as edge lengths
-Issues with SLC: Clusters lean towards connected neighbouring points, which is not necassarily accurate. It might end up with wrong clusters due to noise
-<br/>
-How is median linkage clustering being different from average/mean linkage clustering? The median is good when the number on the distances don't matter, just their ordering. median is a non-metric statistic. Average is a metric statistic which details of number matters.<br/>
+**Running time of SLC**: simplest case of SLC 𝑂(𝑛^3): evaluate and compare n^2 pairs of points at least k times (k = n in the worst case)<br/>
+**Properties**: It is deterministic, and it actually equates to a minimum spanning tree algorithm if we treat distances as edge lengths<br/>
+**Issues with SLC**: Clusters lean towards connected neighbouring points, which is not necassarily accurate. It might end up with wrong clusters due to noise<br/>
+How is median linkage clustering being different from average/mean linkage clustering? The median is good when the number on the distances don't matter, just their ordering. median is a non-metric statistic. Average is a metric statistic which details of number matters<br/>
 
 Hierarchical clustering. Distance metrics: https://towardsdatascience.com/understanding-the-concept-of-hierarchical-clustering-technique-c6e8243758ec
 
