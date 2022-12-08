@@ -206,16 +206,15 @@ Usefulness  ∼  Error given a Model/learner<br/>
 **Relevance**<br/>
 Let B.O.C. = Bayes Optimal Classifier<br/>
 
-• xi  is strongly relevant if removing it degrades B.O.C.<br/>
-• xi  is weakly relevant if:
-    1) Not strognly relavant 
-    2) ∃ a subset of features S, such that adding  xi  to S improves B.O.C.
-• xi  is otherwise irrelevant<br/>
+• xi is strongly relevant if removing it degrades B.O.C.<br/>
+• xi is weakly relevant if:<br/>
+    1) Not strognly relavant <br/>
+    2) ∃ a subset of features S, such that adding  xi  to S improves B.O.C.<br/>
+• xi is otherwise irrelevant<br/>
 
 **Usefulness**<br/>
 • Relevance measures effect on B.O.C.<br/>
 • Usefulness measures effect on a particular predictor<br/>
-
 
 
 <h1 id="3">Module: UL4 - Feature Transformation</h1>
