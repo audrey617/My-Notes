@@ -115,19 +115,19 @@ K-Means is really just the EM (Expectation Maximization) algorithm applied to a 
 
 External: Clustering (4): Gaussian Mixture Models and EM https://www.youtube.com/watch?v=qMTuMa86NzU <br/>
 <p align="center" width="100%">
-    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul3_1.JPG?raw=true">
+    <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul3_1.JPG?raw=true">
 </p>
 <p align="center" width="100%">
-    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul3_2.JPG?raw=true">
+    <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul3_2.JPG?raw=true">
 </p>
 <p align="center" width="100%">
-    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul3_3.JPG?raw=true">
+    <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul3_3.JPG?raw=true">
 </p>
 <p align="center" width="100%">
-    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul3_4.JPG?raw=true">
+    <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul3_4.JPG?raw=true">
 </p>
 <p align="center" width="100%">
-    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul3_5.JPG?raw=true">
+    <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul3_5.JPG?raw=true">
 </p>
 k-means is a special case of expectation maximization: variances are all equal, and there is no covariance <br/>
 Consider the two clusters in the right hand side of the image. There are two clusters both centred at the same mean. K Means has diffuciulty with this. GMMs are an extension of the Kmeans models, where clusters are modelled using gaussian distributions. Where each cluster will have not only a means but also a covariance which helps explain their ellipsoidal shape. We can then fit the model by maximizing the likelihood of the observed data. We do this with an algorithm called EM, for expecation maximization, which assigns each sample to a cluster with a soft probability.<br/>
