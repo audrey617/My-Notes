@@ -160,6 +160,58 @@ Terminates in polynomial time (SLC) vs Terminates not in polynomial time (Kmean,
 
 
 <h1 id="2">Module: UL3 - Feature Selection</h1>
+**The Feature Selection Problem**:
+Goals: 1) Knowledge Discovery, Interoperability & Insight. 2) Avoid Curse of Dimensionality, The amount of data you need grows exponentially with the number of features you have. By reducing our dimensions we can reduce the difficulty of the problem. In summary, with proper feature selection, not only will you understand your data better, but you will also have an easier learning problem<br/> 
+
+Suppose we have N features and we want to reduce to M features where M <= N. How hard is this problem?<br/> 
+Is it Polynomial (includes linear and quadratic) or exponential? ans: exponential<br/> 
+To do this we need to come up with some sort of function that returns a score. We could choose M from N. It turns out this is a well known problem which NP-Hard. It's exactly because you have to find all possible subsets<br/> 
+
+
+**Approaches to Feature Selection**:
+<p align="center" width="100%">
+    <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul5.JPG?raw=true">
+</p>
+**Filtering**: Given a set of features, apply a search algorithm to produce fewer features to be passed to the learning algorithm. In summary, filtering directly reduces to a smaller feature set and feeds it to a learning algorithm<br/> 
+Pros: 1) Faster than wrapping <br/> 
+Cons: <br/> 
+1) Can also be slower because you look at features in isolation <br/> 
+2) Doesn't account for the relationships between features<br/>   
+3) Ignores the learning process (no feedback)<br/> 
+We can use an algorithm that can select the best features, like Decision Tree, then use another algorithm, with another inductive bias, for learning. <br/>
+We can use different criterion to evaluate the usefulness of a subset of features. This is where the domain knowledge comes in: 1. Information gain 2. Variance 3. Entropy 4. Eliminate dependent features<br/> 
+What about using a Neural Network in search box and pruning the lowest weighted features? You could prune correlated or dependent features.<br/> 
+
+Note that you can use the labels in the search algorithm. It's not considered cheating to understand what the labels are in the search box  before passing into the learner.<br/> 
+In fact Information Gain is often used in the search box. You could even go so far as using a decision tree (algorithm used in search box) to determine what should be passed to a Neural Network (actual learner, learner box). Basically, you are using the inductive bias of the decision tree to choose features, but then you use the inductive biasof your other learner in order to do learning. If the learner box is KNN, which suffers from the curse of dimensionality because it doesn't know which features are important. then this search box decision tree is good at figuring out which features are importent, and gives soem hint to KNN.<br/> 
+
+
+**Wrapping**: Given a set of features, apply a search algorithm to produce fewer features, pass them to the learning algorithm, then use the output to update the selected set of features. Here the ML quality is passed back as a quasi-score value which is then used by the algo to determine the final features. In summary, wrapping interacts with the learning algorithm directly to iteratively adjust the feature set <br/>
+Pros: Takes into account model bias, score and learning  <br/>
+Cons: Very slow <br/>
+We can use different techniques to search: Local searching can be useful. We can use approaches directly from randomized optimization algorithms if we treat the learner's result as a fitness function. Other viable options include forward search and backward search. Note that we should avoid an exhaustive search here as this can make the problem under a worst case scenario<br/>
+1. Randomized Optimization algorithms<br/>
+2. Forward Selection: Select a feature and evaluate the effect of creating different combinations of this feature with other features. Stop once you stagnate. This is similar to Hill Climbing.<br/>
+3. Backward Elimination: Start with all the features and evaluate the effect of eliminating each feature<br/>
+
+
+**Describing Features**:
+When it comes to determining which features we should use, it’s necessary to differentiate them based on their viability in a general, statistical sense as well as in a learner-specificsense. We usually care more about usefulness, but relevance is what we generally use to get there.<br/>
+Relevance  ∼  Information <br/>
+Usefulness  ∼  Error given a Model/learner<br/>
+
+**Relevance**<br/>
+Let B.O.C. = Bayes Optimal Classifier<br/>
+
+• xi  is strongly relevant if removing it degrades B.O.C.<br/>
+• xi  is weakly relevant if<br/>
+    1) Not strognly relavant<br/>
+    2) ∃ a subset of features S, such that adding  xi  to S improves B.O.C.<br/>
+• xi  is otherwise irrelevant<br/>
+
+**Usefulness**<br/>
+• Relevance measures effect on B.O.C.<br/>
+• Usefulness measures effect on a particular predictor<br/>
 
 
 
