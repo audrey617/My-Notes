@@ -171,8 +171,9 @@ To do this we need to come up with some sort of function that returns a score. W
 
 **Approaches to Feature Selection**:<br/>
 <p align="center" width="100%">
-    <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul5.JPG?raw=true">
+    <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul6.JPG?raw=true">
 </p>
+
 **Filtering**: Given a set of features, apply a search algorithm to produce fewer features to be passed to the learning algorithm. In summary, filtering directly reduces to a smaller feature set and feeds it to a learning algorithm<br/> 
 Pros: 1) Faster than wrapping <br/> 
 Cons: <br/> 
