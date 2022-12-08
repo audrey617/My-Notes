@@ -102,18 +102,33 @@ EM is not forced to make a decision about the overlapping samples, as soft clust
 
 
 **Properties of EM**<br/>
-• Monotonically non-decreasing likelihood: Each time the iteration of EM runs, the likelihood of the data is monotonically non-decreasing. It is not getting worse. Generally it is finding higher and higher likelihoods and moving in a good direction. 
+• **Monotonically non-decreasing likelihood**: Each time the iteration of EM runs, the likelihood of the data is monotonically non-decreasing. It is not getting worse. Generally it is finding higher and higher likelihoods and moving in a good direction. 
 <br/>
-• Does not converge (practically converge): However, monotonically non-decreasing likelihood doesn't mean the algorithm has to converge. Although in practice, it always converge<br/>
-• Will not diverge: Even it doesn't gaurantee converge, it cannot diverge. The number cannot blow up and become infinitely large, because it is working in the space of probablities. This is a difference in Kmeans which has finite number of configurations and k means Kmean never gets worse in error metric, as long as you have some ways to break ties, eventually you have to stop. That's how you get convergence. In EM, the configurations are probabilities, which is infinite number. You never do worse, but you are trying to move closer and closer. You could keep moving closer every single time, but because of the infinite number of configurations,the step by which you get better could keep getting smaller. So you never actually approach the final best configuration. <br/>
-• Can get stuck: In practice it is very common. The local optimal problem. solution: random start <br/>
-• Works with any distribution (if 𝐸 and 𝜇 are solvable): Nothing specific with Guassian. Different distributions can be used to solve E and 𝜇. Usually it is the case that estimation step is expensive and difficult because it invovles probabilistic inference, like Bayes net. And Maximization step is just counting things. In general, it is harder to do E than M. EM is a small matter of mathematical algorithm derivation <br/>
+• **Does not converge (practically converge)**: However, monotonically non-decreasing likelihood doesn't mean the algorithm has to converge. Although in practice, it always converge<br/>
+• **Will not diverge**: Even it doesn't gaurantee converge, it cannot diverge. The number cannot blow up and become infinitely large, because it is working in the space of probablities. This is a difference in Kmeans which has finite number of configurations and k means Kmean never gets worse in error metric, as long as you have some ways to break ties, eventually you have to stop. That's how you get convergence. In EM, the configurations are probabilities, which is infinite number. You never do worse, but you are trying to move closer and closer. You could keep moving closer every single time, but because of the infinite number of configurations,the step by which you get better could keep getting smaller. So you never actually approach the final best configuration. <br/>
+• **Can get stuck**: In practice it is very common. The local optimal problem. solution: random start <br/>
+• **Works with any distribution (if 𝐸 and 𝜇 are solvable)**: Nothing specific with Guassian. Different distributions can be used to solve E and 𝜇. Usually it is the case that estimation step is expensive and difficult because it invovles probabilistic inference, like Bayes net. And Maximization step is just counting things. In general, it is harder to do E than M. EM is a small matter of mathematical algorithm derivation <br/>
 
 
 Check EM part from http://stanford.edu/~cpiech/cs221/handouts/kmeans.html<br/>
 K-Means is really just the EM (Expectation Maximization) algorithm applied to a particular naive bayes model.<br/>
 
 External: Clustering (4): Gaussian Mixture Models and EM https://www.youtube.com/watch?v=qMTuMa86NzU <br/>
+<p align="center" width="100%">
+    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul3_1.JPG?raw=true">
+</p>
+<p align="center" width="100%">
+    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul3_2.JPG?raw=true">
+</p>
+<p align="center" width="100%">
+    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul3_3.JPG?raw=true">
+</p>
+<p align="center" width="100%">
+    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul3_4.JPG?raw=true">
+</p>
+<p align="center" width="100%">
+    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul3_5.JPG?raw=true">
+</p>
 k-means is a special case of expectation maximization: variances are all equal, and there is no covariance <br/>
 Consider the two clusters in the right hand side of the image. There are two clusters both centred at the same mean. K Means has diffuciulty with this. GMMs are an extension of the Kmeans models, where clusters are modelled using gaussian distributions. Where each cluster will have not only a means but also a covariance which helps explain their ellipsoidal shape. We can then fit the model by maximizing the likelihood of the observed data. We do this with an algorithm called EM, for expecation maximization, which assigns each sample to a cluster with a soft probability.<br/>
 
@@ -132,14 +147,15 @@ Consider the two clusters in the right hand side of the image. There are two clu
 </p>
 Ans: In this SLC stop when case 1) fixed number of cluster doesn't have richness because richness would allow for one cluster or it could have one cluster or it could have n clusters or it could have n/3 clusters or etc. but here we are forced it to have n/2 clusters, so it cannot represent all possible clusters. 2) we can group whatever combination we want, but if we multiply everything by theta, then I have n. But if I have n in the beginning then divide theta, I would have one. It is not scale-invariance 3) W is max function to normalize the distance. This is still scale-invariance as larger unit also makes larger W, which means the scale is undone. However, if expanding inter-cluster, W will be further and change the cluster. eg, theta divide by inf will make no point be able to cluster with the other. This is not consistent.<br/>
 
-**Impossibility Theorem**
+**Impossibility Theorem**<br/>
 Impossibility Theorem: There’s no clustering algorithm that can achieve these three properties.<br/>
 Jon Kleinberg: https://www.cs.cornell.edu/home/kleinber/nips15.pdf<br/>
 https://jeremy9959.net/Blog/KleinbergsClusteringTheorem/<br/>
 k-means and EM has the properties of scale - invariance and consistency but not richness because k determines # of clusters.<br/>
 Essentially, if were to introduce a new distance function and arrive to the same cluster configuration (partition), then you would satisfy the consistency property. From Kleinberg paper, Section 4: "We show here that for a fairly general class of centroid-based clustering functions, including k-means and k-median, none of the functions in the class satisfies the Consistency property. This suggests an interesting tension between between Consistency and the centroid-based approach to clustering, and forms a contrast with the results for single-linkage and sum-of-pairs in previous sections. " <br/> 
 
-**Summary**
+
+**Summary**<br/>
 Soft cluster (EM) vs Hard cluster (SLC, Kmean)<br/> 
 Terminates in polynomial time (SLC) vs Terminates not in polynomial time (Kmean, EM)<br/> 
 
