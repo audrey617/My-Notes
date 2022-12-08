@@ -147,13 +147,12 @@ Consider the two clusters in the right hand side of the image. There are two clu
 </p>
 Ans: In this SLC stop when case 1) fixed number of cluster doesn't have richness because richness would allow for one cluster or it could have one cluster or it could have n clusters or it could have n/3 clusters or etc. but here we are forced it to have n/2 clusters, so it cannot represent all possible clusters. 2) we can group whatever combination we want, but if we multiply everything by theta, then I have n. But if I have n in the beginning then divide theta, I would have one. It is not scale-invariance 3) W is max function to normalize the distance. This is still scale-invariance as larger unit also makes larger W, which means the scale is undone. However, if expanding inter-cluster, W will be further and change the cluster. eg, theta divide by inf will make no point be able to cluster with the other. This is not consistent.<br/>
 
+
 **Impossibility Theorem**<br/>
 Impossibility Theorem: There’s no clustering algorithm that can achieve these three properties.<br/>
 Jon Kleinberg: https://www.cs.cornell.edu/home/kleinber/nips15.pdf<br/>
 https://jeremy9959.net/Blog/KleinbergsClusteringTheorem/<br/>
-k-means and EM has the properties of scale - invariance and consistency but not richness because k determines # of clusters.<br/>
-Essentially, if were to introduce a new distance function and arrive to the same cluster configuration (partition), then you would satisfy the consistency property. From Kleinberg paper, Section 4: "We show here that for a fairly general class of centroid-based clustering functions, including k-means and k-median, none of the functions in the class satisfies the Consistency property. This suggests an interesting tension between between Consistency and the centroid-based approach to clustering, and forms a contrast with the results for single-linkage and sum-of-pairs in previous sections. " <br/> 
-
+k-means and EM has the properties of scale - invariance and consistency but not richness because k determines # of clusters. Essentially, if were to introduce a new distance function and arrive to the same cluster configuration (partition), then you would satisfy the consistency property. From Kleinberg paper, Section 4: "We show here that for a fairly general class of centroid-based clustering functions, including k-means and k-median, none of the functions in the class satisfies the Consistency property. This suggests an interesting tension between between Consistency and the centroid-based approach to clustering, and forms a contrast with the results for single-linkage and sum-of-pairs in previous sections. " <br/> 
 
 **Summary**<br/>
 Soft cluster (EM) vs Hard cluster (SLC, Kmean)<br/> 
