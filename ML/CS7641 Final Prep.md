@@ -160,7 +160,8 @@ Terminates in polynomial time (SLC) vs Terminates not in polynomial time (Kmean,
 
 
 <h1 id="2">Module: UL3 - Feature Selection</h1>
-**The Feature Selection Problem**:
+
+**The Feature Selection Problem**:<br/>
 Goals: 1) Knowledge Discovery, Interoperability & Insight. 2) Avoid Curse of Dimensionality, The amount of data you need grows exponentially with the number of features you have. By reducing our dimensions we can reduce the difficulty of the problem. In summary, with proper feature selection, not only will you understand your data better, but you will also have an easier learning problem<br/> 
 
 Suppose we have N features and we want to reduce to M features where M <= N. How hard is this problem?<br/> 
@@ -168,7 +169,7 @@ Is it Polynomial (includes linear and quadratic) or exponential? ans: exponentia
 To do this we need to come up with some sort of function that returns a score. We could choose M from N. It turns out this is a well known problem which NP-Hard. It's exactly because you have to find all possible subsets<br/> 
 
 
-**Approaches to Feature Selection**:
+**Approaches to Feature Selection**:<br/>
 <p align="center" width="100%">
     <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul5.JPG?raw=true">
 </p>
