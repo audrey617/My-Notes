@@ -119,14 +119,14 @@ Consider the two clusters in the right hand side of the image. There are two clu
 ### Clustering Properties ###
 **Desirable Properties for any given clustering approach**:
 <p align="center" width="100%">
-    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul4.JPG?raw=true">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul4.JPG?raw=true">
 </p>
 1. Richness: There are some distance metrics that would cause your clustering algorithm to produce that clusters. So all inputs are valid and all outputs are valid. The algorithm should produce wahtever is appropraite and not limit to what it can express. The alternative of richness (non-richness): there are certain clusters you just cannot produce.<br/>
 2. Scale-invariance: Doubling the distance or changing the unit shouldn't change what the clustering is. it should be invariant to what the space of the point is, assuming that we keep the relative distances the same<br/>
 3. Consistency: Shrinking intra-cluster distances (Moving points towards each other, similiar become more similar) and expanding inter-cluster (Moving clusters away from each other, not similar become less similar) distances doesn’t change the clustering. Given a particular clustering, we would imagine that by “compressing” or “expanding” the points within a cluster (think squeezing or stretching a circle), none of the points would magically assign themselves to another cluster. In other words, shrinking or expanding intracluster distances should not change the clustering.<br/>
 
 <p align="center" width="100%">
-    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul5.JPG?raw=true">
+    <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul5.JPG?raw=true">
 </p>
 Ans: In this SLC stop when case 1) fixed number of cluster doesn't have richness because richness would allow for one cluster or it could have one cluster or it could have n clusters or it could have n/3 clusters or etc. but here we are forced it to have n/2 clusters, so it cannot represent all possible clusters. 2) we can group whatever combination we want, but if we multiply everything by theta, then I have n. But if I have n in the beginning then divide theta, I would have one. It is not scale-invariance 3) W is max function to normalize the distance. This is still scale-invariance as larger unit also makes larger W, which means the scale is undone. However, if expanding inter-cluster, W will be further and change the cluster. eg, theta divide by inf will make no point be able to cluster with the other. This is not consistent.<br/>
 
@@ -136,6 +136,10 @@ Jon Kleinberg: https://www.cs.cornell.edu/home/kleinber/nips15.pdf<br/>
 https://jeremy9959.net/Blog/KleinbergsClusteringTheorem/<br/>
 k-means and EM has the properties of scale - invariance and consistency but not richness because k determines # of clusters.<br/>
 Essentially, if were to introduce a new distance function and arrive to the same cluster configuration (partition), then you would satisfy the consistency property. From Kleinberg paper, Section 4: "We show here that for a fairly general class of centroid-based clustering functions, including k-means and k-median, none of the functions in the class satisfies the Consistency property. This suggests an interesting tension between between Consistency and the centroid-based approach to clustering, and forms a contrast with the results for single-linkage and sum-of-pairs in previous sections. " <br/> 
+
+**Summary**
+Soft cluster (EM) vs Hard cluster (SLC, Kmean)<br/> 
+Terminates in polynomial time (SLC) vs Terminates not in polynomial time (Kmean, EM)<br/> 
 
 
 <h1 id="2">Module: UL3 - Feature Selection</h1>
