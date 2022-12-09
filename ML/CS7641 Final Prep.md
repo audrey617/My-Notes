@@ -69,7 +69,7 @@ In summary, if we have a finite number of configurations, if we always break tie
 **Issues with K Means**: 
 1. sensitive to initialization and outliers and get stuck in the local minima. Solutions: 1)Random restarts 2)Kmean++ <br/>
 2. it only finds “spherical” clusters. In other words, because we rely on the SSD as our “error function,” the resulting clusters try to balance the centers to make points in any direction roughly evenly distributed <br/>
-3.  Middle point can end up with either cluster depending on how ties are broken and how the initial centers are chosen. solution: probability. leads to soft clustering
+3.  Middle point can end up with either cluster depending on how ties are broken and how the initial centers are chosen. solution: probability. leads to soft clustering<br/>
 K Means VS Hierarchical clustering: K-means clustering specifically tries to put the data into the number of clusters you tell it to. Hierarchical clustering just tells, pairwise, what two things are most similiar. <br/>
 
 
