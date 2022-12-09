@@ -199,9 +199,9 @@ We can use different techniques to search: Local searching can be useful. We can
 
 
 **Describing Features**:
-When it comes to determining which features we should use, it’s necessary to differentiate them based on their viability in a general, statistical sense as well as in a learner-specificsense. We usually care more about usefulness, but relevance is what we generally use to get there.<br/>
-Relevance  ∼  Information <br/>
-Usefulness  ∼  Error given a Model/learner<br/>
+When it comes to determining which features we should use, it’s necessary to differentiate them based on their viability in a general, statistical sense as well as in a learner-specific sense. We usually care more about usefulness, but relevance is what we generally use to get there.<br/>
+**Relevance  ∼  Information**<br/>
+**Usefulness  ∼  Error given a Model/learner**<br/>
 
 Per the lecture, relevance measure effect on Bayesian Optimal Classifier. A feature can be strongly relevant if removing it degrade B.O.C. A feature can be weakly relevant if it is not strongly relevant, adding it to some subset of features S can improve B.O.C. Otherwise a feature is irrelevant. Usefulness measure effect on a particular predictor, minimizing error given a specific model/learner.<br/>
 Think about how one would need at least two relevant features for decision to learn the AND function. For perceptron, it needs one more feature. That additional feature is useful to perceptron but irrelevant to decision tree. DT can learn the AND function without it. Perceptron cannot learn the AND function without it.<br/>
