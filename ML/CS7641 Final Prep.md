@@ -40,7 +40,7 @@ StatQuest: K-means clustering: https://www.youtube.com/watch?v=4b5d3muPQmA<br/>
 
 K-means is a centroid-based clustering algorithm, where we calculate the distance between each data point and a centroid to assign it to a cluster. The goal is to identify the K number of groups in the dataset. Algorithm steps: <br/>
 • Pick K centres at random<br/>
-• Each centre claims its closest points<br/>
+• Each center claims its closest points<br/>
 • recompute the centres by averaging the clustered points<br/>
 • repeat until convergence<br/>
 
