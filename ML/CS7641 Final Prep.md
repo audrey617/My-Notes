@@ -220,11 +220,23 @@ Let B.O.C. = Bayes Optimal Classifier<br/>
 
 
 <h1 id="3">Module: UL4 - Feature Transformation</h1>
+
 **What is Feature Transformation?**
-• The problem of pre-processing a set of features to create a new (more compact) feature set, while retaining as much (relevant/useful) information as possible.
-• Feature Selection is a subset of Feature Transformation, where the preprocessing is literally extracting a subset of the features.
-• In Feature Transformation, we apply a “linear transformation operator”. The goal is to find a matrix 𝑃 such that we can project the examples into a newer subspace (that is typically smaller than the original subspace) to get new features that are linear combinations of the old features.
-• Why? We combine features together hoping to eliminate false positives/negatives
+The problem of pre-processing a set of features to create a new (smaller or more compact) feature set, while retaining as much (relevant and useful) information as possible.<br/>
+Feature Selection is a subset of Feature Transformation, where the preprocessing is literally extracting a subset of the features. In Feature Transformation, we apply a “linear transformation operator”. The goal is to find a matrix 𝑃 such that we can project the examples into a newer subspace (that is typically smaller than the original subspace) to get new features that are linear combinations of the old features.<br/>
+
+<p align="center" width="100%">
+    <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul7.JPG?raw=true">
+</p>
+
+**Why Feature Transformation?**
+Why we need linear transformation operator? We combine features together hoping to eliminate false positives/negatives<br/>
+Motivation/information retrieval problem: <br/>
+Given an unknown search query, we want to list documents from a massive database relevant to the query. How do we design this? If we treat words as features, we encounter the curse of dimensionality: there are a lot of words. Furthermore, words can be ambigious. Many contexts leading to different meanings (polysemy. Apple: fruit or the company?). Another challenge is synonomy: same meaning different representations (Car, Automobile, vehicle etc). Because of this, we encounter false positives and false negatives even if we could find the documents with the words efficiently. A good feature transformation will combine features together and provide a more compact way to query things<br/>
+
+
+**Principal Components Analysis**
+
 
 
 
