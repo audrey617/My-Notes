@@ -231,6 +231,7 @@ Feature Selection is a subset of Feature Transformation, where the preprocessing
 
 **Why Feature Transformation?**<br/>
 Why we need linear transformation operator? We combine features together hoping to eliminate false positives/negatives<br/>
+
 Motivation/information retrieval problem: <br/>
 Given an unknown search query, we want to list documents from a massive database relevant to the query. How do we design this? If we treat words as features, we encounter the curse of dimensionality: there are a lot of words. Furthermore, words can be ambigious. Many contexts leading to different meanings (polysemy. Apple: fruit or the company?). Another challenge is synonomy: same meaning different representations (Car, Automobile, vehicle etc). Because of this, we encounter false positives and false negatives even if we could find the documents with the words efficiently. A good feature transformation will combine features together and provide a more compact way to query things<br/>
 
