@@ -203,9 +203,11 @@ When it comes to determining which features we should use, it’s necessary to d
 Relevance  ∼  Information <br/>
 Usefulness  ∼  Error given a Model/learner<br/>
 
+Per the lecture, relevance measure effect on Bayesian Optimal Classifier. A feature can be strongly relevant if removing it degrade B.O.C. A feature can be weakly relevant if it is not strongly relevant, adding it to some subset of features S can improve B.O.C. Otherwise a feature is irrelevant. Usefulness measure effect on a particular predictor, minimizing error given a specific model/learner.<br/>
+Think about how one would need at least two relevant features for decision to learn the AND function. For perceptron, it needs one more feature. That additional feature is useful to perceptron but irrelevant to decision tree. DT can learn the AND function without it. Perceptron cannot learn the AND function without it.<br/>
+
 **Relevance**<br/>
 Let B.O.C. = Bayes Optimal Classifier<br/>
-
 • xi is strongly relevant if removing it degrades B.O.C.<br/>
 • xi is weakly relevant if:<br/>
     1) Not strognly relavant <br/>
@@ -218,14 +220,53 @@ Let B.O.C. = Bayes Optimal Classifier<br/>
 
 
 <h1 id="3">Module: UL4 - Feature Transformation</h1>
+**What is Feature Transformation?**
+• The problem of pre-processing a set of features to create a new (more compact) feature set, while retaining as much (relevant/useful) information as possible.
+• Feature Selection is a subset of Feature Transformation, where the preprocessing is literally extracting a subset of the features.
+• In Feature Transformation, we apply a “linear transformation operator”. The goal is to find a matrix 𝑃 such that we can project the examples into a newer subspace (that is typically smaller than the original subspace) to get new features that are linear combinations of the old features.
+• Why? We combine features together hoping to eliminate false positives/negatives
+
+
+
+
+
+
+
+
+
 
 <h1 id="4">Module: RL1 - Markov Decision Processes</h1>
 
+
+
+
+
+
+
+
+
 <h1 id="5">Module: RL2 - Reinforcement Learning</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Extra, Great content! Intro to RL, from CIS 522 [Deep Learning @ Penn](https://www.youtube.com/watch?v=cVTud58UfpQ&list=PLYgyoWurxA_8ePNUuTLDtMvzyf-YW7im2&index=2)
 ### CIS522.1 Intro to RL
-
 RL: given observations and occasional rewards as the agent performs sequential actions in an environment. Compared to supervised learning and unsupervised learning, you no longer have dataset given in advance. Instead, you receive your data as the agent performs some sequential actions in an environment. That process of performing sequential actions generates some obversations accompained by rewards. So there is no label but the reward essentially tells you whether the actions that you performed were good or not.<br/><br/>
 
 The aim of RL is to make sequential decisions in an environment. For example, driving a car. How to learn to do these things? 1) RL assumes only occasional feedback, for example, a car crash 2) RL aims to use this feedback to learn through trail and error, as cleverly as possible.<br/><br/>
