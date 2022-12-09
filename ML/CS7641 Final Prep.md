@@ -221,7 +221,7 @@ Let B.O.C. = Bayes Optimal Classifier<br/>
 
 <h1 id="3">Module: UL4 - Feature Transformation</h1>
 
-**What is Feature Transformation?**
+**What is Feature Transformation?**<br/>
 The problem of pre-processing a set of features to create a new (smaller or more compact) feature set, while retaining as much (relevant and useful) information as possible.<br/>
 Feature Selection is a subset of Feature Transformation, where the preprocessing is literally extracting a subset of the features. In Feature Transformation, we apply a “linear transformation operator”. The goal is to find a matrix 𝑃 such that we can project the examples into a newer subspace (that is typically smaller than the original subspace) to get new features that are linear combinations of the old features.<br/>
 
@@ -229,14 +229,26 @@ Feature Selection is a subset of Feature Transformation, where the preprocessing
     <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul7.JPG?raw=true">
 </p>
 
-**Why Feature Transformation?**
+**Why Feature Transformation?**<br/>
 Why we need linear transformation operator? We combine features together hoping to eliminate false positives/negatives<br/>
 Motivation/information retrieval problem: <br/>
 Given an unknown search query, we want to list documents from a massive database relevant to the query. How do we design this? If we treat words as features, we encounter the curse of dimensionality: there are a lot of words. Furthermore, words can be ambigious. Many contexts leading to different meanings (polysemy. Apple: fruit or the company?). Another challenge is synonomy: same meaning different representations (Car, Automobile, vehicle etc). Because of this, we encounter false positives and false negatives even if we could find the documents with the words efficiently. A good feature transformation will combine features together and provide a more compact way to query things<br/>
 
 
-**Principal Components Analysis**
+**Principal Components Analysis**<br/>
+<p align="center" width="100%">
+    <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul9.JPG?raw=true">
+</p>
+An eigenproblem is a computational problem that can be solved by finding the eigenvalues and/or eigenvectors of a matrix. In PCA, we are analyzing the covariance matrix https://www.cs.princeton.edu/picasso/mats/PCA-Tutorial-Intuition_jp.pdf<br/> 
+Principal Components Analysis is an example of an eigenproblem which will transform the features set by:<br/>
+1) Finding the direction (vector) that maximizes variance. The is called the Principal Component<br/>
+2) Finding directions that are mutually orthogonal to the Principal Component.<br/>
 
+properties:<br/>
+1) global algorithm: Mutually orthogonal means it is a global algorithm. "global" means that all the directions and new features that they find have a big global constraint, namely that they must be mutually orthogonal.<br/>
+2) PCA gives the ability to do reconstruction, because it’s a linear rotation of the original space that minimizes L2 error by moving 𝑁 to 𝑀 dimensions. So, we don’t lose information. In details: the PCA actually gives you the best reconstruction, which means if I return these two dimensions, I have actually lost no information. It is just a linear rotation of the original dimensions. So if I were to give you back these two different features, you could reconstruct all of your original data. But PCA will take just one of these dimensions to reconstruct, in particular, take the first one as the principle component, I am guaranteed that if I project only in to this space and then try to reproject into the original space, I will minimize the L2 error (The squared error, here the distance).What this means is that if I project onto this single axis here, and then I compare it to where it was in the original space, the distance, the sum of all the distances between those points will actually be the minimal that I could get for any other projection. just think about the fact that points. Always start out in some orthogonal space. And, I'm basically finding in scaling and a rotation such that I don't lose any information. And I maximize variance along the way. By maximizing variance, it turns out
+I'm maximizing or maintaining distances as best I can in any given dimension. And, so, that gives me the best reconstruction that I can imagine. <br/>
+3) As an eigenproblem, each Principal Component has a prescribed eigen value. We can throw away the components with the least eigenvalues as they correspond to the features that matter less in the reconstruction. In details: What happens when you do principal components analysis is you get all of these axes back, and in fact, if you start out with. N dimensions, you get back N dimensions again, and the job here for a future transformation as you might recall, is you want to pick a subset M of them hopefully much smaller than N. Well, it turns out that associated with each one of these new dimensions that we get is its eigenvalue. That eigenvalue is guaranteed to be non-negative, it has a lot of other neat properties. But what matters to us here is that the **eigenvalues monotonically non-increase**, that is, they tend to get smaller as you move from the principal to the second principal, to the third, to the fourth, to the fifth, to the sixth, and so on to the nth dimension. And so, you can throw away the ones with the least eigenvalue. And that's a way of saying that you're throw awaying these projections, or the directions, or the features, with the least amount of variance.<br/>
 
 
 
