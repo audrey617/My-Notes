@@ -260,6 +260,7 @@ Pratical properties:<br/>
 ICA attempts to maximize independence. It tries to find a linear transformation of the feature space, such that each of the individual new features are mutually statistically independent:<br/> 
 1) The mutual information between any two random features equals zero I(yi,yj)=0 <br/> 
 2) The mutual information between the new features set and the old features set is as high as possible I(yi,xi)= maximum.<br/> 
+
 In the other words, we want to be able to reconstruct the data (predict X from Y or Y from X). And at the same time, each variable in the new dimension is in fact mutually independent. <br/> 
 <p align="center" width="100%">
     <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul10.JPG?raw=true">
