@@ -304,24 +304,39 @@ Reinforcement Learning: a similar task as in Supervised Learning. But instead of
 
 **Markov Decision Processes** <br/>
 1) States S:  Set of tokens. The state of the object of interest represented in any way <br/>
-2) Model T(s,a,s') ∼ Pr(s'|s,a): This is the Transition Model (function), which is the probability of transitioning to a new state 𝑠 given that the object starts at state 𝑠 and performs action a. Markovian prop1 that only the present state matters, the past doesn't. Markovian prop2 the transition model is stationary and doesn't change over time <br/>
+2) Model T(s,a,s') ∼ Pr(s'|s,a): This is the Transition Model (function), which is the probability of transitioning to a new state 𝑠 given that the object starts at state 𝑠 and performs action a. 1) Markovian prop1 that only the present state matters, the past doesn't. 2) Markovian prop2 the transition model is stationary and doesn't change over time <br/>
 3) Actions A(s)/A: the set of all possible actions<br/>
 4) Reward R(s)/R(s,a)/R(s,a,s'): the reward the object gets when transitioning to a state 𝑠, which tells it the “usefulness” of transitioning to that state. It can be 1)R(s) is the reward received from being in a state 2)R(s,a) taking an action from a particular state 3)R(s,a,s') taking an action from a particular state and landing in state. They are all mathematically equivalent <br/>
 
 The above is how we define the MDP problem, the policy is the solution that we are looking to determine.<br/>
-Policy: π(s) → a.  π∗ is the optimal policy. The Policy defines the solution. The policy is a function 𝜋(𝑠) that takes a state 𝑠 as an input and returns the proper action 𝑎. A problem might have different policies.The optimum policy 𝜋∗ is the policy that maximizes the long term expected reward. RL talks about policies, a function that tells you what action to take for all possible states you are in. If you have a policy, and it is an optimal one, it will guide you in any situation. What the policy doesn't tell you is 2 or more steps into the future.<br/>
+Policy: π(s) → a.  π∗ is the optimal policy. The Policy says when you at s state, take action a. an agent always know what states it is in and what reward it can receive. The policy is a function 𝜋(𝑠) that takes a state 𝑠 as an input and returns the proper action 𝑎. A problem might have different policies. The optimum policy 𝜋∗ is the policy that maximizes the long term expected reward. RL talks about policies, a function that tells you what action to take for all possible states you are in. If you have a policy, and it is an optimal one, it will guide you in any situation. What the policy doesn't tell you is 2 or more steps into the future.<br/>
 We will be given (𝑠, 𝑎, 𝑟) and our task would be to learn the optimum policy 𝜋∗ that produces the optimum action (highest reward).<br/>
 
+**Rewards** <br/>
+The amount of rewards <br/>
+1) In the Reinforcement Learning context, we don’t get a reward for each action. Instead, we get a “delayed reward” in terms of a positive or negative label for the state we end up in.
+2) Because we don’t have instant rewards for each action, we have the problem of figuring out which specific action(s) lead us to a positive/negative outcome. This problem is called "Temporal Credit Assignment".
+3) A small negative reward will encourage the agent to take the shortest path to the positive outcome. However, a big negative reward will encourage the agent to take the shortest path no matter what the result is, so it might end up with a negative outcome. This means that determining the rewards is some sort of a domain knowledge.
+
+How much time you have to reach the result (Infinite horizon -> stationary)<br/>
+The normal the gridworld probelm is an infinite horizon. If change horizon from infinite to finite, two things would happen 1) policy changes because game may end 2) policy may chang even in the same state. eg, turn left and bounced the wall, stay, turn left and bounced wall stay. Run out of time, turn right.<br/>
+If you have an infinite amount of time (Infinite Horizon) you will be able to take longer paths to avoid possible risks. On the other hand, if you don’t have that much time, you’ll have to take the shortest path, even if it underlies some risk of falling into a negative outcome. 
+This means that the "time" will change the optimum policy as 𝜋(s,t) → 𝑎. Without assuming an Infinite Horizon, we will lose the notion of stationarity in our policies 𝜋(s) → 𝑎. <br/>
+
+Utility of Sequences<br/>
+stationarity of preferences: if u(s0,s1,s2..)> u(s0,s'1,s'2...) then u(s1,s2..)> u(s'1,s'2...). Another way to state stationarity of preferences is that if I prefer a sequence of states today over another sequence of states, then I’d prefer that sequence of states over the same other sequence of states tomorrow.<br/>
+This notion forces you to do some sort of reward addition, because nothing else will guarantee the stationary of preferences. So "𝑈(𝑠0,𝑠1,𝑠2,⋯)=∑𝑅(s_t) where t = 0 to inf" will be ture. If you don't do that, "if u(s0,s1,s2..)> u(s0,s'1,s'2...) then u(s1,s2..)> u(s'1,s'2...)" will not hold.<br/>
+However, There is a problem regarding "𝑈(𝑠0,𝑠1,𝑠2,⋯)=∑𝑅(s_t) where t = 0 to inf". Consider two grid worlds: in G1 the rewards are steady at +1 per time step, and in G2 they alternate between +1, and +2. Which of the two is better? Well neither, because both sum to infinity when there is an infinite horizon<br/>
+To solve this problem by adding a variable in the function to get discounted reward: 𝑈(𝑠0,𝑠1,𝑠2,⋯)=∑ 𝛾^𝑡 * 𝑅(𝑠_𝑡) for 0<𝛾<1 
+If 𝛾 → 0, we get the first reward and then everything else will fall off to nothing.
+If 𝛾 → 1, we get a maximized reward
+Now we can add an infinite number of numbers, and come up with a single number. Furthermore our intial assumption can still hold (Infinite Horizons, and Utility of sequences). To understand why the conclusion is true just solve for x using a geometric series
 
 
-
-
-
-
-
-
-
-
+**Policy** <br/>
+Define  𝜋∗=𝑎𝑟𝑔𝑚𝑎𝑥_𝜋 𝐸(∑𝛾^𝑡𝑅(𝑠_𝑡)|𝜋] Which is the policy that maximizes our long term rewards
+𝑅(𝑠) ≠ 𝑈𝜋(𝑠). R(s) is immediate reward or feedback, whereas Utility is long term, or delayed, rewards.
+the true utility of a state is defined by Bellman Equation: 𝑈(𝑠)=𝑅(𝑠)+𝛾⋅𝑚𝑎𝑥∑𝑇(𝑠,𝑎,𝑠′)𝑈(𝑠′) 
 
 
 
