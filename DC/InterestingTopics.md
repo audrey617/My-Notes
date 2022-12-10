@@ -6,8 +6,9 @@ Some topics I'm interested in or just some thoughts. Outside of the lecture/exam
 2. https://arxiv.org/pdf/1502.06461.pdf </br>
 
 
-**RDMA - bypass CPU? existing designs?** </br>
-1. Reda, Waleed, et al. "RDMA is Turing complete, we just did not know it yet!." 19th USENIX Symposium on Networked Systems Design and Implementation (NSDI 22). 2022. https://wreda.github.io/papers/redn-nsdi22.pdf </br>
+**RDMA Design** </br>
+1. Ziegler, Tobias, Viktor Leis, and Carsten Binnig. "Rdma communciation patterns." Datenbank-Spektrum 20.3 (2020): 199-210. https://link.springer.com/article/10.1007/s13222-020-00355-7
+2. Reda, Waleed, et al. "RDMA is Turing complete, we just did not know it yet!." 19th USENIX Symposium on Networked Systems Design and Implementation (NSDI 22). 2022. https://wreda.github.io/papers/redn-nsdi22.pdf </br>
 
 
 **Spanner vs BigQuery** </br>
