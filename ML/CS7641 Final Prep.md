@@ -222,7 +222,7 @@ Let B.O.C. = Bayes Optimal Classifier<br/>
 
 **What is Feature Transformation?**<br/>
 The problem of pre-processing a set of features to create a new (smaller or more compact) feature set, while retaining as much (relevant and useful) information as possible.<br/>
-Feature Selection is a subset of Feature Transformation, where the preprocessing is literally extracting a subset of the features. In Feature Transformation, we apply a “linear transformation operator”. The goal is to find a matrix 𝑃 such that we can project the examples into a newer subspace (that is typically smaller than the original subspace) to get new features that are linear combinations of the old features.<br/>
+Feature Selection is where the preprocessing is literally extracting a subset of the features. In Feature Transformation, we apply a “linear transformation operator”. The goal is to find a matrix 𝑃 such that we can project the examples into a new subspace (that is typically smaller than the original subspace) to get new features that are linear combinations of the old features.<br/>
 
 <p align="center" width="100%">
     <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul7.JPG?raw=true">
