@@ -274,7 +274,7 @@ PCA VS ICA<br/>
 </p>
 Bag of Features means whether they both produce a set of feature vectors.<br/> 
 By maximizing variance along orthogonal dimensions, PCA is finding uncorrelated dimensions. There are cases under which PCA happens to find independent projections when all data is gaussian, although independence is not the goal for PCA.<br/> 
-The underlying model between PCA and ICA doesn't match. ICA should not maximizing variance. That will mix independent variables together through central limit theorem to normal distribution, which in fact do not tease apart the independent things. This is specifically wrong when variables are highly non-normal distribution <br/>
+The underlying model between PCA and ICA doesn't match. ICA should not maximizing variance. To do so will mix independent variables together (linear combination of independent variables) through central limit theorem to normal distribution, which in fact do not tease apart the independent things. This is specifically wrong when variables are highly non-normal distribution (ICA assumption) <br/>
 PCA maximize reconstruction of the original data, not the mutal information<br/>
 Effectively they're both trying to do the same thing (reconstruct the data) but they do it in very different ways. What both of these are great at is helping you to understand the fundamental structure and causes of our data.<br/> 
 <p align="center" width="100%">
