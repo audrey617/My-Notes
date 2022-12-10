@@ -294,13 +294,39 @@ PCA, ICA and RCA feel more like filtering. But LDA is more similar to the wrappi
 
 
 
-
-
-
-
-
-
 <h1 id="4">Module: RL1 - Markov Decision Processes</h1>
+
+**Decision Making & Reinforcement Learning** <br/>
+Supervised Learning: given (𝑥, 𝑦) pairs, and the goal is to find a function 𝑓(𝑥) that maps a new 𝑥 to a proper 𝑦 (function approximation). <br/>
+Unsupervised Learning: given a dataset of 𝑥 points, and the goal is to find a function 𝑓(𝑥) the provides a description of this dataset (Clustering). <br/>
+Reinforcement Learning: a similar task as in Supervised Learning. But instead of having (𝑥, 𝑦) pairs as an input, we’ll be given (𝑥, 𝑧) pairs, and our job is to find 𝑓(𝑥) that generates 𝑦. <br/>
+
+
+**Markov Decision Processes** <br/>
+1) States S:  Set of tokens. The state of the object of interest represented in any way <br/>
+2) Model T(s,a,s') ∼ Pr(s'|s,a): This is the Transition Model (function), which is the probability of transitioning to a new state 𝑠 given that the object starts at state 𝑠 and performs action a. Markovian prop1 that only the present state matters, the past doesn't. Markovian prop2 the transition model is stationary and doesn't change over time <br/>
+3) Actions A(s)/A: the set of all possible actions<br/>
+4) Reward R(s)/R(s,a)/R(s,a,s'): the reward the object gets when transitioning to a state 𝑠, which tells it the “usefulness” of transitioning to that state. It can be 1)R(s) is the reward received from being in a state 2)R(s,a) taking an action from a particular state 3)R(s,a,s') taking an action from a particular state and landing in state. They are all mathematically equivalent <br/>
+The above is how we define the MDP problem, the policy is the solution that we are looking to determine.<br/>
+Policy: π(s) → a.  π∗ is the optimal policy. The Policy defines the solution. The policy is a function 𝜋(𝑠) that takes a state 𝑠 as an input and returns the proper action 𝑎. A problem might have different policies.The optimum policy 𝜋∗ is the policy that maximizes the long term expected reward. RL talks about policies, a function that tells you what action to take for all possible states you are in. If you have a policy, and it is an optimal one, it will guide you in any situation. What the policy doesn't tell you is 2 or more steps into the future.<br/>
+We will be given (𝑠, 𝑎, 𝑟) and our task would be to learn the optimum policy 𝜋∗ that produces the optimum action (highest reward).<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
