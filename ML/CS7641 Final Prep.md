@@ -314,12 +314,12 @@ Policy: π(s) → a.  π∗ is the optimal policy. The Policy says when you at s
 We will be given (𝑠, 𝑎, 𝑟) and our task would be to learn the optimum policy 𝜋∗ that produces the optimum action (highest reward).<br/>
 
 **Rewards** <br/>
-The amount of rewards <br/>
-1) In the Reinforcement Learning context, we don’t get a reward for each action. Instead, we get a “delayed reward” in terms of a positive or negative label for the state we end up in.
-2) Because we don’t have instant rewards for each action, we have the problem of figuring out which specific action(s) lead us to a positive/negative outcome. This problem is called "Temporal Credit Assignment".
-3) A small negative reward will encourage the agent to take the shortest path to the positive outcome. However, a big negative reward will encourage the agent to take the shortest path no matter what the result is, so it might end up with a negative outcome. This means that determining the rewards is some sort of a domain knowledge.
+The amount of rewards? <br/>
+1) In the Reinforcement Learning context, we don’t get a reward for each action. Instead, we get a “delayed reward” in terms of a positive or negative label for the state we end up in. <br/>
+2) Because we don’t have instant rewards for each action, we have the problem of figuring out which specific action(s) lead us to a positive/negative outcome. This problem is called "Temporal Credit Assignment". <br/>
+3) A small negative reward will encourage the agent to take the shortest path to the positive outcome. However, a big negative reward will encourage the agent to take the shortest path no matter what the result is, so it might end up with a negative outcome. A big positive reward will encourage the agent to never terminate the game. This means that determining the rewards is some sort of a domain knowledge. <br/>
 
-How much time you have to reach the result (Infinite horizon -> stationary)<br/>
+How much time you have to reach the result? (Infinite horizon -> stationary)<br/>
 The normal the gridworld probelm is an infinite horizon. If change horizon from infinite to finite, two things would happen 1) policy changes because game may end 2) policy may chang even in the same state. eg, turn left and bounced the wall, stay, turn left and bounced wall stay. Run out of time, turn right.<br/>
 If you have an infinite amount of time (Infinite Horizon) you will be able to take longer paths to avoid possible risks. On the other hand, if you don’t have that much time, you’ll have to take the shortest path, even if it underlies some risk of falling into a negative outcome. 
 This means that the "time" will change the optimum policy as 𝜋(s,t) → 𝑎. Without assuming an Infinite Horizon, we will lose the notion of stationarity in our policies 𝜋(s) → 𝑎. <br/>
