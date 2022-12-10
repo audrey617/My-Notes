@@ -280,7 +280,7 @@ Effectively they're both trying to do the same thing (reconstruct the data) but 
 <p align="center" width="100%">
     <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul12.JPG?raw=true">
 </p>
-
+Directional means if give a matrix or a transpose of that matrix, PCA will end up finding the same answer. But ICA gives completely different answer. so it is highly directional. <br/>
 
 **Random Components Analysis/ Random Projection**<br/>
 Similar to Principal Components Analysis, but instead of generating directions that maximize variance, it generates random directions to project data onto it. In doing so it still manages to pick up on some of the correlation.<br/>
