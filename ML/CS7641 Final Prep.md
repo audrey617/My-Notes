@@ -244,13 +244,53 @@ An eigenproblem is a computational problem that can be solved by finding the eig
 Principal Components Analysis is an example of an eigenproblem which will transform the features set by:<br/>
 1) Finding the direction (vector) that maximizes variance. The is called the Principal Component<br/>
 2) Finding directions that are mutually orthogonal to the Principal Component.<br/>
+We are doing a transformation into a new space where feature selection can work<br/>
 
-properties:<br/>
-1) global algorithm: Mutually orthogonal means it is a global algorithm. "global" means that all the directions and new features that they find have a big global constraint, namely that they must be mutually orthogonal.<br/>
+Properties:<br/>
+1) global algorithm (will be forced to find global features): Mutually orthogonal means it is a global algorithm. "global" means that all the directions and new features that they find have a big global constraint, namely that they must be mutually orthogonal.<br/>
 2) PCA gives the ability to do reconstruction, because it’s a linear rotation of the original space that minimizes L2 error by moving 𝑁 to 𝑀 dimensions. So, we don’t lose information. In details: the PCA actually gives you the best reconstruction, which means if I return these two dimensions, I have actually lost no information. It is just a linear rotation of the original dimensions. So if I were to give you back these two different features, you could reconstruct all of your original data. But PCA will take just one of these dimensions to reconstruct, in particular, take the first one as the principle component, I am guaranteed that if I project only in to this space and then try to reproject into the original space, I will minimize the L2 error (The squared error, here the distance).What this means is that if I project onto this single axis here, and then I compare it to where it was in the original space, the distance, the sum of all the distances between those points will actually be the minimal that I could get for any other projection. just think about the fact that points. Always start out in some orthogonal space. And, I'm basically finding in scaling and a rotation such that I don't lose any information. And I maximize variance along the way. By maximizing variance, it turns out
 I'm maximizing or maintaining distances as best I can in any given dimension. And, so, that gives me the best reconstruction that I can imagine. <br/>
 3) As an eigenproblem, each Principal Component has a prescribed eigen value. We can throw away the components with the least eigenvalues as they correspond to the features that matter less in the reconstruction. In details: What happens when you do principal components analysis is you get all of these axes back, and in fact, if you start out with. N dimensions, you get back N dimensions again, and the job here for a future transformation as you might recall, is you want to pick a subset M of them hopefully much smaller than N. Well, it turns out that associated with each one of these new dimensions that we get is its eigenvalue. That eigenvalue is guaranteed to be non-negative, it has a lot of other neat properties. But what matters to us here is that the **eigenvalues monotonically non-increase**, that is, they tend to get smaller as you move from the principal to the second principal, to the third, to the fourth, to the fifth, to the sixth, and so on to the nth dimension. And so, you can throw away the ones with the least eigenvalue. And that's a way of saying that you're throw awaying these projections, or the directions, or the features, with the least amount of variance.<br/>
+4) If eigenvalue of some particular dimension equals to 0, then it means it provides no information (not irrelevant) in the original space. So throw away this dimension won't affect reconstruction.<br/> 
 
+Pratical properties:<br/> 
+5) It's well studied. In this cae, it's very fast algorithms.<br/> 
+6) Does it help with classification later? Maybe not. If one of the original dimension is directly related but its variance of that particular direction is extremely small. It might end up throwing it away. This doesn't help with classification later. kind like filtering. features with high variance don’t necessarily correlate to features with high importance.PCA will almost certainly drop the useful feature when the random noise has high variance<br/> 
+
+
+**Independent Components Analysis**<br/>
+ICA attempts to maximize independence. It tries to find a linear transformation of the feature space, such that each of the individual new features are mutually statistically independent:<br/> 
+1) The mutual information between any two random features equals zero I(yi,yj)=0 <br/> 
+2) The mutual information between the new features set and the old features set is as high as possible I(yi,xi)= maximum.<br/> 
+In the other words, we want to be able to reconstruct the data (predict X from Y or Y from X). And at the same time, each variable in the new dimension is in fact mutually independent. <br/> 
+<p align="center" width="100%">
+    <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul10.JPG?raw=true">
+</p>
+
+Motivation: Blind source separation/cocktail party problem. This is the background for ICA: the voices are hidden variables (variables that we wish we knew since they powered the data we see) that we are trying to learn about, and the overall room noise is our known data. ICA reconstructs the sounds independently by modeling this assumption of the noise being a linear combination of some hidden variables<br/> 
+
+PCA VS ICA<br/> 
+<p align="center" width="100%">
+    <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul11.JPG?raw=true">
+</p>
+Bag of Features means whether they both produce a set of feature vectors.<br/> 
+By maximizing variance along orthogonal dimensions, PCA is finding uncorrelated dimensions. There are cases under which PCA happens to find independent projections when all data is gaussian, although independence is not the goal for PCA.<br/> 
+The underlying model between PCA and ICA doesn't match. ICA should not maximizing variance. That will mix independent variables together through central limit theorem to normal distribution, which in fact do not tease apart the independent things. This is specifically wrong when variables are highly non-normal distribution <br/>
+PCA maximize reconstruction of the original data, not the mutal information<br/>
+Effectively they're both trying to do the same thing (reconstruct the data) but they do it in very different ways. What both of these are great at is helping you to understand the fundamental structure and causes of our data.<br/> 
+<p align="center" width="100%">
+    <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul12.JPG?raw=true">
+</p>
+
+
+**Random Components Analysis/ Random Projection**<br/>
+Similar to Principal Components Analysis, but instead of generating directions that maximize variance, it generates random directions to project data onto it. In doing so it still manages to pick up on some of the correlation.<br/>
+It captures some of the correlations that works well with classification settings. Because you project it to lower dimension space that happens to capture some correlation. In some case the projected dimension m is even bigger than the original space n <br/>
+It’s faster than PCA and ICA. It often won't reduce the dimensions as much as the other two approaches. So one big advantage of RCA is fast but it's also cheap and simple to implement.<br/>
+
+**Linear Discriminant Analysis**<br/>
+Linear Discriminant Analysis finds a projection that discriminates based on the label. That is, it finds projections of features that ultimately align best with the desired output. In other words, it aims to find a collection of good linear separators on data.<br/>
+PCA, ICA and RCA feel more like filtering. But LDA is more similar to the wrapping function. LCA does care about the labels and wants to find ways to discrimination. Unlike wrapping, LDA does not care about the learner <br/>
 
 
 
