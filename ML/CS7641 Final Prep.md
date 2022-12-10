@@ -282,6 +282,7 @@ Effectively they're both trying to do the same thing (reconstruct the data) but 
 </p>
 Directional means if give a matrix or a transpose of that matrix, PCA will end up finding the same answer. But ICA gives completely different answer. so it is highly directional. <br/>
 
+
 **Random Components Analysis/ Random Projection**<br/>
 Similar to Principal Components Analysis, but instead of generating directions that maximize variance, it generates random directions to project data onto it. In doing so it still manages to pick up on some of the correlation.<br/>
 It captures some of the correlations that works well with classification settings. Because you project it to lower dimension space that happens to capture some correlation. In some case the projected dimension m is even bigger than the original space n <br/>
