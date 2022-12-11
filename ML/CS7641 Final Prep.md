@@ -252,7 +252,7 @@ Properties:<br/>
 4) If eigenvalue of some particular dimension equals to 0, then it means it provides no information (not irrelevant) in the original space. So throw away this dimension won't affect reconstruction.<br/> 
 
 Pratical properties:<br/> 
-5) It's well studied. In this cae, it's very fast algorithms.<br/> 
+5) It's well studied. In this case, it's very fast algorithms.<br/> 
 6) Does it help with classification later? Maybe not. If one of the original dimension is directly related but its variance of that particular direction is extremely small. It might end up throwing it away. This doesn't help with classification later. kind like filtering. features with high variance don’t necessarily correlate to features with high importance.PCA will almost certainly drop the useful feature when the random noise has high variance<br/> 
 
 
