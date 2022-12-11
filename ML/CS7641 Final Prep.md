@@ -384,13 +384,13 @@ Note that rather than having the 𝑚𝑎𝑥 over actions as in the normal Bell
 
 **RL API and Three approaches to RL** <br/>
 <p align="center" width="100%">
-    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl5.png?raw=true">
+    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl5.png?raw=true">
 </p>
 <p align="center" width="100%">
-    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl6.png?raw=true">
+    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl6.png?raw=true">
 </p>
 <p align="center" width="100%">
-    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl7.png?raw=true">
+    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl7.png?raw=true">
 </p>
 In Markov Decision Process, our input is a model consisting of a transition function 𝑇 and a reward function 𝑅, and the intended output is to compute the policy 𝜋 (Planning).<br/>
 In Reinforcement Learning, the inputs are transitions (Initial state, action, reward, result state, …), and the intended output is to “learn” the policy 𝜋. Reinforcement Learning is about “reward maximization”.<br/>
