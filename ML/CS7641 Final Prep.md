@@ -427,9 +427,9 @@ Q-Learning is estimating the value of 𝑄(𝑠, 𝑎) based on transitions and 
 <p align="center" width="100%">
     <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl12.png?raw=true">
 </p>
-This simple updating rule is guaranteed to converge to the true value of the Q-function with the huge caveat that (s, a) must be visited infinitely often<br/>
+This simple updating rule is guaranteed to converge to the true value of the Q-function with the huge caveat that (s, a) must be visited infinitely often<br/><br/>
 
-**Choosing Actions**
+**Choosing Actions**<br/>
 <p align="center" width="100%">
     <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl13.png?raw=true">
 </p>
