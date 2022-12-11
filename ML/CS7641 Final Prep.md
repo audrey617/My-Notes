@@ -425,7 +425,7 @@ Q-Learning is estimating the value of 𝑄(𝑠, 𝑎) based on transitions and 
 𝛼 is 0 corresponds to no learning. nothing will change. 𝛼 is 1 means full learning. we forget what we learnt before and jump into the new value. 𝛼 is updated over time, specifically, it must follow the rules for converge to hold true.<br/> 
 
 <p align="center" width="100%">
-    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl9_3.png?raw=true">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl9_3.png?raw=true">
 </p>
 This simple updating rule is guaranteed to converge to the true value of the Q-function with the huge caveat that (s, a) must be visited infinitely often<br/><br/>
 
