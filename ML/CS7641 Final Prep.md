@@ -325,9 +325,11 @@ If you have an infinite amount of time (Infinite Horizon) you will be able to ta
 This means that the "time" will change the optimum policy as 𝜋(s,t) → 𝑎. Without assuming an Infinite Horizon, we will lose the notion of stationarity in our policies 𝜋(s) → 𝑎. <br/>
 
 Utility of Sequences<br/>
+
 <p align="center" width="100%">
     <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul13.JPG?raw=true">
 </p>
+
 stationarity of preferences: if u(s0,s1,s2..)> u(s0,s'1,s'2...) then u(s1,s2..)> u(s'1,s'2...). Another way to state stationarity of preferences is that if I prefer a sequence of states today over another sequence of states, then I’d prefer that sequence of states over the same other sequence of states tomorrow.<br/>
 This notion forces you to do some sort of reward addition, because nothing else will guarantee the stationary of preferences. So "𝑈(𝑠0,𝑠1,𝑠2,⋯)=∑𝑅(s_t) where t = 0 to inf" will be ture. If you don't do that, "if u(s0,s1,s2..)> u(s0,s'1,s'2...) then u(s1,s2..)> u(s'1,s'2...)" will not hold.<br/>
 However, There is a problem regarding "𝑈(𝑠0,𝑠1,𝑠2,⋯)=∑𝑅(s_t) where t = 0 to inf". Consider two grid worlds: in G1 the rewards are steady at +1 per time step, and in G2 they alternate between +1, and +2. Which of the two is better? Well neither, because both sum to infinity when there is an infinite horizon<br/>
