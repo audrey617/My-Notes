@@ -378,7 +378,7 @@ steps<br/>
 1. Start with an arbitrary policy 𝜋0<br/>
 2. Evaluate: calculating the utility following that policy with bellman equation<br/>
 3. Improve: 𝜋_𝑡+1 = argmax a based on the new utilities<br/>
-Note that rather than having the 𝑚𝑎𝑥 over actions as in the normal Bellman equation, we already know what action to take according to the policy we’re evaluating. This trick removes the 𝑚𝑎𝑥 operator, making this a set of 𝑛 solvable linear equations in 𝑛 unknow. <br/>
+Note that rather than having the 𝑚𝑎𝑥 over actions as in the normal Bellman equation, we already know what action to take according to the policy we’re evaluating. This trick removes the 𝑚𝑎𝑥 operator, making this a set of 𝑛 solvable linear equations in 𝑛 unknow. There are finite number of policies and will converge <br/>
 
 <h1 id="5">Module: RL2 - Reinforcement Learning</h1>
 
