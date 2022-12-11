@@ -332,10 +332,15 @@ Utility of Sequences<br/>
 stationarity of preferences: if u(s0,s1,s2..)> u(s0,s'1,s'2...) then u(s1,s2..)> u(s'1,s'2...). Another way to state stationarity of preferences is that if I prefer a sequence of states today over another sequence of states, then I’d prefer that sequence of states over the same other sequence of states tomorrow.<br/>
 This notion forces you to do some sort of reward addition, because nothing else will guarantee the stationary of preferences. So "𝑈(𝑠0,𝑠1,𝑠2,⋯)=∑𝑅(s_t) where t = 0 to inf" will be ture. If you don't do that, "if u(s0,s1,s2..)> u(s0,s'1,s'2...) then u(s1,s2..)> u(s'1,s'2...)" will not hold.<br/>
 However, There is a problem regarding "𝑈(𝑠0,𝑠1,𝑠2,⋯)=∑𝑅(s_t) where t = 0 to inf". Consider two grid worlds: in G1 the rewards are steady at +1 per time step, and in G2 they alternate between +1, and +2. Which of the two is better? Well neither, because both sum to infinity when there is an infinite horizon<br/>
-To solve this problem by adding a variable in the function to get discounted reward: 𝑈(𝑠0,𝑠1,𝑠2,⋯)=∑ 𝛾^𝑡 * 𝑅(𝑠_𝑡) for 0<𝛾<1 
-If 𝛾 → 0, we get the first reward and then everything else will fall off to nothing.
-If 𝛾 → 1, we get a maximized reward
-Now we can add an infinite number of numbers, and come up with a single number. Furthermore our intial assumption can still hold (Infinite Horizons, and Utility of sequences). To understand why the conclusion is true just solve for x using a geometric series
+
+<p align="center" width="100%">
+    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl1.png?raw=true">
+</p>
+
+To solve this problem by adding a variable in the function to get discounted reward: 𝑈(𝑠0,𝑠1,𝑠2,⋯)=∑ 𝛾^𝑡 * 𝑅(𝑠_𝑡) for 0<𝛾<1 <br/>
+If 𝛾 → 0, we get the first reward and then everything else will fall off to nothing.<br/>
+If 𝛾 → 1, we get a maximized reward<br/>
+Now we can add an infinite number of numbers, and come up with a single number. Furthermore our intial assumption can still hold (Infinite Horizons, and Utility of sequences). To understand why the conclusion is true just solve for x using a geometric series<br/>
 
 
 **Policy** <br/>
