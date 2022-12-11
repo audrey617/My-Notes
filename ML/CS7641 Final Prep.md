@@ -320,14 +320,13 @@ The amount of rewards? <br/>
 3) A small negative reward will encourage the agent to take the shortest path to the positive outcome. However, a big negative reward will encourage the agent to take the shortest path no matter what the result is, so it might end up with a negative outcome. A big positive reward will encourage the agent to never terminate the game. This means that determining the rewards is some sort of a domain knowledge. <br/>
 
 How much time you have to reach the result? (Infinite horizon -> stationary)<br/>
-The normal the gridworld probelm is an infinite horizon. If change horizon from infinite to finite, two things would happen 1) policy changes because game may end 2) policy may chang even in the same state. eg, turn left and bounced the wall, stay, turn left and bounced wall stay. Run out of time, turn right.<br/>
-If you have an infinite amount of time (Infinite Horizon) you will be able to take longer paths to avoid possible risks. On the other hand, if you don’t have that much time, you’ll have to take the shortest path, even if it underlies some risk of falling into a negative outcome. 
+The normal the gridworld probelm is an infinite horizon. If change horizon from infinite to finite, two things would happen:  1) policy changes because game may end 2) policy may chang even in the same state. For example, turn left and bounce the wall, stay, turn left and bounce wall, stay. Run out of time, turn right.<br/>
+If you have an infinite amount of time (Infinite Horizon) you will be able to take longer paths to avoid possible risks. On the other hand, if you don’t have that much time, you’ll have to take the shortest path, even if it underlies some risk of falling into a negative outcome. <br/>
 This means that the "time" will change the optimum policy as 𝜋(s,t) → 𝑎. Without assuming an Infinite Horizon, we will lose the notion of stationarity in our policies 𝜋(s) → 𝑎. <br/>
 
 Utility of Sequences<br/>
-
 <p align="center" width="100%">
-    <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul13.png?raw=true">
+    <img width="40%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul13.png?raw=true">
 </p>
 
 stationarity of preferences: if u(s0,s1,s2..)> u(s0,s'1,s'2...) then u(s1,s2..)> u(s'1,s'2...). Another way to state stationarity of preferences is that if I prefer a sequence of states today over another sequence of states, then I’d prefer that sequence of states over the same other sequence of states tomorrow.<br/>
