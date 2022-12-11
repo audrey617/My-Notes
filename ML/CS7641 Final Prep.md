@@ -422,15 +422,28 @@ Q-Learning is estimating the value of 𝑄(𝑠, 𝑎) based on transitions and 
 <p align="center" width="100%">
     <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl11.png?raw=true">
 </p>
-𝛼 is 0 corresponds to no learning. nothing will change. 𝛼 is 1 means full learning. we forget what we learnt before and jump into the new value. 𝛼 is updated over time, specifically, it must follow the rules for converge to hold true. This simple updating rule is guaranteed to converge to the true value of the Q-function with the huge caveat that (s, a) must be visited infinitely often<br/>
+𝛼 is 0 corresponds to no learning. nothing will change. 𝛼 is 1 means full learning. we forget what we learnt before and jump into the new value. 𝛼 is updated over time, specifically, it must follow the rules for converge to hold true.<br/> 
 
-<br/>
 <p align="center" width="100%">
     <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl12.png?raw=true">
 </p>
+This simple updating rule is guaranteed to converge to the true value of the Q-function with the huge caveat that (s, a) must be visited infinitely often<br/>
+
+**Choosing Actions**
 <p align="center" width="100%">
     <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl13.png?raw=true">
 </p>
+Notice that we’re leaving a bunch of questions unanswered, and the answers to them are what make Q-learning a family of algorithms:<br/>
+1. How do we initialize Q_hat? We could initialize it to zero, or with small random values, or negative values, or. . .<br/>
+2. How do we decay α_t? We’ve seen that α_t =1/t follows the convergence rules we need, but are there other alternatives?<br/>
+3. How do we choose actions? 
+1) Always choose a single specific action: We don’t learn anything, and we violate the 4th rule of 𝑄 − Learning (visiting all (𝑠, 𝑎) pairs)
+2) Choose randomly: We don’t learn
+3) Use our estimate 𝑄̂ to choose actions. We can have some issues if we poorly initialized 𝑄̂ so that it always prefers a specific action over all the other actions. So we need to be careful: relying on our (potentially faulty, unconverged) knowledge of actions might lead to us simply reinforcing the wrong actions.<br/>
+4) Random restarts: It will take a lot of time to get to the optimum answer
+5) Simulated Annealing, on the other hand, can facilitate a random but faster approach, while exploring the whole space with probability 1- epsilon 
+
+**Greedy Exploration**
 <p align="center" width="100%">
     <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl14.png?raw=true">
 </p>
