@@ -389,13 +389,12 @@ Note that rather than having the 𝑚𝑎𝑥 over actions as in the normal Bell
 <p align="center" width="100%">
     <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl6.png?raw=true">
 </p>
-In Markov Decision Process, our input is a model consisting of a transition function 𝑇 and a reward function 𝑅, and the intended output is to compute the policy 𝜋 (Planning).<br/>
-In Reinforcement Learning, the inputs are transitions (Initial state, action, reward, result state, …), and the intended output is to “learn” the policy 𝜋. Reinforcement Learning is about “reward maximization”.<br/>
-Three approaches:<br/>
+In Markov Decision Process, our input is a model consisting of a transition function 𝑇 and a reward function 𝑅, and the intended output is to compute the policy 𝜋 (Planning). In Reinforcement Learning, the inputs are transitions (Initial state, action, reward, result state, …), and the intended output is to “learn” the policy 𝜋. Reinforcement Learning is about “reward maximization”.<br/>
 
 <p align="center" width="100%">
     <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl7.png?raw=true">
 </p>
+Three approaches:<br/>
 1. Policy Search Algorithm: Mapping states to actions. Learning directly on policy for the use. However, learning this function is very indirect. Similar to Temporal Credit Assignment problem, state to action is not easy<br/>
 2. Value Function based Algorithms: Mapping states to values. Learning values from states is quite direct, but turning this into a policy might be done using an 𝑎𝑟𝑔𝑚𝑎𝑥.<br/>
 3. Model-based Algorithm: Mapping (states & actions) to (next state & reward). Turning this into a utility function can be done using Bellman equations, then using 𝑎𝑟𝑔𝑚𝑎𝑥 to get the policy. It is direct learning but the usage is computationally indirect.<br/>
