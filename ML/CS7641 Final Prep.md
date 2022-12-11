@@ -397,7 +397,7 @@ In Markov Decision Process, our input is a model consisting of a transition func
 Three approaches:<br/>
 1. Policy Search Algorithm: Mapping states to actions. Learning directly on policy for the use. However, learning this function is very indirect. Similar to Temporal Credit Assignment problem, state to action is not easy<br/>
 2. Value Function based Algorithms: Mapping states to values. Learning values from states is quite direct, but turning this into a policy might be done using an 𝑎𝑟𝑔𝑚𝑎𝑥.<br/>
-3. Model-based Algorithm: Mapping (states & actions) to (next state & reward). Turning this into a utility function can be done using Bellman equations, then using 𝑎𝑟𝑔𝑚𝑎𝑥 to get the policy. It is direct learning but the usage is computationally indirect.<br/>
+3. Model-based Algorithm: Mapping (states & actions) to (next state & reward). Turning this into a utility function can be done using Bellman equations, then using 𝑎𝑟𝑔𝑚𝑎𝑥 to get the policy. It is direct learning but the usage is computationally indirect.<br/><br/>
 
 **Q function - a new kind of value funciton** <br/>
 <p align="center" width="100%">
@@ -408,7 +408,7 @@ Now using Q we could rewrite U(s) and π(s) as U(s)= max_a(Q(s,a)) and π(s)= ar
 <p align="center" width="100%">
     <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl9_1.png?raw=true">
 </p>
-Estimating the value of 𝑄(𝑠, 𝑎) or evaluating hte bellman equations from data is called Q-Learning<br/>
+Estimating the value of 𝑄(𝑠, 𝑎) or evaluating the bellman equations from data is called Q-Learning<br/><br/>
 
 **Q Learning** <br/>
 <p align="center" width="100%">
