@@ -327,7 +327,7 @@ This means that the "time" will change the optimum policy as 𝜋(s,t) → 𝑎.
 Utility of Sequences<br/>
 
 <p align="center" width="100%">
-    <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul13.PNG?raw=true">
+    <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul13.png?raw=true">
 </p>
 
 stationarity of preferences: if u(s0,s1,s2..)> u(s0,s'1,s'2...) then u(s1,s2..)> u(s'1,s'2...). Another way to state stationarity of preferences is that if I prefer a sequence of states today over another sequence of states, then I’d prefer that sequence of states over the same other sequence of states tomorrow.<br/>
