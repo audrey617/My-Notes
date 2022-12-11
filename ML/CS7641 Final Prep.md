@@ -347,7 +347,7 @@ Now we can add an infinite number of numbers, and come up with a single number. 
 
 **Policy** <br/>
 <p align="center" width="100%">
-    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul14.png?raw=true">
+    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ula1.JPG?raw=true">
 </p>
 Policy maximizes our long term rewards. 𝑅(𝑠) ≠ 𝑈(𝑠). R(s) is immediate reward or feedback, whereas utility is long term or delayed rewards.The true utility of a state is defined by Bellman Equation<br/>
 <p align="center" width="100%">
@@ -360,6 +360,7 @@ If we have 𝑛 states/utilities, then we have 𝑛 equations in 𝑛 unknows. I
 <p align="center" width="100%">
     <img width=60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl3.png?raw=true">
 </p>
+                                                                                                 
 Value Iteration:<br/>
 steps<br/>
 1. Start with arbitrary utilities.<br/>
