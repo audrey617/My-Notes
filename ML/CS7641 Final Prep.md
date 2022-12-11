@@ -403,8 +403,9 @@ Three approaches:<br/>
 <p align="center" width="100%">
     <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl8.png?raw=true">
 </p>
+
 <p align="center" width="100%">
-    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl9.png?raw=true">
+    <img width="40%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl9_1.png?raw=true">
 </p>
 
 Q-function: the utility of leaving state 𝑠 via action 𝑎, which is the reward of state 𝑠 plus the discounted expected value of taking action 𝑎 multiplied by the value of the optimum action in state 𝑠′. 𝑈(𝑠) and 𝜋(𝑠) can be defined via 𝑄(𝑠, 𝑎) in the chart. Estimating the value of 𝑄(𝑠, 𝑎) or evaluating hte bellman equations from data is called Q-Learning<br/>
