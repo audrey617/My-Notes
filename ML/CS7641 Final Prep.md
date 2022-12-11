@@ -293,7 +293,9 @@ It’s faster than PCA and ICA. It often won't reduce the dimensions as much as 
 Linear Discriminant Analysis finds a projection that discriminates based on the label. That is, it finds projections of features that ultimately align best with the desired output. In other words, it aims to find a collection of good linear separators on data.<br/>
 PCA, ICA and RCA feel more like filtering. But LDA is more similar to the wrapping function. LCA does care about the labels and wants to find ways to discrimination. Unlike wrapping, LDA does not care about the learner <br/>
 
-
+<p align="center" width="100%">
+    <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ula1.JPG.JPG?raw=true">
+</p>
 
 <h1 id="4">Module: RL1 - Markov Decision Processes</h1>
 
