@@ -345,7 +345,7 @@ Now we can add an infinite number of numbers, and come up with a single number. 
 
 **Policy** <br/>
 <p align="center" width="100%">
-    <img width="40%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl4.png?raw=true">
+    <img width="40%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul14.png?raw=true">
 </p>
 Define  𝜋∗=𝑎𝑟𝑔𝑚𝑎𝑥_𝜋 𝐸(∑𝛾^𝑡𝑅(𝑠_𝑡)|𝜋] which is the policy that maximizes our long term rewards<br/>
 𝑅(𝑠) ≠ 𝑈𝜋(𝑠). R(s) is immediate reward or feedback, whereas Utility is long term, or delayed, rewards.<br/>
