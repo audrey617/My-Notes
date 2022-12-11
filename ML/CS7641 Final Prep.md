@@ -281,7 +281,7 @@ Effectively they're both trying to do the same thing (reconstruct the data) but 
     <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul12.JPG?raw=true">
 </p>
 
-Directional means if give a matrix or a transpose of that matrix, PCA will end up finding the same answer. But ICA gives completely different answer. so it is highly directional. <br/><br/>
+Directional means if give a matrix or a transpose of that matrix, PCA will end up finding the same answer. But ICA gives completely different answers. so ICA is highly directional. <br/><br/>
 
 
 **Random Components Analysis/ Random Projection**<br/>
