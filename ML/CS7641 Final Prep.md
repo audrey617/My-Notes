@@ -358,7 +358,7 @@ Policy maximizes our long term rewards. 𝑅(𝑠) ≠ 𝑈(𝑠). R(s) is immed
 If we have 𝑛 states/utilities, then we have 𝑛 equations in 𝑛 unknows. If the equations are linear, they would have been solvable, but the 𝑚𝑎𝑥 operator makes the equations non-linear. But there are still ways to solve it even it is non-linear<br/>
 
 <p align="center" width="100%">
-    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl3.png?raw=true">
+    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl3.png?raw=true">
 </p>
                                                                                                  
 Value Iteration:<br/>
@@ -371,7 +371,7 @@ We basically update the estimate of utility of state 𝑠 by calculating the act
 This is guaranteed to converge because with each step we’re adding 𝑅(𝑠), which is a true value. So, even if we started with a very wrong estimate of utility, we keep adding the true value 𝑅(𝑠) in each iteration that it will dominate the original arbitrary estimate.<br/> 
 
 <p align="center" width="100%">
-    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl4.png?raw=true">
+    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl4.png?raw=true">
 </p>
 Policy Iteration:<br/>
 steps<br/>
