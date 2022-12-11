@@ -413,10 +413,18 @@ Q-function: the utility of leaving state 𝑠 via action 𝑎, which is the rewa
 </p>
 Q-Learning is estimating the value of 𝑄(𝑠, 𝑎) based on transitions and rewards but we don't have access to 𝑅(𝑠) and 𝑇(𝑠, 𝑎, 𝑠′)<br/>
 𝑄̂(𝑠, 𝑎) is an estimate of the Q-function that updates by a learning rate 𝛼 in the direction of the immediate reward 𝑟 plus the estimated value of the next state. 𝛼 is 0 corresponds to no learning. nothing will change. 𝛼 is 1 means full learning. we forget what we learnt before and jump into the new value. <br/>
-
-
-
-
+<p align="center" width="100%">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl11.png?raw=true">
+</p>
+<p align="center" width="100%">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl12.png?raw=true">
+</p>
+<p align="center" width="100%">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl13.png?raw=true">
+</p>
+<p align="center" width="100%">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl14.png?raw=true">
+</p>
 
 
 
