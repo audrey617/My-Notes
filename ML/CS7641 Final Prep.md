@@ -350,7 +350,9 @@ Now we can add an infinite number of numbers, and come up with a single number. 
 Define  𝜋∗=𝑎𝑟𝑔𝑚𝑎𝑥_𝜋 𝐸(∑𝛾^𝑡𝑅(𝑠_𝑡)|𝜋] which is the policy that maximizes our long term rewards<br/>
 𝑅(𝑠) ≠ 𝑈𝜋(𝑠). R(s) is immediate reward or feedback, whereas Utility is long term, or delayed, rewards.<br/>
 the true utility of a state is defined by Bellman Equation: 𝑈(𝑠)=𝑅(𝑠)+𝛾⋅𝑚𝑎𝑥∑𝑇(𝑠,𝑎,𝑠′)𝑈(𝑠′) <br/>
-
+<p align="center" width="100%">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl2.png?raw=true">
+</p>
 
 
 
