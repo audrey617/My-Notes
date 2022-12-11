@@ -415,14 +415,14 @@ Estimating the value of 𝑄(𝑠, 𝑎) or evaluating the bellman equations fro
     <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl10.png?raw=true">
 </p>
 Q-Learning is estimating the value of 𝑄(𝑠, 𝑎) based on transitions and rewards but we don't have access to 𝑅(𝑠) and 𝑇(𝑠, 𝑎, 𝑠′). 𝑄̂(𝑠, 𝑎) is an estimate of the Q-function that updates by a learning rate 𝛼 in the direction of the immediate reward 𝑟 plus the estimated value of the next state. The foundation behind Q-learning is using data that we learn about the world as we take actions in order to evaluate the Bellman equation. The fundamental problem is that we don't have R or T, but we do have samples about the world.<br/>
-𝛼 is 0 corresponds to no learning. nothing will change. 𝛼 is 1 means full learning. we forget what we learnt before and jump into the new value. 𝛼 is updated over time, specifically, it must follow the below rules for converge to hold true. This simple updating rule is guaranteed to converge to the true value of the Q-function with the huge caveat that (s, a) must be visited infinitely often<br/>
+
 <p align="center" width="100%">
     <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl9_2.png?raw=true">
 </p>
-
 <p align="center" width="100%">
     <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl11.png?raw=true">
 </p>
+𝛼 is 0 corresponds to no learning. nothing will change. 𝛼 is 1 means full learning. we forget what we learnt before and jump into the new value. 𝛼 is updated over time, specifically, it must follow the rules for converge to hold true. This simple updating rule is guaranteed to converge to the true value of the Q-function with the huge caveat that (s, a) must be visited infinitely often<br/>
 
 <br/>
 <p align="center" width="100%">
