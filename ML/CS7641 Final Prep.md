@@ -197,7 +197,7 @@ We can use different techniques to search: Local searching can be useful. We can
 3. Backward Elimination: Start with all the features and evaluate the effect of eliminating each feature<br/>
 
 
-**Describing Features**:
+**Describing Features**<br/>
 When it comes to determining which features we should use, it’s necessary to differentiate them based on their viability in a general, statistical sense as well as in a learner-specific sense. We usually care more about usefulness, but relevance is what we generally use to get there.<br/>
 **Relevance  ∼  Information**<br/>
 **Usefulness  ∼  Error given a Model/learner**<br/>
