@@ -354,27 +354,65 @@ the true utility of a state is defined by Bellman Equation: 𝑈(𝑠)=𝑅(𝑠
     <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl2.png?raw=true">
 </p>
 
+**Solving Bellman Equation: Value Iteration and Policy Iteration** <br/>
+If we have 𝑛 states/utilities, then we have 𝑛 equations in 𝑛 unknows. If the equations are linear, they would have been solvable, but the 𝑚𝑎𝑥 operator makes the equations non-linear. But there are still ways to solve it even it is non-linear<br/>
 
+<p align="center" width="100%">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl3.png?raw=true">
+</p>
+Value Iteration:<br/>
+steps<br/>
+1. Start with arbitrary utilities.<br/>
+2. Update utilities based on neighbors.<br/>
+3. Repeat until convergence.<br/>
+We basically update the estimate of utility of state 𝑠 by calculating the actual reward for this state plus the discounted utility expected from the original estimate of utility of s<br/>
+This is guaranteed to converge because with each step we’re adding 𝑅(𝑠), which is a true value. So, even if we started with a very wrong estimate of utility, we keep adding the true value 𝑅(𝑠) in each iteration that it will dominate the original arbitrary estimate.<br/> 
 
-
-
-
-
-
-
-
-
-
-
+<p align="center" width="100%">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl4.png?raw=true">
+</p>
+Policy Iteration:<br/>
+steps<br/>
+1. Start with an arbitrary policy 𝜋0<br/>
+2. Evaluate: how good that policy is by calculating the utility with Bellman equation<br/>
+3. Improve: 𝜋_𝑡+1 = argmax a based on the new utilities<br/>
+Note that rather than having the 𝑚𝑎𝑥 over actions as in the normal Bellman equation, we already know what action to take according to the policy we’re evaluating. This trick removes the 𝑚𝑎𝑥 operator, making this a set of 𝑛 solvable linear equations in 𝑛 unknow<br/>
 
 <h1 id="5">Module: RL2 - Reinforcement Learning</h1>
 
+**RL API and Three approaches to RL** <br/>
+<p align="center" width="100%">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl5.png?raw=true">
+</p>
+<p align="center" width="100%">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl6.png?raw=true">
+</p>
+<p align="center" width="100%">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl7.png?raw=true">
+</p>
+In Markov Decision Process, our input is a model consisting of a transition function 𝑇 and a reward function 𝑅, and the intended output is to compute the policy 𝜋 (Planning).<br/>
+In Reinforcement Learning, the inputs are transitions (Initial state, action, reward, result state, …), and the intended output is to “learn” the policy 𝜋. Reinforcement Learning is about “reward maximization”.<br/>
+Three approaches:
+1. Policy Search Algorithm: Mapping states to actions. Learning directly on policy for the use. However, learning this function is very indirect. Similar to Temporal Credit Assignment problem, state to action is not easy<br/>
+2. Value Function based Algorithms: Mapping states to values. Learning values from states is quite direct, but turning this into a policy might be done using an 𝑎𝑟𝑔𝑚𝑎𝑥.<br/>
+3. Model-based Algorithm: Mapping (states & actions) to (next state & reward). Turning this into a utility function can be done using Bellman equations, then using 𝑎𝑟𝑔𝑚𝑎𝑥 to get the policy. It is direct learning but the usage is computationally indirect.<br/>
 
+**Q function - a new kind of value funciton** <br/>
+<p align="center" width="100%">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl8.png?raw=true">
+</p>
+<p align="center" width="100%">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl9.png?raw=true">
+</p>
 
+Q-function: the utility of leaving state 𝑠 via action 𝑎, which is the reward of state 𝑠 plus the discounted expected value of taking action 𝑎 multiplied by the value of the optimum action in state 𝑠′. 𝑈(𝑠) and 𝜋(𝑠) can be defined via 𝑄(𝑠, 𝑎) in the chart. Estimating the value of 𝑄(𝑠, 𝑎) or evaluating hte bellman equations from data is called Q-Learning<br/>
 
-
-
-
+**Q Learning** <br/>
+<p align="center" width="100%">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl10.png?raw=true">
+</p>
+Q-Learning is estimating the value of 𝑄(𝑠, 𝑎) based on transitions and rewards but we don't have access to 𝑅(𝑠) and 𝑇(𝑠, 𝑎, 𝑠′)<br/>
+𝑄̂(𝑠, 𝑎) is an estimate of the Q-function that updates by a learning rate 𝛼 in the direction of the immediate reward 𝑟 plus the estimated value of the next state. 𝛼 is 0 corresponds to no learning. nothing will change. 𝛼 is 1 means full learning. we forget what we learnt before and jump into the new value. <br/>
 
 
 
