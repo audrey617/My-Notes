@@ -615,4 +615,4 @@ Same as policy evaluation TD, setting alpha as 1 is a bad idea because the updat
 
 
 <h1 id="6">Module: RL3&4 - Game Theory</h1>
-
+game theory check George Kudrayvtsev's note
