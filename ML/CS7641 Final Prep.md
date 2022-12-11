@@ -347,9 +347,9 @@ Now we can add an infinite number of numbers, and come up with a single number. 
 
 **Policy** <br/>
 <p align="center" width="100%">
-    <img width="40%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul14.png?raw=true">
+    <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/ul14.png?raw=true">
 </p>
-policy maximizes our long term rewards. 𝑅(𝑠) ≠ 𝑈(𝑠). R(s) is immediate reward or feedback, whereas utility is long term or delayed rewards.The true utility of a state is defined by Bellman Equation: 𝑈(𝑠)=𝑅(𝑠)+𝛾⋅𝑚𝑎𝑥∑𝑇(𝑠,𝑎,𝑠′)𝑈(𝑠′) <br/>
+Policy maximizes our long term rewards. 𝑅(𝑠) ≠ 𝑈(𝑠). R(s) is immediate reward or feedback, whereas utility is long term or delayed rewards.The true utility of a state is defined by Bellman Equation<br/>
 <p align="center" width="100%">
     <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl2.png?raw=true">
 </p>
@@ -358,7 +358,7 @@ policy maximizes our long term rewards. 𝑅(𝑠) ≠ 𝑈(𝑠). R(s) is immed
 If we have 𝑛 states/utilities, then we have 𝑛 equations in 𝑛 unknows. If the equations are linear, they would have been solvable, but the 𝑚𝑎𝑥 operator makes the equations non-linear. But there are still ways to solve it even it is non-linear<br/>
 
 <p align="center" width="100%">
-    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl3.png?raw=true">
+    <img width=60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl3.png?raw=true">
 </p>
 Value Iteration:<br/>
 steps<br/>
