@@ -455,8 +455,8 @@ Notice that we’re leaving a bunch of questions unanswered, and the answers to 
 <p align="center" width="100%">
     <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl14.png?raw=true">
 </p>
-This greedy limit plus infinite exploration means we learn stuff: Q_hat->Q, and we also use it: π_hat -> π*. This is an example of Exploration-Exploitation dilemma<br/>
-Exploration-Exploitation dilemma:<br/>. G\
+This greedy limit plus infinite exploration means we learn stuff: Q_hat->Q, and we also use it: π_hat -> π*. This is an example of dilemma between Exploration(gettingthe data you need) and Exploitation(using what you know) <br/>
+Exploration-Exploitation dilemma:<br/>. 
 1) Exploration is about getting the data that you need (learning) and exploitation is about stop learning and actually using what you’ve already learned.<br/>
 2) The dilemma exists because there is only one agent interacting with the world with conflicting actions.<br/>
 
