@@ -153,6 +153,10 @@ Jon Kleinberg: https://www.cs.cornell.edu/home/kleinber/nips15.pdf<br/>
 https://jeremy9959.net/Blog/KleinbergsClusteringTheorem/<br/>
 "k-means and EM has the properties of scale - invariance and consistency but not richness because k determines # of clusters." statement is wrong. Essentially, if were to introduce a new distance function and arrive to the same cluster configuration (partition), then you would satisfy the consistency property. From Kleinberg paper, Section 4: "We show here that for a fairly general class of centroid-based clustering functions, including k-means and k-median, none of the functions in the class satisfies the Consistency property. This suggests an interesting tension between between Consistency and the centroid-based approach to clustering, and forms a contrast with the results for single-linkage and sum-of-pairs in previous sections. " <br/> 
 
+<p align="center" width="100%">
+    <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/finalreviewaddon1.jpg?raw=true">
+</p>
+
 **Summary**<br/>
 Soft cluster (EM) vs Hard cluster (SLC, Kmean)<br/> 
 Terminates in polynomial time (SLC) vs Terminates not in polynomial time (Kmean, EM)<br/> 
