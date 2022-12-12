@@ -639,4 +639,14 @@ Same as policy evaluation TD, setting alpha as 1 is a bad idea because the updat
 
 
 <h1 id="6">Module: RL3&4 - Game Theory</h1>
-game theory check George Kudrayvtsev's note
+game theory check George Kudrayvtsev's note<br/>
+
+For the Minipoker Tree, TA's explain:<br/>
+<p align="center" width="100%">
+    <img width="60%" src="https://user-images.githubusercontent.com/62491253/206940313-7a1c88c6-6753-4fd1-9207-836cc8fb5477.png?raw=true">
+</p>
+So I think the assumption here is that we need to consider both sides of the tree at a time. So let me explain the calculation first and then let's see why that calculation is so. So for resign-resign, 50% of the time the game goes left, A resigns, and the game is over with a payoff of -20. The other 50% of the time, the game goes to the right, A holds, and B resigns with a payoff of +10. Calculating that out, you get -5.<br/>
+
+For your follow-up, the assumption is that B will respond by resigning because both A and B are resigners. Now you might be asking if this looks like a hold-resign strategy for A because A holds on the right side of the tree. The important thing is that A *never* resigns when they have the high card according to this formulation. It's not an option for them on the right side of the tree so they must hold.<br/>
+
+Anyway, it also wouldn't be an interesting strategy if a player resigned when they couldn't lose. In the game formulation, it only makes sense to resign when you have the option to call a bluff, for example. Another way to say this is that resign-resign does not actually mean both players always resign no matter what.<br/>
