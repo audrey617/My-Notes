@@ -643,7 +643,7 @@ game theory check George Kudrayvtsev's note<br/>
 
 For the Minipoker Tree, TA's explain:<br/>
 <p align="center" width="100%">
-    <img width="60%" src="https://user-images.githubusercontent.com/62491253/206940313-7a1c88c6-6753-4fd1-9207-836cc8fb5477.png?raw=true">
+    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/rl1.JPG?raw=true">
 </p>
 So I think the assumption here is that we need to consider both sides of the tree at a time. So let me explain the calculation first and then let's see why that calculation is so. So for resign-resign, 50% of the time the game goes left, A resigns, and the game is over with a payoff of -20. The other 50% of the time, the game goes to the right, A holds, and B resigns with a payoff of +10. Calculating that out, you get -5.<br/>
 
