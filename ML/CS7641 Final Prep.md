@@ -445,7 +445,11 @@ Notice that we’re leaving a bunch of questions unanswered, and the answers to 
 2) Choose randomly: We learnt but we don't use it. it's like we don't learn<br/>
 3) Use our estimate 𝑄̂ to choose actions. We can have some issues if we poorly initialized 𝑄̂ so that it always prefers a specific action over all the other actions. So we need to be careful: relying on our (potentially faulty, unconverged) knowledge of actions might lead to us simply reinforcing the wrong actions. In the worst case, it is gready but we get local min. It won't learn <br/>
 4) Random restarts: It will take a lot of time to get to the optimum answer<br/>
-5) Simulated Annealing, on the other hand, can facilitate a random but faster approach, while exploring the whole space with probability 1- epsilon <br/>
+5) Simulated Annealing: can facilitate a random but faster approach, while exploring the whole space with probability 1- epsilon. It will learn and can guarantee that (with infinite iterations) all possible stateaction pairs will be explored.<br/>
+<p align="center" width="100%">
+    <img width="40%" src="https://github.com/audrey617/Notes/blob/main/ML/images/finalreviewaddon2.jpg?raw=true">
+</p>
+
 
 <br/>**Greedy Exploration**<br/>
 <p align="center" width="100%">
@@ -454,10 +458,6 @@ Notice that we’re leaving a bunch of questions unanswered, and the answers to 
 Exploration-Exploitation dilemma:<br/>
 1) Exploration is about getting the data that you need (learning) and exploitation is about stop learning and actually using what you’ve already learned.<br/>
 2) The dilemma exists because there is only one agent interacting with the world with conflicting actions.<br/>
-
-
-
-
 
 
 
