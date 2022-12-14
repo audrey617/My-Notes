@@ -35,5 +35,5 @@ More posts from Peter Bailis blog http://www.bailis.org/blog/</br>
 
 **Papers and articles from James Mickens** </br>
 Woud love to read more about his articles!</br>
-The saddnest moment is here: https://mickens.seas.harvard.edu/wisdom-james-mickens</br>
+The saddnest moment is here and more: https://mickens.seas.harvard.edu/wisdom-james-mickens</br>
 More research papers: https://mickens.seas.harvard.edu/publications?page=1</br>
