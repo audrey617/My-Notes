@@ -2,6 +2,7 @@ Some topics I'm interested in or just some thoughts. Outside of the lecture/exam
 
 **More about Memcached** </br>
 https://memcached.org/about</br>
+memcached FAQ " A memcached server does not require a dedicated machine. If you have web, application, or database servers that have spare RAM capacity, then use them with memcached." https://docs.oracle.com/cd/E17952_01/mysql-5.6-en/ha-memcached-faq.html</br>
 Hardware requirement for Memcached https://github.com/memcached/memcached/wiki/Hardware</br>
 Scaling memcached at Facebook https://engineering.fb.com/2008/12/12/core-data/scaling-memcached-at-facebook/</br>
 
