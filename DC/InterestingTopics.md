@@ -1,6 +1,7 @@
 Some topics I'm interested in or just some thoughts. Outside of the lecture/exam scope.</br>
 
 **More about Memcached** </br>
+https://memcached.org/about</br>
 Hardware requirement for Memcached https://github.com/memcached/memcached/wiki/Hardware</br>
 Scaling memcached at Facebook https://engineering.fb.com/2008/12/12/core-data/scaling-memcached-at-facebook/</br>
 
