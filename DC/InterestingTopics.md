@@ -1,7 +1,8 @@
 Some topics I'm interested in or just some thoughts. Outside of the lecture/exam scope.</br>
 
-**Hardware requirment for Memcached** </br>
-https://github.com/memcached/memcached/wiki/Hardware</br>
+**More about Memcached** </br>
+Hardware requirement for Memcached https://github.com/memcached/memcached/wiki/Hardware</br>
+Scaling memcached at Facebook https://engineering.fb.com/2008/12/12/core-data/scaling-memcached-at-facebook/</br>
 
 **Chord - Is chord really correct?** </br>
 1. https://www.cs.princeton.edu/courses/archive/fall18/cos561/docs/ChordClass.pdf </br>
