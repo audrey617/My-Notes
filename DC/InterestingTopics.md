@@ -22,7 +22,7 @@ https://hevodata.com/learn/spanner-vs-bigquery/#1 </br>
 
 
 **More about Transaction** </br>
-Unfortunately the CS6400 Database course focuses too much on SQL & basic design applicaiton but has little depth of or completely skipped advanced system-level topics including transaction. This bites me for the DC class. For these concepts, good to read the DB textbook fundamentals of database systems Part 9 transaction and Part 10 distributed database for more information. Peter Bailis's blog is also helpful.</br>
+Unfortunately the CS6400 Database course focuses too much on SQL & basic design applicaiton but has little depth of or completely skipped advanced system-level topics including transaction. For these concepts, good to read the DB textbook fundamentals of database systems Part 9 transaction and Part 10 distributed database for more information. Peter Bailis's blog is also helpful.</br>
 
 "Serializability is a sufficient condition for ACID consistency but it is not strictly necessary. A database with serializability (“I” in ACID), provides arbitrary read/write transactions and guarantees consistency (“C” in ACID)", "For distributed systems nerds: achieving linearizability for reads and writes is, in a formal sense, “easier” to achieve than serializability. here’s some intuition: terminating atomic register read/write operations are achievable in a fail-stop model. Yet atomic commitment—which is needed to execute multi-site serializable transactions (think: AC is to 2PC as consensus is to Paxos)—is not: the FLP result says consensus is unachievable in a fail-stop model (hence with One Faulty Process), and (non-blocking) atomic commitment is “harder” than consensus (see also). Also, keep in mind that linearizability for read-modify-write is harder than linearizable read/write. " - Peter Bailis</br>
 [When is "ACID" ACID? Rarely](http://www.bailis.org/blog/when-is-acid-acid-rarely/)</br>
@@ -30,3 +30,10 @@ Unfortunately the CS6400 Database course focuses too much on SQL & basic design 
 [Linearizability versus Serializability](http://www.bailis.org/blog/linearizability-versus-serializability/)</br>
 [Understanding Weak Isolation Is a Serious Problem](http://www.bailis.org/blog/understanding-weak-isolation-is-a-serious-problem/)</br>
 More posts from Peter Bailis blog http://www.bailis.org/blog/</br>
+
+
+
+**Papers and articles from James Mickens** </br>
+Woud love to read more about his articles!</br>
+The saddnest moment is here: https://mickens.seas.harvard.edu/wisdom-james-mickens</br>
+More research papers: https://mickens.seas.harvard.edu/publications?page=1</br>
