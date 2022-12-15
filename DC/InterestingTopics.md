@@ -42,3 +42,7 @@ More posts from Peter Bailis blog http://www.bailis.org/blog/</br>
 Woud love to read more articles from him!</br>
 The Saddest Moment is here and more: https://mickens.seas.harvard.edu/wisdom-james-mickens</br>
 More research papers: https://mickens.seas.harvard.edu/publications?page=1</br>
+
+
+**About Parameter Server** </br>
+Scaling Distributed Machine Learning with the Parameter Server https://www.cs.cmu.edu/~muli/file/parameter_server_osdi14.pdf</br>
