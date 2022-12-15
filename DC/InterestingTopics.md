@@ -46,3 +46,4 @@ More research papers: https://mickens.seas.harvard.edu/publications?page=1</br>
 
 **About Parameter Server** </br>
 Scaling Distributed Machine Learning with the Parameter Server https://www.cs.cmu.edu/~muli/file/parameter_server_osdi14.pdf</br>
+https://www.cs.cornell.edu/courses/cs4787/2019sp/notes/lecture22.pdf</br>
