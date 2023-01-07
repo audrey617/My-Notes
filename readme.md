@@ -5,4 +5,4 @@ Considering the copyright, I only set my notes to be public for the open courses
 Folder Link:<br/>
 - [Advanced Operating Systems Notes](https://github.com/audrey617/CS6210-Advanced-Operating-Systems-Notes)
 
-- [Machine Learning](https://github.com/audrey617/My-Notes/tree/main/ML)
+- [Machine Learning Review](https://github.com/audrey617/My-Notes/tree/main/ML)
