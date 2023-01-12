@@ -1,3 +1,4 @@
+0. Math For ML https://static.us.edusercontent.com/files/fp5iS7gSfEKiqEz5OchGseaY
 1. pdf to cdf practice example: https://blogs.ubc.ca/math105/continuous-random-variables/example/ <br>
 2. inner products and norms: https://www.princeton.edu/~aaa/Public/Teaching/ORF523/S17/ORF523_S17_Lec2_gh.pdf <br> 
 3. gradient vector: https://acritch.com/media/math53/Critch_Math53_09Su_-_Nabla_Notation.pdf <br> https://www.khanacademy.org/math/multivariable-calculus/multivariable-derivatives/partial-derivative-and-gradient-articles/a/the-gradient<br>
