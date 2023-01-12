@@ -165,6 +165,11 @@ Overfitting, underfitting - learning curve & validation curve <br/>
 https://scikit-learn.org/stable/modules/cross_validation.html <br/> 
 https://en.wikipedia.org/wiki/Cross-validation_(statistics) <br/> 
 
+<p align="center" width="100%">
+    <img width="50%" src="https://user-images.githubusercontent.com/62491253/211968443-269228ed-ae50-4c2b-9d97-075ce1994be1.png">
+</p>
+https://www.baeldung.com/cs/learning-curve-ml<br/> 
+
 ### 4. Input Spaces
 Scalar continuous input  <br/> 
 vector continuous input  <br/> 
