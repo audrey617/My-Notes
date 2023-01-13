@@ -1,5 +1,7 @@
+For my math concepts review and understanding purpose. These are not solutions for course probelm sets. 
+
 0. Math For ML https://static.us.edusercontent.com/files/fp5iS7gSfEKiqEz5OchGseaY
-1. pdf to cdf practice example: https://blogs.ubc.ca/math105/continuous-random-variables/example/ <br>
+1. pdf to cdf example: https://blogs.ubc.ca/math105/continuous-random-variables/example/ <br>
 2. inner products and norms: https://www.princeton.edu/~aaa/Public/Teaching/ORF523/S17/ORF523_S17_Lec2_gh.pdf <br> 
 3. gradient vector: https://acritch.com/media/math53/Critch_Math53_09Su_-_Nabla_Notation.pdf <br> https://www.khanacademy.org/math/multivariable-calculus/multivariable-derivatives/partial-derivative-and-gradient-articles/a/the-gradient<br>
 4. Sigmoid derivative via chain rule: https://hausetutorials.netlify.app/posts/2019-12-01-neural-networks-deriving-the-sigmoid-derivative/#:~:text=The%20derivative%20of%20the%20sigmoid%20function%20%CF%83(x)%20is%20the,1%E2%88%92%CF%83(x). <br>
