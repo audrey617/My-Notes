@@ -7,4 +7,5 @@
 6. Theory of convex functions: https://www.princeton.edu/~aaa/Public/Teaching/ORF523/S16/ORF523_S16_Lec7_gh.pdf  and https://see.stanford.edu/materials/lsocoee364a/03convexfunctions.pdf and mentioned in Theory of convex functions but more math  https://math.stackexchange.com/questions/2280341/why-is-every-p-norm-convex<br>
 7. Convex Optimization Lecture Notes https://people.eecs.berkeley.edu/~elghaoui/Teaching/EE227BT/LectureNotes_EE227BT.pdf
 8. Great content connecting KL Divergence and cross entropy loss https://www.youtube.com/watch?v=SxGYPqCgJWM and https://www.youtube.com/watch?v=Pwgpl9mKars
-9. one page List of Derivative Rules https://www.math.ucdavis.edu/~kouba/Math17BHWDIRECTORY/Derivatives.pdf
+9. One page List of Derivative Rules https://www.math.ucdavis.edu/~kouba/Math17BHWDIRECTORY/Derivatives.pdf
+10. Why midpoint-Convex and Continuous Implies Convex https://math.stackexchange.com/questions/83383/midpoint-convex-and-continuous-implies-convex
