@@ -5,4 +5,5 @@ Instructor: Mayur Naik, Chris Poch
 This is an open course. Professor's Youtube playlist: [link](https://www.youtube.com/playlist?list=PLF3-CvSRq2SaApl3Lnu6Tu_ecsBr94543)
 
 Ref:
+
 Useful notes from a previous student: [link](https://one2bla.me/cs6340/introduction.html)
