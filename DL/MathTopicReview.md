@@ -1,4 +1,4 @@
-For my math concepts review and understanding purpose. These are not solutions for course probelm sets. 
+For my math concepts review and understanding purpose. These are not solutions for course problem sets. 
 
 0. Math For ML https://static.us.edusercontent.com/files/fp5iS7gSfEKiqEz5OchGseaY
 1. pdf to cdf example: https://blogs.ubc.ca/math105/continuous-random-variables/example/ <br>
