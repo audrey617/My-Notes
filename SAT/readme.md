@@ -7,5 +7,7 @@ This is an open course. Professor's Youtube playlist: [link](https://www.youtube
 Ref:
 
 Useful notes from a previous student: 
+
 [summary note](https://one2bla.me/cs6340/introduction.html)
+
 [slides and transcript](http://rightingcode.org/lessons.html)
