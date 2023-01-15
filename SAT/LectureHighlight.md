@@ -1,8 +1,11 @@
 Lesson1 & 1.5 Introduction to Software Analysis </br>
 
-1. Undecidability: A decision problem is a problem that requires a yes or no answer. A decision problem that admits no algorithmic solution is said to be undecidable [link](https://www.cs.rochester.edu/u/nelson/courses/csc_173/computability/undecidable.html#:~:text=Definition%3A%20A%20decision%20problem%20is,is%20said%20to%20be%20undecidable.) [wiki](https://en.wikipedia.org/wiki/Undecidable_problem)</br>
+1. Undecidability: </br>
+A decision problem is a problem that requires a yes or no answer. A decision problem that admits no algorithmic solution is said to be undecidable [link](https://www.cs.rochester.edu/u/nelson/courses/csc_173/computability/undecidable.html#:~:text=Definition%3A%20A%20decision%20problem%20is,is%20said%20to%20be%20undecidable.) [wiki](https://en.wikipedia.org/wiki/Undecidable_problem)</br>
+
 
 2. Soundness and Completeness</br>
+
 Dynamic analysis - unsound (may miss error, false negative)</br>
 Static analysis - incomplete (may report spurious errors, false positive)</br>
 
