@@ -9,8 +9,8 @@ Soundness and Completeness</br>
 Dynamic analysis - unsound (may miss error, false negative)</br>
 Static analysis - incomplete (may report spurious errors, false positive)</br>
 
-A sound analysis - we can trust the correctness of the output. Soundness: A statement proven True is definitely true (but not all True statements may be proven). It can say some true programs are false. trivialSoundAnalysis() returns false for all inputs</br>
-A complete analysis - we can trust the incorrectness of the ouput. Completeness:  A statement proven false is definitely false. but not all false statements may be proven). It can say some false program to true. trivialCompleteAnalysis() returns true for all inputs</br>
+A sound analysis - we can trust the correctness of the output. Soundness: An analysis True is definitely true (but not all True statements may be proven). It can say some true programs are false. trivialSoundAnalysis() returns false for all inputs</br>
+A complete analysis - we can trust the incorrectness of the ouput. Completeness:  A analysis false is definitely false. but not all false statements may be proven). It can say some false program to true. trivialCompleteAnalysis() returns true for all inputs</br>
 
 Soundness and completeness are relative terms and depends on what we are looking for. Are we analyzing correct programs or error-containing programs.</br>
 Correct programs: All sound program are correct program. all correct program are complete. </br>
