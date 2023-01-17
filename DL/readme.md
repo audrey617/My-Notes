@@ -12,6 +12,6 @@ Math Resources Recommanded by Professor Zsolt and Peer Students:</br>
 
 Other resources for DL:</br>
 1. Stanford CS230 </br>
-2. Stanford CS231n </br>
+2. Stanford CS231n [Notes](https://cs231n.github.io/)</br>
 3. Stanford CS224n </br>
 4. UMichigan EECS 498-007 / 598-005 Deep Learning for Computer Vision </br>
