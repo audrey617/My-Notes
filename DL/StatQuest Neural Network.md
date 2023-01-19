@@ -29,9 +29,6 @@ w1, b1 <br/>
     <img width="70%" src="https://github.com/audrey617/Notes/blob/main/DL/images/dlsq/2.JPG?raw=true">
 </p>
 <p align="center" width="100%">
-    <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition2_0.JPG?raw=true">
-</p>
-<p align="center" width="100%">
     <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition2_1.JPG?raw=true">
 </p>
 w2, b2<br/> 
