@@ -87,20 +87,20 @@ Why not SSR?<br/>
 How to use Cross Entropy with Backpropagation
 Example<br/>
 <p align="center" width="100%">
-    <img width="80%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/9.JPG?raw=true?">
+    <img width="100%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/9.JPG?raw=true?">
 </p>
 b3 <br/>
 <p align="center" width="100%">
-    <img width="80%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/10.JPG?raw=true?">
+    <img width="100%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/10.JPG?raw=true?">
 </p>
 Derivative b3<br/>
 <p align="center" width="100%">
-    <img width="80%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/11.JPG?raw=true?">
+    <img width="100%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/11.JPG?raw=true?">
 </p>
 Backpropagation b3<br/>
 <p align="center" width="100%">
-    <img width="80%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/12.JPG?raw=true?">
+    <img width="100%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/12.JPG?raw=true?">
 </p>
 <p align="center" width="100%">
-    <img width="80%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/13.JPG?raw=true?">
+    <img width="100%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/13.JPG?raw=true?">
 </p>
