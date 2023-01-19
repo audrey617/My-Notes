@@ -55,13 +55,13 @@ get values to calculate step size<br/>
 **Part5: ArgMax and SoftMax && The SoftMax Derivative**: <br/>
 The broad range of values makes the Raw Output harder to interpret than it needs to be. So the raw output values are sent to either an Argmax layer or softmax layer before the final decision is made.<br/>
 
-Argmax sets the largest value to 1 and all other to 0. Thus, when we use ArgMax, the NN prediction is simply the output with a 1 in it. The problem with ArgMax is that we cannot use it to optimize the Weights and Biases in the NN because the output values are constants 0 and 1. <br/>
+Argmax sets the largest value to 1 and all other to 0. Thus, when we use ArgMax, the NN prediction is simply the output with a 1 in it. The problem with ArgMax is that we cannot use it to optimize the Weights and Biases in the NN because the output values are constants 0 and 1. The derivative is 0 or undefined. <br/>
 <p align="center" width="100%">
     <img width="65%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/4.JPG?raw=true?">
 </p>
 
 So that leads us to SoftMax function. When people want to use ArgMax for output, they often use SoftMax for training. Regardless of how many raw output values there are, the SoftMax output values will always be between 0 and 1. The total of softmax is 1. That measn as long as outputs are mutually exclusive, the softmax output values can be interpreted as predicted "probabilities", which depends on the W and B in the NN. W and B in turn depends on the randomly selected initial values. 
-Softmax has a derivative that can be used for Backpropagation. So we can use SoftMax for training and then ArgMax to understand output. Note, previously we used SSR to determine how well the NN fit the data. However, when we use the SoftMax function, because the output values are between 0 and 1, we often use **Cross Entropy** to determine how well the NN fits the data.<br/> 
+Softmax has a derivative that can be used for Backpropagation. So we can use SoftMax for training and then ArgMax to understand output. Note, when we use the SoftMax function, because the output values are between 0 and 1, we often use **Cross Entropy** instead of SSR.<br/> 
 <p align="center" width="100%">
     <img width="55%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/5.JPG?raw=true?">
 </p>
@@ -71,3 +71,7 @@ Softmax has a derivative that can be used for Backpropagation. So we can use Sof
 
 
 **Part 6: Cross Entropy**: <br/>
+When we have a simple NN with a single output, we commonly use SSR to determine how well the NN fits the data. However, when with multiple output values, we need Cross Entropy. The NN only needs a simplified form of this general Cross Entropy equation.
+<p align="center" width="100%">
+    <img width="90%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/7.JPG?raw=true?">
+</p>
