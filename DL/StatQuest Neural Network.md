@@ -70,13 +70,17 @@ Softmax has a derivative that can be used for Backpropagation. So we can use Sof
 </p>
 
 
-**Part 6: Cross Entropy**: <br/>
+**Part 6: Cross Entropy** <br/>
 When we have a simple NN with a single output, we commonly use SSR to determine how well the NN fits the data. However, when with multiple output values, we need Cross Entropy. The NN only needs a simplified form of this general Cross Entropy equation.
 <p align="center" width="100%">
     <img width="90%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/7.JPG?raw=true?">
 </p>
 
-Why not SSR?
+Why not SSR?<br/>
 <p align="center" width="100%">
     <img width="80%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/8.JPG?raw=true?">
 </p>
+
+
+**Part 7: Cross Entropy Derivatives and Backpropagation** <br/>
+How to use Cross Entropy with Backpropagation
