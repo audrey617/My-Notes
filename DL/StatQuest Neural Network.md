@@ -18,10 +18,12 @@ A neural network consists of Nodes and connection between the nodes. The numbers
 More details go to cs229 [note](https://cs229.stanford.edu/lectures-spring2022/main_notes.pdf) 1.1 LMS algorithm. page 9 - 13<br/><br/>
 
 
-**Part2: Backpropagation Main Ideas** <br/>
+**Part2: Backpropagation Main Ideas & Details** <br/>
 Backpropagation optimizes the Weights and Biases in the NN. Conceptually, backpropagation starts with the last parameter (here b3) and works its way backwards to estimate all other parameters <br/>
 Step1: using chain rule to calculate derivatives  <br/> 
 Step2: plug the derivates into Gradient Descent to optimize parameters <br/> 
+
+SSR (sum of squares residuals = Σ(obs_y - predict_y) for 1 to n sample)<br/>
 
 <p align="center" width="100%">
     <img width="60%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition2_0.JPG?raw=true">
