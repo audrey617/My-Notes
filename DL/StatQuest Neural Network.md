@@ -45,7 +45,8 @@ get values to calculate step size<br/>
     <img width="65%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition2_4.JPG?raw=true">
 </p>
 
-**Part3: ReLU In Action**: skip <br/>
+**Part3: ReLU In Action**:<br/>
+ReLU activation function is bent and not curved. This means the derivative is not defined where the function is bent. That's a problem because Gradient Descent which we use to estimate the W and B requires a derivative for all points. However, it is not a problem because we can get around this by simply defining the derivative at the bent part to be 0 or 1. It doesn't really matter. <br/>
 
 **Part4: Multiple Inputs and Outputs**: details skip <br/>
 <p align="center" width="100%">
