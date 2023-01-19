@@ -23,19 +23,23 @@ Backpropagation optimizes the Weights and Biases in the NN. Conceptually, backpr
 Step1: using chain rule to calculate derivatives  <br/> 
 Step2: plug the derivates into Gradient Descent to optimize parameters <br/> 
 
-Optimize all wweights and biases in this NN example: <br/>
+Optimize all wweights and biases in this NN example. activation function is softplus <br/>
+w1, b1 <br/> 
 <p align="center" width="100%">
     <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition2_0.JPG?raw=true">
 </p>
 <p align="center" width="100%">
     <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition2_1.JPG?raw=true">
 </p>
+w2, b2<br/> 
 <p align="center" width="100%">
     <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition2_2.JPG?raw=true">
 </p>
+w3, w4, b3<br/> 
 <p align="center" width="100%">
     <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition2_3.JPG?raw=true">
 </p>
+all<br/> 
 <p align="center" width="100%">
     <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition2_4.JPG?raw=true">
 </p>
