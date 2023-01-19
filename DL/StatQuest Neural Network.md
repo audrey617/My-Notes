@@ -23,23 +23,32 @@ Backpropagation optimizes the Weights and Biases in the NN. Conceptually, backpr
 Step1: using chain rule to calculate derivatives  <br/> 
 Step2: plug the derivates into Gradient Descent to optimize parameters <br/> 
 
-Optimize all weights and biases in this NN example. activation function is softplus. we combine these derivatives with others, and use gradient descent to optimize all simultaneously. First we initialize the W from normal distribution (or others) and bias term to 0. Then we plug in samples to get the values, and we use each derivative to calculate a step size. Next we update the parameters in the NN and repeat until the predictions no longer improve or meet other criteria <br/>
-w1, b1 <br/> 
+Optimize all weights and biases in this NN example. activation function is softplus. we combine these derivatives with others, and use gradient descent to optimize all simultaneously. First we initialize the W from normal distribution (or others) and bias term to 0. Then we plug in samples to get the values, and we use each derivative to calculate a step size. Next we update the parameters in the NN and repeat until the predictions no longer improve or meet other criteria. <br/>
+
+w1, b1 Derivative <br/> 
 <p align="center" width="100%">
     <img width="70%" src="https://github.com/audrey617/Notes/blob/main/DL/images/dlsq/2.JPG?raw=true">
 </p>
 <p align="center" width="100%">
     <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition2_1.JPG?raw=true">
 </p>
-w2, b2<br/> 
+w2, b2 Derivative<br/> 
 <p align="center" width="100%">
     <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition2_2.JPG?raw=true">
 </p>
-w3, w4, b3<br/> 
+w3, w4, b3 Derivative<br/> 
 <p align="center" width="100%">
     <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition2_3.JPG?raw=true">
 </p>
-all<br/> 
+get values to calculate step size<br/> 
 <p align="center" width="100%">
     <img width="70%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition2_4.JPG?raw=true">
 </p>
+
+**Part3: ReLU In Action**: skip <br/>
+
+**Part4: Multiple Inputs and Outputs**: details skip <br/>
+<p align="center" width="100%">
+    <img width="70%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/3.JPG?raw=true?">
+</p>
+
