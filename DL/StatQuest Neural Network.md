@@ -7,13 +7,15 @@ A neural network consists of Nodes and connection between the nodes. The numbers
 <p align="center" width="100%">
     <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition1.JPG?raw=true">
 </p>
-
+<br/>
 **Part1.1: chain rule**: skip <br/>
 **Part1.2: Gradient descent**: <br/>
 <p align="center" width="100%">
-    <img width="60%" src="https://github.com/audrey617/Notes/blob/main/DL/images/dlsq/1.JPG?raw=true">
+    <img width="80%" src="https://github.com/audrey617/Notes/blob/main/DL/images/dlsq/1.JPG?raw=true">
 </p>
-More details go to cs229 [note](https://cs229.stanford.edu/lectures-spring2022/main_notes.pdf) 1.1 LMS algorithm. page 9 - 13<br/>
+
+More details go to cs229 [note](https://cs229.stanford.edu/lectures-spring2022/main_notes.pdf) 1.1 LMS algorithm. page 9 - 13<br/><br/>
+
 
 **Part2: Backpropagation Main Ideas** <br/>
 Step1: using chain rule to calculate derivatives  <br/> 
