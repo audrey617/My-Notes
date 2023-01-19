@@ -75,3 +75,8 @@ When we have a simple NN with a single output, we commonly use SSR to determine 
 <p align="center" width="100%">
     <img width="90%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/7.JPG?raw=true?">
 </p>
+
+Why not SSR?
+<p align="center" width="100%">
+    <img width="80%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/8.JPG?raw=true?">
+</p>
