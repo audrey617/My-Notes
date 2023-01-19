@@ -8,7 +8,9 @@ A neural network consists of Nodes and connection between the nodes. The numbers
     <img width="50%" src="https://github.com/audrey617/Notes/blob/main/ML/images/addition1.JPG?raw=true">
 </p>
 <br/>
+
 **Part1.1: chain rule**: skip <br/>
+
 **Part1.2: Gradient descent**: <br/>
 <p align="center" width="100%">
     <img width="80%" src="https://github.com/audrey617/Notes/blob/main/DL/images/dlsq/1.JPG?raw=true">
