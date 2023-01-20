@@ -84,23 +84,78 @@ Why not SSR?<br/>
 
 
 **Part 7: Cross Entropy Derivatives and Backpropagation** <br/>
-How to use Cross Entropy with Backpropagation
+How to use Cross Entropy with Backpropagation<br/>
+
 Example<br/>
 <p align="center" width="100%">
     <img width="100%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/9.JPG?raw=true?">
 </p>
+
 b3 <br/>
 <p align="center" width="100%">
     <img width="100%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/10.JPG?raw=true?">
 </p>
+
 Derivative b3<br/>
 <p align="center" width="100%">
     <img width="100%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/11.JPG?raw=true?">
 </p>
+
 Backpropagation b3<br/>
 <p align="center" width="100%">
     <img width="100%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/12.JPG?raw=true?">
 </p>
 <p align="center" width="100%">
     <img width="100%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/13.JPG?raw=true?">
+</p>
+
+
+**Part 8: Image Classification with Convolutional Neural Networks (CNNs)** <br/>
+
+**RNN**  <br/>
+
+**Long Short-Term Memory (LSTM)** <br/>
+
+**Tensors for Neural Networks** <br/>
+From the perspective of creating a NN, tensors are ways to store the input data (Different than what tensor is in math). Unlike normal scalars, arrays, matrices, and n-dimensional matrices, Tensors were designed to take advantage of hardware acceleration. In other words, Tensors don't just hold data in various shape but also allow for all math that we have to do with the data to be done relatively quickly. Usually, Tensors and the math they do are sped up with GPUs and TPUs (Tensor processing units). One more cool thing about Tensors is that they take care of backpropagation for you with **Automatic Differentiation**, which means you can create fanciest NN and the hard part of derivatives will be taken care of by the Tensors. 
+
+**Introduction to PyTorch** <br/>
+import<br/>
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/14.JPG?raw=true?">
+</p>
+
+init<br/>
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/15.JPG?raw=true?">
+</p>
+
+Now we need to connect init to the input, activation function and output<br/>
+Forward()<br/>
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/16.JPG?raw=true?">
+</p>
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/17.JPG?raw=true?">
+</p>
+
+BasicNN<br/>
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/18.JPG?raw=true?">
+</p>
+
+Example<br/>
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/19.JPG?raw=true?">
+</p>
+
+PyTorch with backpropagation<br/>
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/20.JPG?raw=true?">
+</p>
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/21.JPG?raw=true?">
+</p>
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/22.JPG?raw=true?">
 </p>
