@@ -146,7 +146,7 @@ BasicNN<br/>
 
 Example<br/>
 <p align="center" width="100%">
-    <img width="100%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/19.JPG?raw=true?">
+    <img width="70%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/19.JPG?raw=true?">
 </p>
 
 PyTorch with backpropagation<br/>
