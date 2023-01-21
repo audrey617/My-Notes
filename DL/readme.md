@@ -10,8 +10,10 @@ Math Resources Recommanded by Professor Zsolt and Peer Students:</br>
 5. Appendix: Mathematics for Deep Learning https://d2l.ai/chapter_appendix-mathematics-for-deep-learning/index.html</br>
 6. The Matrix Cookbook https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf</br>
 
-Other resources for DL:</br>
-1. Stanford CS230 </br>
-2. Stanford CS231n [Notes](https://cs231n.github.io/)</br>
-3. Stanford CS224n </br>
-4. UMichigan EECS 498-007 / 598-005 Deep Learning for Computer Vision </br>
+Other Resources Recommanded by Professor Zsolt</br>
+1. Deep Learning Tuning Playbook https://github.com/google-research/tuning_playbook</br>
+
+Other DL online resources</br>
+1. Stanford CS231n [Notes](https://cs231n.github.io/)</br>
+2. Stanford CS224n </br>
+3. UMichigan EECS 498-007 / 598-005 Deep Learning for Computer Vision </br>
