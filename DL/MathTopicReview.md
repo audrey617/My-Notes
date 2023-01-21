@@ -10,5 +10,6 @@ For my math concepts review and understanding purpose. These are not solutions f
 7. Convex Optimization Lecture Notes https://people.eecs.berkeley.edu/~elghaoui/Teaching/EE227BT/LectureNotes_EE227BT.pdf
 8. Great content connecting KL Divergence and cross entropy loss https://www.youtube.com/watch?v=SxGYPqCgJWM and https://www.youtube.com/watch?v=Pwgpl9mKars
 9. One page List of Derivative Rules https://www.math.ucdavis.edu/~kouba/Math17BHWDIRECTORY/Derivatives.pdf
-10. Why midpoint-Convex and Continuous Implies Convex https://math.stackexchange.com/questions/83383/midpoint-convex-and-continuous-implies-convex
-11. law of the unconscious statistician https://math.stackexchange.com/questions/1500751/the-law-of-the-unconscious-statistician
+10. Calculus cheatsheetderivatives https://tutorial.math.lamar.edu/pdf/calculus_cheat_sheet_derivatives.pdf
+11. Why midpoint-Convex and Continuous Implies Convex https://math.stackexchange.com/questions/83383/midpoint-convex-and-continuous-implies-convex
+12. law of the unconscious statistician https://math.stackexchange.com/questions/1500751/the-law-of-the-unconscious-statistician
