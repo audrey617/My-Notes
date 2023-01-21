@@ -12,4 +12,5 @@ For my math concepts review and understanding purpose. These are not solutions f
 9. One page List of Derivative Rules https://www.math.ucdavis.edu/~kouba/Math17BHWDIRECTORY/Derivatives.pdf
 10. Calculus cheatsheetderivatives https://tutorial.math.lamar.edu/pdf/calculus_cheat_sheet_derivatives.pdf
 11. Why midpoint-Convex and Continuous Implies Convex https://math.stackexchange.com/questions/83383/midpoint-convex-and-continuous-implies-convex
-12. law of the unconscious statistician https://math.stackexchange.com/questions/1500751/the-law-of-the-unconscious-statistician
+12. Law of the unconscious statistician https://math.stackexchange.com/questions/1500751/the-law-of-the-unconscious-statistician
+13. A Gentle Introduction to the Jacobian for NN  https://machinelearningmastery.com/a-gentle-introduction-to-the-jacobian/#:~:text=The%20Jacobian%20matrix%20collects%20all,one%20coordinate%20space%20and%20another. and https://www.youtube.com/watch?v=AdV5w8CY3pw
