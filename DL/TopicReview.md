@@ -18,6 +18,9 @@ For my review and understanding purpose. These are not solutions for course prob
 13. A Gentle Introduction to the Jacobian for NN  https://machinelearningmastery.com/a-gentle-introduction-to-the-jacobian/#:~:text=The%20Jacobian%20matrix%20collects%20all,one%20coordinate%20space%20and%20another. and https://www.youtube.com/watch?v=AdV5w8CY3pw
 14. Hessian matrix https://en.wikipedia.org/wiki/Hessian_matrix
 15. Indicator function https://en.wikipedia.org/wiki/Indicator_function
+16. Element-wise product https://stats.stackexchange.com/questions/533577/what-is-the-difference-between-the-dot-product-and-the-element-by-element-multip#:~:text=With%20the%20dot%20product%2C%20you,as%20the%20original%20operand%20vectors.
+
+
 
 
 **ML**<br>
