@@ -1,5 +1,6 @@
-For my math concepts review and understanding purpose. These are not solutions for course problem sets. 
+For my review and understanding purpose. These are not solutions for course problem sets. <br>
 
+**Math**<br>
 0. Math For ML https://static.us.edusercontent.com/files/fp5iS7gSfEKiqEz5OchGseaY
 1. pdf to cdf example: https://blogs.ubc.ca/math105/continuous-random-variables/example/ <br>
 2. inner products and norms: https://www.princeton.edu/~aaa/Public/Teaching/ORF523/S17/ORF523_S17_Lec2_gh.pdf <br> 
@@ -16,3 +17,6 @@ For my math concepts review and understanding purpose. These are not solutions f
 13. A Gentle Introduction to the Jacobian for NN  https://machinelearningmastery.com/a-gentle-introduction-to-the-jacobian/#:~:text=The%20Jacobian%20matrix%20collects%20all,one%20coordinate%20space%20and%20another. and https://www.youtube.com/watch?v=AdV5w8CY3pw
 14. Hessian matrix https://en.wikipedia.org/wiki/Hessian_matrix
 15. Indicator function https://en.wikipedia.org/wiki/Indicator_function
+
+**ML**<br>
+1. Parametric and Nonparametric Machine Learning Algorithms https://machinelearningmastery.com/parametric-and-nonparametric-machine-learning-algorithms/
