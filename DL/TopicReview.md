@@ -1,6 +1,7 @@
 For my review and understanding purpose. These are not solutions for course problem sets. <br>
 
 **Math**<br>
+
 0. Math For ML https://static.us.edusercontent.com/files/fp5iS7gSfEKiqEz5OchGseaY
 1. pdf to cdf example: https://blogs.ubc.ca/math105/continuous-random-variables/example/ <br>
 2. inner products and norms: https://www.princeton.edu/~aaa/Public/Teaching/ORF523/S17/ORF523_S17_Lec2_gh.pdf <br> 
