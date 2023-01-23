@@ -26,3 +26,4 @@ For my review and understanding purpose. These are not solutions for course prob
 **ML**<br>
 
 1. Parametric and Nonparametric Machine Learning Algorithms https://machinelearningmastery.com/parametric-and-nonparametric-machine-learning-algorithms/
+2. A Gentle Introduction to Continuous Functions https://machinelearningmastery.com/continuous-functions/
