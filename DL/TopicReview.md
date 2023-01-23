@@ -19,11 +19,10 @@ For my review and understanding purpose. These are not solutions for course prob
 14. Hessian matrix https://en.wikipedia.org/wiki/Hessian_matrix
 15. Indicator function https://en.wikipedia.org/wiki/Indicator_function
 16. Element-wise product https://stats.stackexchange.com/questions/533577/what-is-the-difference-between-the-dot-product-and-the-element-by-element-multip#:~:text=With%20the%20dot%20product%2C%20you,as%20the%20original%20operand%20vectors.
+17. A Gentle Introduction to Continuous Functions https://machinelearningmastery.com/continuous-functions/
 
-
-
+---------------------------------------------------------------
 
 **ML**<br>
-
 1. Parametric and Nonparametric Machine Learning Algorithms https://machinelearningmastery.com/parametric-and-nonparametric-machine-learning-algorithms/
-2. A Gentle Introduction to Continuous Functions https://machinelearningmastery.com/continuous-functions/
+
