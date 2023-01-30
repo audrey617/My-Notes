@@ -22,6 +22,7 @@ For my review and understanding purpose. These are not solutions for course prob
 15. Indicator function https://en.wikipedia.org/wiki/Indicator_function
 16. Element-wise product https://stats.stackexchange.com/questions/533577/what-is-the-difference-between-the-dot-product-and-the-element-by-element-multip#:~:text=With%20the%20dot%20product%2C%20you,as%20the%20original%20operand%20vectors.
 17. A Gentle Introduction to Continuous Functions https://machinelearningmastery.com/continuous-functions/
+18. Derivative of the Softmax Function and the Categorical Cross-Entropy Loss https://towardsdatascience.com/derivative-of-the-softmax-function-and-the-categorical-cross-entropy-loss-ffceefc081d1
 
 ---------------------------------------------------------------
 
