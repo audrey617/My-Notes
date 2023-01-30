@@ -111,6 +111,37 @@ Backpropagation b3<br/>
 
 
 **Part 8: Image Classification with Convolutional Neural Networks (CNNs)** <br/>
+When the image is small (6 pixels * 6 pixels), it is possible to make a normal neural network to classify it. We simply convert this 6 * 6 grid of pixels into a single column of 36 input nodes, and then connect the input nodes to a Hidden layer. Each connection has a Weight that we have to estimate with Backpropagation. So that means we need to estimate 36 weights in order to connect to the ReLU node. However, usually the first hidden layer has more than one node, and each additional node adds an additional 36 weights to be estimated.
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/23.JPG?raw=true?">
+</p>
+
+However, a larger image would cause more than 10K weights per node in the hidden layer. This normal NN doesn't scale well. Another probelm is that this NN might not perform well if the image is shifted by one pixel. Lastly, complicated images like this teddy bear tend to have correlated pixels. for example, any brownish pixel in this image tends to be close to other brown pixels, and any white pixel tends to be near other white pixels. It might be helpful if we can take advantage of the correlation that exists among each pixel. Thus, classification of large and complicated complicated images is usually done using convolutional nerual network.
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/24.JPG?raw=true?">
+</p>
+
+convolutional nerual network
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/25.JPG?raw=true?">
+</p>
+
+Filter
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/26.JPG?raw=true?">
+</p>
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/27.JPG?raw=true?">
+</p>
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/28.JPG?raw=true?">
+</p>
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/29.JPG?raw=true?">
+</p>
+
+Pooling
+
 
 **RNN**  <br/>
 
