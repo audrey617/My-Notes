@@ -175,9 +175,9 @@ Pooling
 </p>
 
 In this example, given this image, we run it through the Filter to create the Feature Map. Then we run the Feature Map through a ReLU activation function, then we select the maximum value in each area. And end up with these values in the Input Nodes. Now we multiply the values in the Input Nodes by their assoicated Weights. And add each term together and then add the bias. <br/>
-Reduce number of inputs: starts from 6x6 image or 36 potential inputs and compressed down to 4 inputs into the NN<br/>
-Take correlations into account: accomplished by the filter, which looks at a region of pixels, instead of just one at a time<br/>
-Can tolerate small shifts of pixels: can still decide the same category<br/>
+**Reduce number of inputs**: starts from 6x6 image or 36 potential inputs and compressed down to 4 inputs into the NN<br/>
+**Take correlations into account**: accomplished by the filter, which looks at a region of pixels, instead of just one at a time<br/>
+**Can tolerate small shifts of pixels**: can still decide the same category<br/>
 No matter how fancy the Convolutional neural network is, it is based on 1) filters, aka, Convolution 2) apply an activation function to the filter output 3) pooling the output of the activation function<br/>
 <p align="center" width="100%">
     <img width="80%" src="https://github.com/audrey617/My-Notes/blob/main/DL/images/dlsq/32.JPG?raw=true?">
