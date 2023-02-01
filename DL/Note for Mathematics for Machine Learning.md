@@ -1,4 +1,4 @@
-Coursera Mathematics for Machine Learning playlist (2023 new open): [link](https://www.coursera.org/specializations/mathematics-for-machine-learning-and-data-science)<br/>
+Coursera Mathematics for Machine Learning (2023 new open course): [link](https://www.coursera.org/specializations/mathematics-for-machine-learning-and-data-science)<br/>
 
 - [Linear Algebra](#1) 
 
