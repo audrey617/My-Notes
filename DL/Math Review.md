@@ -1,6 +1,6 @@
 Review for math <br/>
 
-- [Coursera Mathematics for ML: [link](https://www.coursera.org/specializations/mathematics-for-machine-learning-and-data-science)](#1) 
+- [Coursera Mathematics for ML](#1) [link](https://www.coursera.org/specializations/mathematics-for-machine-learning-and-data-science)
 
 
 ---------------
