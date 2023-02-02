@@ -8,7 +8,7 @@ Review for math <br/>
 
 [Coursera link](https://www.coursera.org/specializations/mathematics-for-machine-learning-and-data-science)
 
-**Linear Algebra** : basic concepts, many are covered in high school math. But still good to do a quick refresh</br>
+**Linear Algebra** : basic concepts, many are covered in high school math. Good to do a quick refresh, but not enough</br>
 1. Systems of equations: Complete/non-singular -> unique solution -> lines across at a single point -> non-singular matrix -> rows are linearly independent -> determinant(det A) != 0,  redundent/Singular -> inf solutions -> singular matrix -> rows are linearly dependent -> determinant ==0, Contradictory/Singular -> no solution</br>
 2. Linear vs NonLinear: A linear function forms a straight line when it is plotted on a graph; and a nonlinear function does not form a straight line (it is curved in some way)</br>
 3. Matrix Row Reduction/ Gaussian Elimination/ Row echelon form /reduced row echelon form: A matrix is in echelon form if it has the shape resulting from a Gaussian elimination https://en.wikipedia.org/wiki/Gaussian_elimination</br>
