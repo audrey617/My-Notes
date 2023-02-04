@@ -32,7 +32,7 @@ For my review and understanding purpose. These are not solutions for course prob
 2. Explicit Regularization: [Weight Decay/L2 Norm regularization](https://stats.stackexchange.com/questions/29130/difference-between-neural-net-weight-decay-and-learning-rate), [Dropout](https://machinelearningmastery.com/dropout-for-regularizing-deep-neural-networks/), [Data Augmentation](https://www.datacamp.com/tutorial/complete-guide-data-augmentation)
 3. Implicit Regularization: Early Stopping, Batch Normalization, [SGD](https://www.inference.vc/notes-on-the-origin-of-implicit-regularization-in-stochastic-gradient-descent/)
 4. Saturating Gradient Problem https://datascience.stackexchange.com/questions/27665/what-is-saturating-gradient-problem
-5. Why not zero-centered bad? The answer explains well why it is bad, but the mentioned solution is not right. Zero mean won't solve this problem.  https://stats.stackexchange.com/questions/237169/why-are-non-zero-centered-activation-functions-a-problem-in-backpropagation
+5. Why not zero-centered bad? The answer explains well why it is bad, but the mentioned solution zero mean won't solve this problem.  https://stats.stackexchange.com/questions/237169/why-are-non-zero-centered-activation-functions-a-problem-in-backpropagation
 6. "dying ReLU" problem https://datascience.stackexchange.com/questions/5706/what-is-the-dying-relu-problem-in-neural-networks
 7. The Dead Neuron https://towardsdatascience.com/neural-network-the-dead-neuron-eaa92e575748
 8. all zero initialization. See the answer starts from "It's a bad idea because of 2 reasons:", not the current highest voted one. https://stats.stackexchange.com/questions/27112/danger-of-setting-all-initial-weights-to-zero-in-backpropagation
