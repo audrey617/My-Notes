@@ -33,3 +33,4 @@ For my review and understanding purpose. These are not solutions for course prob
 3. Implicit Regularization: Early Stopping, Batch Normalization, [SGD](https://www.inference.vc/notes-on-the-origin-of-implicit-regularization-in-stochastic-gradient-descent/)
 4. Saturating Gradient Problem https://datascience.stackexchange.com/questions/27665/what-is-saturating-gradient-problem
 5. "dying ReLU" problem https://datascience.stackexchange.com/questions/5706/what-is-the-dying-relu-problem-in-neural-networks
+6. all zero initialization. See the answer starts from "It's a bad idea because of 2 reasons:", not the current highest voted one. https://stats.stackexchange.com/questions/27112/danger-of-setting-all-initial-weights-to-zero-in-backpropagation
