@@ -32,3 +32,4 @@ For my review and understanding purpose. These are not solutions for course prob
 2. Explicit Regularization: [Weight Decay/L2 Norm regularization](https://stats.stackexchange.com/questions/29130/difference-between-neural-net-weight-decay-and-learning-rate), [Dropout](https://machinelearningmastery.com/dropout-for-regularizing-deep-neural-networks/), [Data Augmentation](https://www.datacamp.com/tutorial/complete-guide-data-augmentation)
 3. Implicit Regularization: Early Stopping, Batch Normalization, [SGD](https://www.inference.vc/notes-on-the-origin-of-implicit-regularization-in-stochastic-gradient-descent/)
 4. Saturating Gradient Problem https://datascience.stackexchange.com/questions/27665/what-is-saturating-gradient-problem
+5. "dying ReLU" problem https://datascience.stackexchange.com/questions/5706/what-is-the-dying-relu-problem-in-neural-networks
