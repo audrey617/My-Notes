@@ -39,4 +39,5 @@ For my review and understanding purpose. These are not solutions for course prob
 7. The Dead Neuron https://towardsdatascience.com/neural-network-the-dead-neuron-eaa92e575748
 8. all zero initialization. See the answer starts from "It's a bad idea because of 2 reasons:", not the current highest voted one. https://stats.stackexchange.com/questions/27112/danger-of-setting-all-initial-weights-to-zero-in-backpropagation
 9. Nesterov Momentum https://machinelearningmastery.com/gradient-descent-with-nesterov-momentum-from-scratch/#:~:text=Nesterov%20momentum%20is%20an%20extension,than%20the%20actual%20positions%20themselves.
-10. 1D and 3D Convolution Neural Network https://towardsdatascience.com/understanding-1d-and-3d-convolution-neural-network-keras-9d8f76e29610
+10. 1D and 3D Convolution Neural Network https://towardsdatascience.com/understanding-1d-and-3d-convolution-neural-network-keras-9d8f76e29610 and https://stackoverflow.com/questions/42883547/intuitive-understanding-of-1d-2d-and-3d-convolutions-in-convolutional-neural-n
+11. -
