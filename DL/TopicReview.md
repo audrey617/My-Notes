@@ -42,4 +42,5 @@ For my review and understanding purpose. These are not solutions for course prob
 10. 1D and 3D Convolution Neural Network https://towardsdatascience.com/understanding-1d-and-3d-convolution-neural-network-keras-9d8f76e29610 and https://stackoverflow.com/questions/42883547/intuitive-understanding-of-1d-2d-and-3d-convolutions-in-convolutional-neural-n
 11. Co-adaptation https://datascience.stackexchange.com/questions/36064/what-is-coadaptation-of-neurons-in-neural-networks
 12. Equivariance v Invariance https://datascience.stackexchange.com/questions/16060/what-is-the-difference-between-equivariant-to-translation-and-invariant-to-tr
-13. placeholder
+13. SMOTE for Imbalanced Classification https://machinelearningmastery.com/smote-oversampling-for-imbalanced-classification/
+14. placeholder
