@@ -20,4 +20,5 @@ Review for math <br/>
 9. Matrices as linear transformations: A linear transformation is a way to send each point in the plane into another point in the plane in a very structured way. </br>
 10. The identity matrix: 1s in the diagonal and 0's everywhere else https://en.wikipedia.org/wiki/Identity_matrix</br>
 11. Matrix inverse: The inverse matrix is precisely that matrix for which the product of the matrices is the identity matrix. In a linear transformation, the inverse matrix is the one that undoes the job of the original matrix, namely the one that returns the plane to where it was at the beginning. https://en.wikipedia.org/wiki/Invertible_matrix </br>
-12. 
+12. Determinant of a product https://proofwiki.org/wiki/Determinant_of_Matrix_Product && https://math.stackexchange.com/questions/1455761/how-is-the-determinant-related-to-the-inverse-of-matrix
+13. Eigenvalues and eigenvectors:https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors. Eigenbasis is a basis in which every vector is an eigenvector
