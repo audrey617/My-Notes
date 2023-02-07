@@ -1,9 +1,7 @@
-Lesson1 & 1.5 Introduction to Software Analysis </br>
-
 Undecidability: </br>
 A decision problem is a problem that requires a yes or no answer. A decision problem that admits no algorithmic solution is said to be undecidable [link](https://www.cs.rochester.edu/u/nelson/courses/csc_173/computability/undecidable.html#:~:text=Definition%3A%20A%20decision%20problem%20is,is%20said%20to%20be%20undecidable.) [wiki](https://en.wikipedia.org/wiki/Undecidable_problem)</br>
 
-
+</br></br>
 Soundness and Completeness</br>
 
 Dynamic analysis - unsound (may miss error, false negative)</br>
@@ -18,3 +16,6 @@ Error-containing programs: All complete programs are error-containing program, a
 Frame of reference: correct software -> sound analysis; error-containing programs -> complete analysis</br>
 
 
+</br></br>
+Chaotic Iteration </br>
+https://www.cs.cmu.edu/~aldrich/courses/654-sp05/handouts/dataflow-intro.pdf
