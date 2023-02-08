@@ -43,4 +43,14 @@ For my review and understanding purpose. These are not solutions for course prob
 11. Equivariance v Invariance https://datascience.stackexchange.com/questions/16060/what-is-the-difference-between-equivariant-to-translation-and-invariant-to-tr
 12. SMOTE for Imbalanced Classification https://machinelearningmastery.com/smote-oversampling-for-imbalanced-classification/
 13. placeholder
-14. placeholder
+14. 
+15. placeholder
+
+
+
+---------------------------------------------------------------
+
+**Papers mentioned**<br>
+1. Corbett-Davies, Sam, and Sharad Goel. "The measure and mismeasure of fairness: A critical review of fair machine learning." arXiv preprint arXiv:1808.00023 (2018).
+2. Cheng, Heng-Tze, et al. "Wide & deep learning for recommender systems." Proceedings of the 1st workshop on deep learning for recommender systems. 2016.
+3. 
