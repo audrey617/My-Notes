@@ -26,7 +26,8 @@ For my review and understanding purpose. These are not solutions for course prob
 19. what is a convolution? https://www.youtube.com/watch?v=KuXjwB4LzSA
 20. Condition number https://en.wikipedia.org/wiki/Condition_number
 21. Ill-conditioned curvature https://www.cs.toronto.edu/~rgrosse/courses/csc421_2019/slides/lec07.pdf
-22. Pooling Derivative https://towardsdatascience.com/forward-and-backward-propagation-of-pooling-layers-in-convolutional-neural-networks-11e36d169bec
+22. Pooling Derivative https://leimao.github.io/blog/Max-Pooling-Backpropagation/ and https://towardsdatascience.com/forward-and-backward-propagation-of-pooling-layers-in-convolutional-neural-networks-11e36d169bec
+23. 
 
 ---------------------------------------------------------------
 
