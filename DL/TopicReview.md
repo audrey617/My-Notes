@@ -28,7 +28,8 @@ For my review and understanding purpose. These are not solutions for course prob
 21. Ill-conditioned curvature https://www.cs.toronto.edu/~rgrosse/courses/csc421_2019/slides/lec07.pdf
 22. Pooling Derivative https://leimao.github.io/blog/Max-Pooling-Backpropagation/ and https://towardsdatascience.com/forward-and-backward-propagation-of-pooling-layers-in-convolutional-neural-networks-11e36d169bec
 23. Convolutions and Backpropagations https://pavisj.medium.com/convolutions-and-backpropagations-46026a8f5d2c
-24. 
+24. Numpy Einsum https://ajcr.net/Basic-guide-to-einsum/
+25. 
 
 ---------------------------------------------------------------
 
@@ -45,9 +46,9 @@ For my review and understanding purpose. These are not solutions for course prob
 10. Co-adaptation https://datascience.stackexchange.com/questions/36064/what-is-coadaptation-of-neurons-in-neural-networks
 11. Equivariance v Invariance https://datascience.stackexchange.com/questions/16060/what-is-the-difference-between-equivariant-to-translation-and-invariant-to-tr
 12. SMOTE for Imbalanced Classification https://machinelearningmastery.com/smote-oversampling-for-imbalanced-classification/
-13. placeholder
+13. 
 14. 
-15. placeholder
+15. 
 
 
 
