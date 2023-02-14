@@ -29,7 +29,7 @@ For my review and understanding purpose. These are not solutions for course prob
 22. Pooling Derivative https://leimao.github.io/blog/Max-Pooling-Backpropagation/ and https://towardsdatascience.com/forward-and-backward-propagation-of-pooling-layers-in-convolutional-neural-networks-11e36d169bec
 23. Convolutions and Backpropagations https://pavisj.medium.com/convolutions-and-backpropagations-46026a8f5d2c
 24. Numpy Einsum https://ajcr.net/Basic-guide-to-einsum/
-25. 
+25. Numpy Stride https://towardsdatascience.com/advanced-numpy-master-stride-tricks-with-25-illustrated-exercises-923a9393ab20#176a
 
 ---------------------------------------------------------------
 
