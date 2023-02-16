@@ -2,7 +2,7 @@ For my review and understanding purpose. These are not solutions for course prob
 
 ---------------------------------------------------------------
 
-**Math**<br>
+**Math/Math-related Programming**<br>
 
 0. Math For ML https://static.us.edusercontent.com/files/fp5iS7gSfEKiqEz5OchGseaY
 1. pdf to cdf example: https://blogs.ubc.ca/math105/continuous-random-variables/example/ 
