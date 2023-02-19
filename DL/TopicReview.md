@@ -46,7 +46,7 @@ For my review and understanding purpose. These are not solutions for course prob
 10. Co-adaptation https://datascience.stackexchange.com/questions/36064/what-is-coadaptation-of-neurons-in-neural-networks
 11. Equivariance v Invariance https://datascience.stackexchange.com/questions/16060/what-is-the-difference-between-equivariant-to-translation-and-invariant-to-tr
 12. SMOTE for Imbalanced Classification https://machinelearningmastery.com/smote-oversampling-for-imbalanced-classification/
-13. 
+13. ResNet. Why? https://www.doc.ic.ac.uk/~bkainz/teaching/DL/notes/ResNet.pdf
 14. 
 15. 
 
