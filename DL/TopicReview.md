@@ -1,4 +1,4 @@
-For my review and understanding purpose. These are not solutions for course problem sets. <br>
+For review purpose. These are not solutions for problem sets. <br>
 
 ---------------------------------------------------------------
 
@@ -47,7 +47,7 @@ For my review and understanding purpose. These are not solutions for course prob
 11. Equivariance v Invariance https://datascience.stackexchange.com/questions/16060/what-is-the-difference-between-equivariant-to-translation-and-invariant-to-tr
 12. SMOTE for Imbalanced Classification https://machinelearningmastery.com/smote-oversampling-for-imbalanced-classification/
 13. ResNet. Why? https://www.doc.ic.ac.uk/~bkainz/teaching/DL/notes/ResNet.pdf
-14. 
+14. Transfer Learning https://towardsdatascience.com/a-comprehensive-hands-on-guide-to-transfer-learning-with-real-world-applications-in-deep-learning-212bf3b2f27a
 15. 
 
 
