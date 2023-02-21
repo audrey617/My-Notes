@@ -20,7 +20,7 @@ RegAsm virus: https://malwaretips.com/blogs/remove-regasm-exe/#:~:text=The%20Reg
 
 
 **Project3 - Web Security** </br>
-This project is about XSRF, XSS and SQL injection to a provided unsecured website. I never thought about these attacks and learnt a lot. Overall it is a good assignment. However, I do feel a lot of pain due to no previous experience on Javascript. In addition, GS autograder tests are not available, which forces me to check details on VM again and again.  It took me multiple nights to finish this project. </br>
+This project is about XSRF, XSS and SQL injection to a provided unsecured website. I never thought about these attacks and learnt a lot. Overall it is a good assignment. However, I do feel a lot of pain due to no previous experience on Javascript. In addition, tests are not available, which force me to check details on VM again and again.  It took me multiple nights to finish this project. </br>
 
 Some refernece:
 XSS https://medium.com/@R4v3ncl4w/step-20-cross-site-scripting-xss-1df10ff7fd12</br>
