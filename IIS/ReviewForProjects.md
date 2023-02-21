@@ -17,3 +17,12 @@ This project can be better. It is cool to analyze the Joesandbox malware reports
 Some Reference</br>
 Mirai botnet: https://www.cloudflare.com/learning/ddos/glossary/mirai-botnet/</br>
 RegAsm virus: https://malwaretips.com/blogs/remove-regasm-exe/#:~:text=The%20Regasm.exe%20process%20is%20part%20of%20a%20Trojan%20Horse,itself%20as%20a%20legitimate%20process.</br>
+
+
+**Project3 - Web Security** </br>
+This project is about XSRF, XSS and SQL injection to a provided unsecured website. I never thought about these attacks and learnt a lot. Overall it is a good assignment. However, I do feel a lot of pain due to no previous experience on Javascript. In addition, GS autograder is not available, which forces me to check details on VM again and again.  It took me multiple nights to finish this project. </br>
+
+Some refernece:
+XSS https://medium.com/@R4v3ncl4w/step-20-cross-site-scripting-xss-1df10ff7fd12</br>
+SQL injection https://en.wikipedia.org/wiki/SQL_injection</br>
+(In Chinese) How to prevent XSS attack: https://medium.com/codelighthouse/xss-what-it-is-how-it-works-and-how-to-prevent-it-454629e3a0da</br>
