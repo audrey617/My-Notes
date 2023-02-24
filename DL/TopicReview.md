@@ -51,6 +51,7 @@ For review purpose. These are not solutions for problem sets. <br>
 15. Dense layer is fully-connected layer: Intuitively, each non linear activation function can be decomposed to Taylor series thus producing a polynomial of a degree higher than 1. By stacking several dense non-linear layers (one after the other) we can create higher and higher order of polynomials. Dense layers add an interesting non-linearity property, thus they can model any mathematical function. [source](https://medium.com/datathings/dense-layers-explained-in-a-simple-way-62fe1db0ed75)
 16. Ensemble Learning Methods for NN https://machinelearningmastery.com/ensemble-methods-for-deep-learning-neural-networks/
 17. t-SNE with Python Example https://towardsdatascience.com/an-introduction-to-t-sne-with-python-example-5a3a293108d1
+18. What's a "patch" in CNN? https://stats.stackexchange.com/questions/309308/whats-a-patch-in-cnn
 
 
 
