@@ -50,6 +50,7 @@ For review purpose. These are not solutions for problem sets. <br>
 14. Transfer Learning https://towardsdatascience.com/a-comprehensive-hands-on-guide-to-transfer-learning-with-real-world-applications-in-deep-learning-212bf3b2f27a
 15. Dense layer is fully-connected layer: Intuitively, each non linear activation function can be decomposed to Taylor series thus producing a polynomial of a degree higher than 1. By stacking several dense non-linear layers (one after the other) we can create higher and higher order of polynomials. Dense layers add an interesting non-linearity property, thus they can model any mathematical function. [source](https://medium.com/datathings/dense-layers-explained-in-a-simple-way-62fe1db0ed75)
 16. Ensemble Learning Methods for NN https://machinelearningmastery.com/ensemble-methods-for-deep-learning-neural-networks/
+17. t-SNE with Python Example https://towardsdatascience.com/an-introduction-to-t-sne-with-python-example-5a3a293108d1
 
 
 
