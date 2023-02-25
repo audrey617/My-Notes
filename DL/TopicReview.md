@@ -44,7 +44,7 @@ For review purpose. These are not solutions for problem sets. <br>
 8. all zero initialization. See the answer starts from "It's a bad idea because of 2 reasons:", not the current highest voted one. https://stats.stackexchange.com/questions/27112/danger-of-setting-all-initial-weights-to-zero-in-backpropagation
 9. 1D and 3D Convolution Neural Network https://towardsdatascience.com/understanding-1d-and-3d-convolution-neural-network-keras-9d8f76e29610 and https://stackoverflow.com/questions/42883547/intuitive-understanding-of-1d-2d-and-3d-convolutions-in-convolutional-neural-n
 10. Co-adaptation https://datascience.stackexchange.com/questions/36064/what-is-coadaptation-of-neurons-in-neural-networks
-11. Equivariance v Invariance https://datascience.stackexchange.com/questions/16060/what-is-the-difference-between-equivariant-to-translation-and-invariant-to-tr
+11. Equivariance v Invariance https://fabianfuchsml.github.io/equivariance1of2/ and https://datascience.stackexchange.com/questions/16060/what-is-the-difference-between-equivariant-to-translation-and-invariant-to-tr
 12. SMOTE for Imbalanced Classification https://machinelearningmastery.com/smote-oversampling-for-imbalanced-classification/
 13. ResNet. Why? https://www.doc.ic.ac.uk/~bkainz/teaching/DL/notes/ResNet.pdf
 14. Transfer Learning https://towardsdatascience.com/a-comprehensive-hands-on-guide-to-transfer-learning-with-real-world-applications-in-deep-learning-212bf3b2f27a
