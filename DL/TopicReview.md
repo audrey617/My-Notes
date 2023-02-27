@@ -53,6 +53,7 @@ For review purpose. These are not solutions for problem sets. <br>
 17. t-SNE with Python Example https://towardsdatascience.com/an-introduction-to-t-sne-with-python-example-5a3a293108d1
 18. What's a "patch" in CNN? https://stats.stackexchange.com/questions/309308/whats-a-patch-in-cnn
 19. Receptive field arithmetic for Convolutional Neural Networks https://blog.mlreview.com/a-guide-to-receptive-field-arithmetic-for-convolutional-neural-networks-e0f514068807
+20. What is a multi-headed model https://stackoverflow.com/questions/56004483/what-is-a-multi-headed-model-and-what-exactly-is-a-head-in-a-model
 
 
 
