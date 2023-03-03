@@ -54,10 +54,11 @@ For review purpose. These are not solutions for problem sets. <br>
 18. What's a "patch" in CNN? https://stats.stackexchange.com/questions/309308/whats-a-patch-in-cnn
 19. Receptive field arithmetic for Convolutional Neural Networks https://blog.mlreview.com/a-guide-to-receptive-field-arithmetic-for-convolutional-neural-networks-e0f514068807
 20. What is a multi-headed model https://stackoverflow.com/questions/56004483/what-is-a-multi-headed-model-and-what-exactly-is-a-head-in-a-model
-21. CNN Heat Maps: Saliency/Backpropagation https://glassboxmedicine.com/2019/06/21/cnn-heat-maps-saliency-backpropagation/#:~:text=Saliency%20maps%20are%20sometimes%20referred,a%20network%20has%20finished%20training.
-22. CNN Heat Maps: Class Activation Mapping (CAM) https://glassboxmedicine.com/2019/06/11/cnn-heat-maps-class-activation-mapping-cam/
-23. Understanding Latent Space https://stats.stackexchange.com/questions/442352/what-is-a-latent-space And https://towardsdatascience.com/understanding-latent-space-in-machine-learning-de5a7c687d8d
+21. Understanding Latent Space https://stats.stackexchange.com/questions/442352/what-is-a-latent-space And https://towardsdatascience.com/understanding-latent-space-in-machine-learning-de5a7c687d8d
+22. CNN Heat Maps: Saliency/Backpropagation https://glassboxmedicine.com/2019/06/21/cnn-heat-maps-saliency-backpropagation/#:~:text=Saliency%20maps%20are%20sometimes%20referred,a%20network%20has%20finished%20training.
+23. CNN Heat Maps: Class Activation Mapping (CAM) https://glassboxmedicine.com/2019/06/11/cnn-heat-maps-class-activation-mapping-cam/
 24. Implementation of Class Activation Map (CAM) with PyTorch https://medium.com/intelligentmachines/implementation-of-class-activation-map-cam-with-pytorch-c32f7e414923
+25. TBC
 
 
 
