@@ -54,6 +54,7 @@ For review purpose. These are not solutions for problem sets. <br>
 18. What's a "patch" in CNN? https://stats.stackexchange.com/questions/309308/whats-a-patch-in-cnn
 19. Receptive field arithmetic for Convolutional Neural Networks https://blog.mlreview.com/a-guide-to-receptive-field-arithmetic-for-convolutional-neural-networks-e0f514068807
 20. What is a multi-headed model https://stackoverflow.com/questions/56004483/what-is-a-multi-headed-model-and-what-exactly-is-a-head-in-a-model
+21. CNN Heat Maps: Saliency/Backpropagation https://glassboxmedicine.com/2019/06/21/cnn-heat-maps-saliency-backpropagation/#:~:text=Saliency%20maps%20are%20sometimes%20referred,a%20network%20has%20finished%20training.
 
 
 
