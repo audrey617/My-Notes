@@ -22,10 +22,14 @@ RegAsm virus: https://malwaretips.com/blogs/remove-regasm-exe/#:~:text=The%20Reg
 </br>**Project3 - Web Security** </br>
 This project is about XSRF, XSS and SQL injection to a provided unsecured website. I never thought about these attacks and learnt a lot. Overall it is a good assignment. However, I do feel a lot of pain due to no previous experience on Javascript. In addition, tests are not available, which force me to check details on VM again and again.  It took me multiple nights to finish this project. </br>
 
-Some refernece:
+Some refernece:</br>
 XSS https://medium.com/@R4v3ncl4w/step-20-cross-site-scripting-xss-1df10ff7fd12</br>
 SQL injection https://en.wikipedia.org/wiki/SQL_injection</br>
 (In Chinese) How to prevent XSS attack: https://tech.meituan.com/2018/09/27/fe-security.html</br>
 
 
-</br>**Project4 - TBC** </br>
+</br>**Project4 - ML on CLAMP** </br>
+This homework is a big distraction from Security itself and till now every task is basic ML implementation. However, the quality of this assignment is bad. No local tests are provided for the majority tasks and some function/input descriptions are pretty unclear. The GS tests have very strict formats, for example, One Hot Encoding value has to be 0.0 or 1.0 instead of 0 or 1 to pass GS (This feedback is not provided in GS and costs me tons of time to debug).</br>
+
+Some refernece:</br>
+args and kwargs in Python: https://www.geeksforgeeks.org/args-kwargs-python/
