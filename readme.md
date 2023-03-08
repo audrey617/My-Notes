@@ -8,3 +8,5 @@ Shortcut Link:<br/>
 - [Machine Learning Midterm Review](https://github.com/audrey617/My-Notes/blob/main/ML/CS7641%20Mid-term%20Prep.md) & [ML Final Review](https://github.com/audrey617/My-Notes/blob/main/ML/CS7641%20Final%20Prep.md)
 
 - [Deep Learning Topic Review](https://github.com/audrey617/My-Notes/blob/main/DL/TopicReview.md)
+
+- [Intro To Info Security Project Review](https://github.com/audrey617/My-Notes/blob/main/IIS/ReviewForProjects.md)
