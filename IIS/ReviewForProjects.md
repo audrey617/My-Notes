@@ -29,7 +29,7 @@ SQL injection https://en.wikipedia.org/wiki/SQL_injection</br>
 
 
 </br>**Project4 - ML on CLAMP** </br>
-This homework is a big distraction from Security itself and every task is basic ML implementation. I think it is one of the worst assignments I have had in this program: The quality of this assignment document is bad, some function descriptions are very unclear, and no local tests are provided for the majority parts. In addition, the GS tests usually provide no feedback on failed tests and the test design is pretty silly; one example is that One Hot Encoding value has to be 0.0/1.0 float format and will fail silently if your value is 0 or 1. Even I am pretty familiar with all concepts and relevant coding, I spent 11.5 hours to pass all GS tests. My workload should reduce by at least half if the project is designed better. </br>
+This homework is a big distraction from Security itself and every task is basic ML implementation. I think it is one of the worst assignments I have had in this program: The quality of this assignment document is bad, some function descriptions are very unclear, and no local tests are provided for the majority parts. In addition, the GS tests usually provide no feedback on failed tests and the test design is pretty silly; one example is that One Hot Encoding value has to be 0.0/1.0 float format and GS test will fail silently if your value is 0 or 1. Even I am pretty familiar with all concepts and relevant coding, I spent 11.5 hours to pass all GS tests. My workload should reduce by at least half if the project is designed better. </br>
 
 Some refernece:</br>
 args and kwargs in Python: https://www.geeksforgeeks.org/args-kwargs-python/
