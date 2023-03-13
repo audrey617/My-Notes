@@ -59,7 +59,8 @@ For review purpose. These are not solutions for problem sets. <br>
 23. CNN Heat Maps: Class Activation Mapping (CAM) https://glassboxmedicine.com/2019/06/11/cnn-heat-maps-class-activation-mapping-cam/
 24. Implementation of Class Activation Map (CAM) with PyTorch https://medium.com/intelligentmachines/implementation-of-class-activation-map-cam-with-pytorch-c32f7e414923
 25. steps in a PyTorch training loop https://towardsdatascience.com/the-unofficial-pytorch-optimization-loop-song-89657dd3a434
-26. 
+26. Understanding LSTM Networks https://colah.github.io/posts/2015-08-Understanding-LSTMs/
+27. 
 
 
 
