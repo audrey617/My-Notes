@@ -119,7 +119,7 @@ Adversarial examples
 
 Loss functions we've covered so far (including style transfer)
 
-Object detection architectures (including outputs, losses, etc.)
+Object detection architectures
 
 Receptive fields
 
