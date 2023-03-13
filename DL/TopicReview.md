@@ -70,3 +70,57 @@ For review purpose. These are not solutions for problem sets. <br>
 2. Cheng, Heng-Tze, et al. "Wide & deep learning for recommender systems." Proceedings of the 1st workshop on deep learning for recommender systems. 2016.
 3. Lin, Tsung-Yi, et al. "Focal loss for dense object detection." Proceedings of the IEEE international conference on computer vision. 2017.
 4. Cui, Yin, et al. "Class-balanced loss based on effective number of samples." Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2019.
+
+
+---------------------------------------------------------------
+**Important concepts**<br>
+
+Gradient descent and properties
+
+Backpropagation
+
+Representational power of neural networks, auto-differentiation
+
+How computation graphs work, what properties the graph requires (DAG), ordering, etc.
+
+Know when functions are differentiable and not-differentiable
+
+differences between parametric/non-parametric models
+
+Activation functions and their properties, including relative comparisons between them
+
+Initialization
+
+Optimizers
+
+Regularization methods and their properties, including dropout
+
+Batch normalization
+
+How batch sizes affects optimization
+
+Supervised Pre-training
+
+Convolution
+
+Types of errors and what they mean
+
+Effectiveness of transfer learning under certain conditions
+
+Differences between different types of modern architectures (AlexNet, VGGNet, Inception Net, ResNet)
+
+Convolutional layers and how they work (forward/backward)
+
+Invariance vs. equivariance
+
+Backprop-based visualization
+
+Adversarial examples
+
+Loss functions we've covered so far (including style transfer)
+
+Object detection architectures (including outputs, losses, etc.)
+
+Receptive fields
+
+Transpose convolution
