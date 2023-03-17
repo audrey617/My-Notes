@@ -33,3 +33,9 @@ This homework is a big distraction from Security itself and every task is basic 
 
 Reference:</br>
 args and kwargs in Python: https://www.geeksforgeeks.org/args-kwargs-python/
+
+</br>**Project5 - Cryptography (RSA)** </br>
+Much more interesting project.
+
+Reference:</br>
+Modular exponentiation https://en.wikipedia.org/wiki/Modular_exponentiation#Memory-efficient_method
