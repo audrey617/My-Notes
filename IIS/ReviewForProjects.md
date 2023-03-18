@@ -35,7 +35,7 @@ Reference:</br>
 args and kwargs in Python: https://www.geeksforgeeks.org/args-kwargs-python/
 
 </br>**Project5 - Cryptography (RSA)** </br>
-Much more interesting project. Total 11.5 hours.
+Much more interesting project. Different attacks on RSA. Total 11.5 hours.
 
 Reference:</br>
 Modular exponentiation https://en.wikipedia.org/wiki/Modular_exponentiation#Memory-efficient_method</br>
