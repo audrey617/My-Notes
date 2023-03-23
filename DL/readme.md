@@ -12,8 +12,3 @@ Math Resources Recommanded by Professor Zsolt and Peer Students:</br>
 
 Other Resources Recommanded by Professor Zsolt</br>
 1. Deep Learning Tuning Playbook https://github.com/google-research/tuning_playbook</br>
-
-Other DL online resources</br>
-1. Stanford CS231n [Notes](https://cs231n.github.io/)</br>
-2. Stanford CS224n </br>
-3. UMichigan EECS 498-007 / 598-005 Deep Learning for Computer Vision </br>
