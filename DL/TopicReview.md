@@ -60,7 +60,7 @@ For review purpose. These are not solutions for problem sets. <br>
 24. Implementation of Class Activation Map (CAM) with PyTorch https://medium.com/intelligentmachines/implementation-of-class-activation-map-cam-with-pytorch-c32f7e414923
 25. steps in a PyTorch training loop https://towardsdatascience.com/the-unofficial-pytorch-optimization-loop-song-89657dd3a434
 26. Understanding LSTM Networks https://colah.github.io/posts/2015-08-Understanding-LSTMs/
-27. 
+27. In classification tasks, what do "soft predictions" and "hard labels" mean https://www.quora.com/In-classification-tasks-what-do-soft-predictions-and-hard-labels-mean-apart-from-being-predictions-and-labels
 
 
 
