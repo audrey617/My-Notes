@@ -72,27 +72,3 @@ For review purpose. These are not solutions for problem sets. <br>
 3. Lin, Tsung-Yi, et al. "Focal loss for dense object detection." Proceedings of the IEEE international conference on computer vision. 2017.
 4. Cui, Yin, et al. "Class-balanced loss based on effective number of samples." Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2019.
 
-
----------------------------------------------------------------
-**Important concepts**<br>
-1. Gradient descent and properties
-2. Backpropagation
-3. Representational power of neural networks, auto-differentiation
-4. How computation graphs work, what properties the graph requires (DAG), ordering, etc.
-5. Know when functions are differentiable and not-differentiable
-6. differences between parametric/non-parametric models
-7. Activation functions and their properties, including relative comparisons between them
-8. Initialization, Optimizers, Regularization methods and their properties, including dropout, Batch normalization, How batch sizes affects optimization
-9. Supervised Pre-training
-10. Convolution
-11. Types of errors and what they mean
-12. Effectiveness of transfer learning under certain conditions
-13. Differences between different types of modern architectures (AlexNet, VGGNet, Inception Net, ResNet)
-14. Convolutional layers and how they work (forward/backward)
-15. Invariance vs. equivariance
-16. Backprop-based visualization
-17. Adversarial examples
-18. Loss functions we've covered so far (including style transfer)
-19. Object detection architectures
-20. Receptive fields
-21. Transpose convolution
