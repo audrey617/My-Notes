@@ -1,4 +1,4 @@
-CS 6340 Software Analysis & Testing
+CS 6340 Software Analysis & Testing (2023 Spring)
 
 Instructor: Mayur Naik, Chris Poch
 
