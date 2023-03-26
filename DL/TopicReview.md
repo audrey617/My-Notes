@@ -1,4 +1,4 @@
-For review purpose. These are not solutions for problem sets. <br>
+For review purpose. These are not solutions for problem sets/quizzes. <br>
 
 ---------------------------------------------------------------
 
@@ -65,6 +65,7 @@ For review purpose. These are not solutions for problem sets. <br>
 29. The Skip-Gram Model http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/
 30. Negative Sampling https://www.baeldung.com/cs/nlps-word2vec-negative-sampling#:~:text=In%20a%20nutshell%2C%20by%20defining,they%20occur%20in%20different%20contexts.
 31. Transformer http://jalammar.github.io/illustrated-transformer/
+32. Understanding the Matrix Operations In Transformer Architecture https://santhoshkolloju.github.io/transformers/
 
 
 
