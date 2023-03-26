@@ -65,8 +65,9 @@ For review purpose. These are not solutions for problem sets/quizzes. <br>
 29. Word Embedding https://www.kaggle.com/code/redwankarimsony/nlp-101-understanding-word-embedding
 30. The Skip-Gram Model http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/
 31. Negative Sampling https://www.baeldung.com/cs/nlps-word2vec-negative-sampling#:~:text=In%20a%20nutshell%2C%20by%20defining,they%20occur%20in%20different%20contexts.
-32. Transformer http://jalammar.github.io/illustrated-transformer/
-33. Understanding the Matrix Operations In Transformer Architecture https://santhoshkolloju.github.io/transformers/
+32. Perplexity math https://medium.com/nlplanet/two-minutes-nlp-perplexity-explained-with-simple-probabilities-6cdc46884584
+33. Transformer http://jalammar.github.io/illustrated-transformer/
+34. Understanding the Matrix Operations In Transformer Architecture https://santhoshkolloju.github.io/transformers/
 
 
 
