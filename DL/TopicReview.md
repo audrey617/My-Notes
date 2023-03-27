@@ -58,18 +58,20 @@ For review purpose. These are not solutions for problem sets/quizzes. <br>
 22. CNN Heat Maps: Saliency/Backpropagation https://glassboxmedicine.com/2019/06/21/cnn-heat-maps-saliency-backpropagation/#:~:text=Saliency%20maps%20are%20sometimes%20referred,a%20network%20has%20finished%20training.
 23. CNN Heat Maps: Class Activation Mapping (CAM) https://glassboxmedicine.com/2019/06/11/cnn-heat-maps-class-activation-mapping-cam/
 24. Implementation of Class Activation Map (CAM) with PyTorch https://medium.com/intelligentmachines/implementation-of-class-activation-map-cam-with-pytorch-c32f7e414923
-25. steps in a PyTorch training loop https://towardsdatascience.com/the-unofficial-pytorch-optimization-loop-song-89657dd3a434
+25. Steps in a PyTorch training loop https://towardsdatascience.com/the-unofficial-pytorch-optimization-loop-song-89657dd3a434
 26. Understanding LSTM Networks https://colah.github.io/posts/2015-08-Understanding-LSTMs/
 27. In classification tasks, what do "soft predictions" and "hard labels" mean https://www.quora.com/In-classification-tasks-what-do-soft-predictions-and-hard-labels-mean-apart-from-being-predictions-and-labels
 28. Knowledge Distillation https://medium.com/analytics-vidhya/knowledge-distillation-in-a-deep-neural-network-c9dd59aff89b && keras demo https://keras.io/examples/vision/knowledge_distillation/
-29. Word Embedding https://www.kaggle.com/code/redwankarimsony/nlp-101-understanding-word-embedding
-30. The Skip-Gram Model http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/
-31. Negative Sampling https://www.baeldung.com/cs/nlps-word2vec-negative-sampling#:~:text=In%20a%20nutshell%2C%20by%20defining,they%20occur%20in%20different%20contexts.
-32. Perplexity math https://medium.com/nlplanet/two-minutes-nlp-perplexity-explained-with-simple-probabilities-6cdc46884584
-33. Transformer http://jalammar.github.io/illustrated-transformer/
-34. Understanding the Matrix Operations In Transformer Architecture https://santhoshkolloju.github.io/transformers/
-35. temperature in Softmax https://stats.stackexchange.com/questions/527080/what-is-the-role-of-temperature-in-softmax
-36. 
+29. Temperature in Softmax https://stats.stackexchange.com/questions/527080/what-is-the-role-of-temperature-in-softmax
+30. Word Embedding https://www.kaggle.com/code/redwankarimsony/nlp-101-understanding-word-embedding
+31. The Skip-Gram Model http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/
+32. Negative Sampling https://www.baeldung.com/cs/nlps-word2vec-negative-sampling#:~:text=In%20a%20nutshell%2C%20by%20defining,they%20occur%20in%20different%20contexts.
+33. Perplexity math https://medium.com/nlplanet/two-minutes-nlp-perplexity-explained-with-simple-probabilities-6cdc46884584
+34. Transformer http://jalammar.github.io/illustrated-transformer/
+35. Understanding the Matrix Operations In Transformer Architecture https://santhoshkolloju.github.io/transformers/
+36. Cross-Attention https://medium.com/@geetkal67/attention-networks-a-simple-way-to-understand-cross-attention-3b396266d82e
+37. 
+38. 
 
 
 
