@@ -68,6 +68,8 @@ For review purpose. These are not solutions for problem sets/quizzes. <br>
 32. Perplexity math https://medium.com/nlplanet/two-minutes-nlp-perplexity-explained-with-simple-probabilities-6cdc46884584
 33. Transformer http://jalammar.github.io/illustrated-transformer/
 34. Understanding the Matrix Operations In Transformer Architecture https://santhoshkolloju.github.io/transformers/
+35. temperature in Softmax https://stats.stackexchange.com/questions/527080/what-is-the-role-of-temperature-in-softmax
+36. 
 
 
 
