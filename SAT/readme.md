@@ -6,4 +6,4 @@ This is an open course: [Video, slides and transcript](http://rightingcode.org/l
 
 Useful notes from a previous student: [summary note](https://one2bla.me/cs6340/introduction.html)
 
-
+LLVM Guide: https://mukulrathi.com/create-your-own-programming-language/llvm-ir-cpp-api-tutorial/ 
