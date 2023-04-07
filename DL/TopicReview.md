@@ -72,7 +72,8 @@ For review purpose. These are not solutions for problem sets/quizzes. <br>
 36. Cross-Attention https://medium.com/@geetkal67/attention-networks-a-simple-way-to-understand-cross-attention-3b396266d82e
 37. Generative VS Discriminative Models https://medium.com/@mlengineer/generative-and-discriminative-models-af5637a66a3 && https://developers.google.com/machine-learning/gan/generative
 38. Autoencoders https://www.jeremyjordan.me/autoencoders/
-39. 
+39. Good discussion of PCA vs autoencoder https://stats.stackexchange.com/questions/120080/whatre-the-differences-between-pca-and-autoencoder
+40. 
 
 
 
