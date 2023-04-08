@@ -73,7 +73,7 @@ For review purpose. These are not solutions for problem sets/quizzes. <br>
 37. Generative VS Discriminative Models https://medium.com/@mlengineer/generative-and-discriminative-models-af5637a66a3 && https://developers.google.com/machine-learning/gan/generative
 38. Autoencoders https://www.jeremyjordan.me/autoencoders/
 39. Good discussion of PCA vs autoencoder https://stats.stackexchange.com/questions/120080/whatre-the-differences-between-pca-and-autoencoder
-40. 
+40. Why Sigmoid: A Probabilistic Perspective https://towardsdatascience.com/why-sigmoid-a-probabilistic-perspective-42751d82686
 
 
 
