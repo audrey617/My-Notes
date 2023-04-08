@@ -43,7 +43,7 @@ The Mathematics behind RSA http://www.cs.sjsu.edu/~stamp/CS265/SecurityEngineeri
 Understand Python Decimal</br>
 
 </br>**Project6 - Binary Exploitation** </br>
-This binary exploitation project is the best project so far in this IIS course. It blows my mind on how to abuse the unsafe codes. This project covers assembly, buffer overflow, reverse engineer and ROP (return oriented programming). Super cool! Brute-force can work in part 1 and part 2 tasks once you spot some patterns. However, part 3 requires more research - make sure use GDB for exploration and read project doc carefully. Total spent 12 hours to finish all.
+This binary exploitation project is the best project so far in this IIS course. It blows my mind on how to abuse the unsafe codes. This project covers assembly, buffer overflow, reverse engineer and ROP (return oriented programming). Super cool! Brute-force can work in part 1 and part 2 tasks once you spot some patterns. However, part 3 requires more research - make sure use GDB for exploration and read project doc carefully. Total 12 hours.
 
 Reference:</br>
 pwntools document https://docs.pwntools.com/en/stable/util/cyclic.html </br>
