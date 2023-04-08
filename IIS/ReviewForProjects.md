@@ -41,3 +41,16 @@ Reference:</br>
 Modular exponentiation https://en.wikipedia.org/wiki/Modular_exponentiation#Memory-efficient_method</br>
 The Mathematics behind RSA http://www.cs.sjsu.edu/~stamp/CS265/SecurityEngineering/chapter5_SE/RSAmath.html</br>
 Understand Python Decimal</br>
+
+</br>**Project6 - Binary Exploitation** </br>
+This binary exploitation project is the best project so far in this IIS course. It blows my mind on how to abuse the unsafe codes. This project covers assembly, buffer overflow, reverse engineer and ROP (return oriented programming). Super cool! Following the instruction & ed discussion threads can solve most part 1 and part 2 tasks. Brute-force can work once you spot some patterns. However, part 3 requires more research - make sure use GDB for exploration and read project doc carefully. Total spent 12 hours to finish all.
+
+Reference:</br>
+pwntools document https://docs.pwntools.com/en/stable/util/cyclic.html </br>
+GDB cheatsheet https://darkdust.net/files/GDB%20Cheat%20Sheet.pdf</br>
+Linux strings command https://www.javatpoint.com/linux-strings-command</br>
+Return Oriented Programming https://ctf101.org/binary-exploitation/return-oriented-programming/</br>
+ROP tutorial https://www.youtube.com/watch?v=8zRoMAkGYQE&list=PLchBW5mYosh_F38onTyuhMTt2WGfY-yr7&index=13</br>
+
+
+
