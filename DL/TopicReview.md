@@ -74,6 +74,7 @@ For review purpose. These are not solutions for problem sets/quizzes. <br>
 38. Autoencoders https://www.jeremyjordan.me/autoencoders/ && Prob autoencoders CS480/680 Lecture 20 https://www.youtube.com/watch?v=E28CVTbNoSA
 39. Good discussion of PCA vs autoencoder https://stats.stackexchange.com/questions/120080/whatre-the-differences-between-pca-and-autoencoder
 40. Why Sigmoid: A Probabilistic Perspective https://towardsdatascience.com/why-sigmoid-a-probabilistic-perspective-42751d82686
+41. Deep Reinforcement Learning: Pong from Pixels http://karpathy.github.io/2016/05/31/rl/
 
 
 
