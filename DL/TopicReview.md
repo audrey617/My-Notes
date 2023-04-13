@@ -75,6 +75,7 @@ For review purpose. These are not solutions for problem sets/quizzes. <br>
 39. Good discussion of PCA vs autoencoder https://stats.stackexchange.com/questions/120080/whatre-the-differences-between-pca-and-autoencoder
 40. Why Sigmoid: A Probabilistic Perspective https://towardsdatascience.com/why-sigmoid-a-probabilistic-perspective-42751d82686
 41. Deep Reinforcement Learning: Pong from Pixels http://karpathy.github.io/2016/05/31/rl/
+42. RL Non-Stationary https://towardsdatascience.com/understanding-reinforcement-learning-hands-on-part-3-non-stationarity-544ed094b55
 
 
 
