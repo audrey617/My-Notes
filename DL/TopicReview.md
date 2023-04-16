@@ -77,6 +77,7 @@ For review purpose. These are not solutions for problem sets/quizzes. <br>
 41. Deep Reinforcement Learning: Pong from Pixels http://karpathy.github.io/2016/05/31/rl/
 42. The Exploration-Exploitation Dilemma https://towardsdatascience.com/understanding-reinforcement-learning-hands-on-part-2-multi-armed-bandits-526592072bdc
 43. RL Non-Stationary https://towardsdatascience.com/understanding-reinforcement-learning-hands-on-part-3-non-stationarity-544ed094b55
+44. Meta-Learning https://www.borealisai.com/research-blogs/tutorial-2-few-shot-learning-and-meta-learning-i/
 
 
 
