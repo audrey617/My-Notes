@@ -67,7 +67,7 @@ For review purpose. These are not solutions for problem sets/quizzes. <br>
 31. The Skip-Gram Model http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/
 32. Negative Sampling https://www.baeldung.com/cs/nlps-word2vec-negative-sampling#:~:text=In%20a%20nutshell%2C%20by%20defining,they%20occur%20in%20different%20contexts.
 33. Perplexity math https://medium.com/nlplanet/two-minutes-nlp-perplexity-explained-with-simple-probabilities-6cdc46884584
-34. Transformer http://jalammar.github.io/illustrated-transformer/
+34. Transformer http://jalammar.github.io/illustrated-transformer/ && https://peterbloem.nl/blog/transformers
 35. Understanding the Matrix Operations In Transformer Architecture https://santhoshkolloju.github.io/transformers/
 36. Cross-Attention https://medium.com/@geetkal67/attention-networks-a-simple-way-to-understand-cross-attention-3b396266d82e
 37. Generative VS Discriminative Models https://medium.com/@mlengineer/generative-and-discriminative-models-af5637a66a3 && https://developers.google.com/machine-learning/gan/generative
