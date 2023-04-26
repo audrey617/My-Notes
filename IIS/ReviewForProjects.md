@@ -1,4 +1,4 @@
-My reviews and helpful reference links. Up til now, it is pretty easy course.
+My reviews and helpful reference links. It is pretty easy course. I skipped the credit project and still got more than 100% in total (since binary exploitation has extra points)
 
 </br>**Project1 - Man in the middle** </br>
 This project somehow reminds me of the steam game Hacknet. The working process on this project is a bit suffering and kinda like a puzzle. I got stuck on part 2 for a long while. But overall it is fun. I finished the project in 6 hours, while few students completed the lab in 3 hours. I assume they are very good at wireshark and have some security background before the lab. </br>
@@ -53,4 +53,6 @@ Return Oriented Programming https://ctf101.org/binary-exploitation/return-orient
 ROP tutorial https://www.youtube.com/watch?v=8zRoMAkGYQE&list=PLchBW5mYosh_F38onTyuhMTt2WGfY-yr7&index=13</br>
 
 
+</br>**Project7 - Log4Shell** </br>
+This project covers https://www.lunasec.io/docs/blog/log4j-zero-day/ issue and has the hardest puzzle to think about in this IIS course. Finished the project in 10 hours but it is very stressful. Suggestion is to look at reference material when get stuck. If you has issue on finishing flag 4, then work on flag 5 and 6 first. The knowledge leanred from flag 5/6 will help sort out flag 4. Generally it's still very interesting. No extra references are needed. Reference Material in lab document covers everything. READ ALL!
 
