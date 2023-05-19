@@ -1,4 +1,4 @@
-I use this seminar to review basic concepts so as to prepare graduate algorithm course. So far, pretty basic but the details are covered well in each module. 
+I use this seminar to review basic concepts and get ready for CS6515 graduate algorithm. So far, pretty basic but the details are covered well. 
 
 Project1: build arraylist <br>
 Follow the homework instruction would be fine. I spend most time in setting up Java, Junit and required formatter in the VScode. Code part is fast. One mistake I had was not following the instruction closely. Had to adjust code to meet requirement in the end.<br>
