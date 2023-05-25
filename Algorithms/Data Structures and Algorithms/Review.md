@@ -5,4 +5,4 @@ Follow the homework instruction would be fine. I spend most time in setting up J
 Reference:
 1. Create generic array in Java https://www.baeldung.com/java-generic-array && https://stackoverflow.com/questions/529085/how-to-create-a-generic-array-in-java
 
-Project2: build circularly linked list. pretty basic. compared to other single/double linked list, add to back is O(1)
+Project2: build circularly linked list. pretty basic. Adding to back is O(1) without using tail
