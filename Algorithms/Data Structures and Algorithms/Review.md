@@ -1,8 +1,16 @@
-I use this seminar to review basic concepts and get ready for CS6515 graduate algorithm. So far, pretty basic but the details are covered well. 
+This seminar is an adapted version of the undergraduate DS&A course. The contents are really good, covering various concepts in detail with clear explanations. A public version is also available in edX. So far, I highly recommend it.
 
-Project1: build arraylist <br>
-Follow the homework instruction would be fine. I spend most time in setting up Java, Junit and required formatter in the VScode. Code part is fast. One mistake I had was not following the instruction closely. Had to adjust code to meet requirement in the end.<br>
-Reference:
-1. Create generic array in Java https://www.baeldung.com/java-generic-array && https://stackoverflow.com/questions/529085/how-to-create-a-generic-array-in-java
+From the syllabus, https://gt-student-wiki.org/mediawiki/index.php/CS_1332#Algorithms
+Data structure: 
+Arrays, ArrayLists,
+LinkedLists (Singular, Doubly, Circular)
+Stacks, Queues, Deques, Priority Queues
+Various Trees: Binary, Binary Search, AVL, Splay, Heaps, 2-4 Trees, etc…
+Hash Maps/Tables; External Chaining and Probing
+Graphs and their algorithms
 
-Project2: build circularly linked list. pretty basic. Adding to back is O(1) without using tail
+Algorithms:
+Sorting Algorithms: Bubble, Insertion, Selection, Cocktail Shaker, Merge, Quick, Radix etc...
+Pattern Matching Algorithms: Brute force, Boyer-Moore, KMP, Rabin-Karp
+Graph Algorithms: Dijkstra’s Shortest Path and multiple MSTs
+Dynamic Programming Algorithms
