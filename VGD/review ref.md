@@ -1,3 +1,4 @@
 1) Inverse Kinematics https://www.rosroboticslearning.com/inverse-kinematics
 2) Ragdolls in Unity https://learn.unity.com/tutorial/creating-ragdolls-2019#
-3) Postmortem: DreamWorks Interactive's Trespasser https://www.gamedeveloper.com/programming/postmortem-dreamworks-interactive-s-i-trespasser-i-
+3) Root Motion https://docs.unrealengine.com/4.27/en-US/AnimatingObjects/SkeletalMeshAnimation/RootMotion/
+4) Postmortem: DreamWorks Interactive's Trespasser https://www.gamedeveloper.com/programming/postmortem-dreamworks-interactive-s-i-trespasser-i-
