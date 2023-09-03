@@ -9,5 +9,5 @@ For review purposes. These are not solutions for HW/Project/Quiz.
 **Marked Ed Discussion Posts**<be>
 Note: The below links are only available for CS 6515 Fall 23 students
 1. DP topic
-1) recurrence and recursion #89 
-2) Clarification on memoization #84
+  1) recurrence and recursion #89 Ed Post
+  2) Clarification on memoization #84 Ed Post
