@@ -6,7 +6,7 @@ For review purposes. These are not solutions for HW/Project/Quiz.
 
 
 ---------------------------------------------------------------
-**Marked Ed Discussion Posts**<be>
+**Useful Posts in Ed Discussion**<be>
 Note: The below links are only available for CS 6515 Fall 23 students
 1. DP topic
   - recurrence and recursion #89 Ed Post
