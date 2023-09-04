@@ -4,7 +4,7 @@ For review purposes. These are not solutions for HW/Project/Quiz.
 **Concepts**<br>
 1. Stirling’s Approximation for Factorials [link](https://towardsdatascience.com/stirlings-approximation-for-factorials-proof-and-applications-c058418e42db)
 2. Polynomial time and exponential time [link](https://stackoverflow.com/questions/4317414/polynomial-time-and-exponential-time)
-3. 
+3. inductive proof for summing a general geometric series [link](https://math.stackexchange.com/questions/22599/how-to-prove-a-formula-for-the-sum-of-powers-of-2-by-induction)
 
 
 ---------------------------------------------------------------
