@@ -2,7 +2,7 @@ For review purposes. These are not solutions for HW/Project/Quiz.
 
 ---------------------------------------------------------------
 **Concepts**<br>
-
+1. Stirling’s Approximation for Factorials https://towardsdatascience.com/stirlings-approximation-for-factorials-proof-and-applications-c058418e42db
 
 
 ---------------------------------------------------------------
