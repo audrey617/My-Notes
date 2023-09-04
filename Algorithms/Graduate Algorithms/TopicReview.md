@@ -9,7 +9,7 @@ For review purposes. These are not solutions for HW/Project/Quiz.
 
 ---------------------------------------------------------------
 **Useful Posts (Topic and ID) in Ed Discussion**<br>
-Note:  Each post's content is only available for CS6515 Fall23 students
+Note:  Each post's content is only searchable and available for CS6515 Fall23 students
 1. <b>DP</b>: 
   - Clarification on memoization #84 
   - subproblem constraint #75 #225
