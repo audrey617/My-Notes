@@ -11,7 +11,10 @@ For review purposes. These are not solutions for HW/Project/Quiz.
 **Useful Posts in Ed Discussion**<be>
 Note: The below links are only available for CS 6515 Fall 23 students
 1. DP: Ed Post Topic and ID
-  - Recurrence and recursion #89 
   - Clarification on memoization #84 
   - subproblem constraint #75 #225
   - Master Theorem #227
+  - Recurrence Relation #77
+  - Recurrence and recursion #89 
+  - Solving Recurrences #226
+  - Write DP #76
