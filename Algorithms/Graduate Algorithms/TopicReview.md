@@ -3,7 +3,7 @@ For review purposes. These are not solutions for HW/Project/Quiz.
 ---------------------------------------------------------------
 **Concepts**<br>
 1. Stirling’s Approximation for Factorials [link](https://towardsdatascience.com/stirlings-approximation-for-factorials-proof-and-applications-c058418e42db)
-2. Polynomial time and exponential time[link](https://stackoverflow.com/questions/4317414/polynomial-time-and-exponential-time)
+2. Polynomial time and exponential time [link](https://stackoverflow.com/questions/4317414/polynomial-time-and-exponential-time)
 3. 
 
 
