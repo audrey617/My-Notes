@@ -6,6 +6,7 @@ For review purposes. These are not solutions for HW/Project/Quiz.
 2. Polynomial time and exponential time [link](https://stackoverflow.com/questions/4317414/polynomial-time-and-exponential-time)
 3. inductive proof for summing a general geometric series [link](https://math.stackexchange.com/questions/22599/how-to-prove-a-formula-for-the-sum-of-powers-of-2-by-induction)
 4. backtracking vs DP discussion [link](https://stackoverflow.com/questions/3592943/difference-between-back-tracking-and-dynamic-programming?answertab=modifieddesc#tab-top)
+5. Algorithm complexity, log^k n vs n log n proof [link](https://stackoverflow.com/questions/19986407/algorithm-complexity-logk-n-vs-n-log-n)
 
 
 ---------------------------------------------------------------
