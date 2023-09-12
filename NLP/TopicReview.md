@@ -1,8 +1,9 @@
 For review purpose. These are not solutions for projects/quizzes.
 
 ---------------------------------------------------------------
-**NLP Concepts**<br>
-log probabilities https://stats.stackexchange.com/questions/483927/why-are-log-probabilities-useful
+**Concepts**<br>
+
+1. log probabilities https://stats.stackexchange.com/questions/483927/why-are-log-probabilities-useful
 
 
 ---------------------------------------------------------------
