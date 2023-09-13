@@ -23,5 +23,7 @@ Note:  Each post's content is only searchable and available for CS6515 Fall23 st
   - Write DP #76
 2. <b>Divide & Conquer</b>
   - Write DC #208
-  - 
+
+3. <b>Exam prep</b>
+  - Practice questions (student summary) #362
 
