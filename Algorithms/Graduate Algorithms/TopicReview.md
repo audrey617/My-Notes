@@ -8,7 +8,7 @@ For review purposes. These are not solutions for HW/Project/Quiz.
 4. backtracking vs DP discussion [link](https://stackoverflow.com/questions/3592943/difference-between-back-tracking-and-dynamic-programming?answertab=modifieddesc#tab-top)
 5. Algorithm complexity, log^k n vs n log n proof [link](https://stackoverflow.com/questions/19986407/algorithm-complexity-logk-n-vs-n-log-n)
 6. Matrix chain multiplication [link](https://en.wikipedia.org/wiki/Matrix_chain_multiplication)
-
+7. Catalan number time complexity https://stackoverflow.com/questions/27371612/catalan-numbers-recursive-function-time-complexity
 
 ---------------------------------------------------------------
 **Useful Posts (Topic and ID) in Ed Discussion**<br>
