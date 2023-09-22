@@ -12,7 +12,7 @@ For review purposes. These are not solutions for HW/Project/Quiz.
 8. An array of size n contains 2^n subsets proof https://math.stackexchange.com/questions/546414/what-is-the-proof-that-the-total-number-of-subsets-of-a-set-is-2n?noredirect=1&lq=1
 9. Longest Increasing Subsequence https://www.baeldung.com/cs/longest-increasing-subsequence-dynamic-programming
 10. n vs log^2 n https://stackoverflow.com/questions/13710629/on2-vs-o-nlogn2 && https://stackoverflow.com/questions/7523070/what-is-the-big-o-of-the-function-log-nk
-11. Fast Fourier Transform https://medium.com/@aiswaryamathur/understanding-fast-fourier-transform-from-scratch-to-solve-polynomial-multiplication-8018d511162f && https://docs.sympy.org/latest/modules/discrete.html
+11. Fast Fourier Transform https://medium.com/@aiswaryamathur/understanding-fast-fourier-transform-from-scratch-to-solve-polynomial-multiplication-8018d511162f && https://docs.sympy.org/latest/modules/discrete.html && https://www3.cs.stonybrook.edu/~rezaul/Fall-2017/CSE548/CSE548-lecture-4.pdf
 ---------------------------------------------------------------
 **Useful Posts (Topic and ID) in Ed Discussion**<br>
 Note:  Each post's content is only searchable and available for CS6515 Fall23 students
