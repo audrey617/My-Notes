@@ -4,6 +4,7 @@ For review purpose. These are not solutions for projects/quizzes.
 **Concepts**<br>
 
 1. log probabilities https://stats.stackexchange.com/questions/483927/why-are-log-probabilities-useful
+2. sampling multinomial from small log probability vectors https://stackoverflow.com/questions/33738382/sampling-multinomial-from-small-log-probability-vectors-in-numpy-scipy
 
 
 ---------------------------------------------------------------
